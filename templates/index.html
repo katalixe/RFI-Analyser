@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM Response Categories</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .container { max-width: 600px; margin: auto; text-align: center; }
+        .category { margin: 10px; padding: 10px; border: 1px solid #ccc; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>LLM Response Categories</h1>
+        {% for category in categories %}
+            <div class="category" onclick="fetchResponses('{{ category }}')">
+                {{ category }}
+            </div>
+        {% endfor %}
+    </div>
+
+    <div id="responses"></div>
+
+    <script>
+        function fetchResponses(category) {
+            fetch(`/category/${category}/llm_response`)
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById("responses").innerHTML = `<p>${data.response || data.error}</p>`;
+                });
+        }
+    </script>
+</body>
+</html>

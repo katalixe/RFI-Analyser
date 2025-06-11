@@ -1,5 +1,6 @@
 fastapi
 pyyaml
 uvicorn
-ollama
+#ollama
 openai
+jinja2
