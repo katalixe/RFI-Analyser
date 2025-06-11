@@ -138,7 +138,7 @@ def process_vendor(vendor):
             prompt_prefix = f"This is about {vendor}"
             prompt_suffix = (f"Offering:\n{offering}\nInterfaces:\n{intefaces}\nAbility:\n{ability} {purpose}")
             prompt= """
-You are an expert RFP analyst responsible for evaluating a vendor's response to a specific Request for Proposal (RFP) criterion. You will receive structured input consisting of the vendor's Offering, Interfaces and Ability
+You are an expert RFP analyst responsible for evaluating a vendor's response to a specific Request for Proposal (RFP) criterion. You will receive structured input consisting of the vendor's Offering, Interfaces and Ability. The Ability is supplied by the issuer and should be seen as the requirement as requested.
 Your task is to:
 Strictly analyze the input content without making assumptions or adding information that is not explicitly stated.
 Factually evaluate how well the information supports the criterion (you will not be given the criterion explicitly, assume it is clear from context).
@@ -149,7 +149,7 @@ Assign a score between 1 and 10, where:
 10 = Fully and clearly meets the requirement with strong, explicit support
 But you need to be very strict here. The answers should follow a gaussian curve. If the answer is too perfect, that should be cause of suspicion as well.
 Your output should be structured in JSON format as follows:
-jsonCopyEdit{"score": <integer between 1 and 10>,"justification": "<short explanation with direct references to vendor text>" }
+{"score": <integer between 1 and 10>,"justification": "<short explanation with direct references to vendor text>" }
 
             """
             with open(f"./prompts/{vendor}-{uid}.prompt", "w") as out_f:
@@ -160,13 +160,20 @@ jsonCopyEdit{"score": <integer between 1 and 10>,"justification": "<short explan
                     {"role": "user", "content": f"{prompt_prefix} {prompt} {prompt_suffix}"},
                 ],
                 max_tokens=4096,
-                temperature=0.8,
+                temperature=1.0,
                 top_p=1.0,
                 model=deployment,
             )
             if response.choices:
+              # Add 'ability' to the output JSON
+              import json
+              try:
+                result = json.loads(response.choices[0].message.content)
+                result['ability'] = ability
                 with open(f"./llm-response/{vendor}_{uid}.json", "w") as f:
-                    f.write(response.choices[0].message.content)
+                    json.dump(result, f, ensure_ascii=False, indent=2)
+              except Exception as e:
+                  print(f"Error writing JSON for {vendor} {uid}: {e}")
 
 
 

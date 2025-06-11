@@ -8,3 +8,4 @@ requests
 azure-storage-blob
 pandas
 openpyxl
+pyjson
