@@ -1,4 +1,0 @@
-{
-  "score": 9,
-  "justification": "Vendor 2 provides explicit support by stating their workflow engine automates business processes like commissioning, maintenance scheduling, and compliance verification. The use of BPMN, REST, and SOAP interfaces, as well as certifications (GDPR, ISO 27001, ISA-95), further underlines robust and secure process execution. The mention of 'sequence of actions as a process flow' directly addresses requirements for process automation and repeatability. However, some details on extensibility and monitoring are implied rather than detailed, so the score is 9."
-}

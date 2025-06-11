@@ -1,4 +1,0 @@
-{
-  "score": 9,
-  "justification": "Vendor 2 provides explicit support for defining and managing business rules via the Mendix platform, allowing users to 'design rule-based triggers, automated decision trees, and custom logic to control Digital Twin behavior throughout its lifecycle.' Interfaces supporting BPMN and APIs enhance flexibility. The only slight gap is lack of detailed examples or proof-of-use, but the requirement is substantively addressed."
-}

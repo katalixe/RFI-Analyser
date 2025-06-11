@@ -1,4 +1,0 @@
-{
-  "score": 10,
-  "justification": "Vendor 2 clearly addresses real-time asset monitoring ('real-time monitoring of assets, systems, and sensors'), supports key industrial and secure protocols ('MQTT, OPC UA, AMQP, and HTTPS'), and enables interaction with continuously updated information ('zero or low latency'). Compliance with security standards is also stated. Each requirement is explicitly supported."
-}

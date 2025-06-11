@@ -1,4 +1,0 @@
-{
-  "score": 10,
-  "justification": "Vendor 3 explicitly demonstrates real-time monitoring ('observe asset behavior, sensor telemetry, and operational status with minimal latency') and the ability for trigger-based alerts and event-driven workflows for prompt responses. Interfaces include MQTT, OPC UA, AMQP, WebSockets, and REST APIs, and the platform is compliant with recognized security standards. The ability statement specifies presenting continuously updated information at zero or low latency, directly supporting consequential real-time decision-making."
-}

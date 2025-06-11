@@ -1,4 +1,0 @@
-{
-  "score": 9,
-  "justification": "Vendor 2 fully addresses centralized storage, management, and retrieval by providing a 'centralized Simulation Model Repository' that manages 'algorithmic models, business rules, test cases, and simulation metadata'. Explicit mention of 'register and manage a portfolio of simulation models' supports governance and repository aspects. Interfaces emphasize 'APIs and open simulation model standards' for integration. Slight deduction as details on retrieval mechanisms are not deeply detailed."
-}

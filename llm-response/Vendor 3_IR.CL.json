@@ -1,4 +1,0 @@
-{
-  "score": 9,
-  "justification": "Vendor 3 provides 'support for chat-based interfaces, voice interaction, and workflow automation using connectors to platforms such as Microsoft Teams, Slack, and enterprise service portals.' It also specifies 'connectors and APIs for integration with RESTful and WebSocket-based services,' and cites secure standards compliance. The ability statement directly addresses interfacing with key platforms and offering conversational UIs. However, the mention of Yammer and Jabber in 'Ability' is not explicitly corroborated in 'Offering' or 'Interfaces,' resulting in a minor gap."
-}

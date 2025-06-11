@@ -1,4 +1,0 @@
-{
-  "score": 9,
-  "justification": "Vendor 2 fully addresses the requirement by offering integrated BI via Mendix Dashboards and MindSphere’s Insight Hub, providing real-time/historical analytics, visual metrics, alerts, and export features for business users. Interfaces such as OData, REST APIs, SQL, and standard export formats are supported. The ability section confirms a focus on business-user-friendly analytics and actionable insights. The description is comprehensive, though details on configuring new visualizations or deeper customization could be clearer."
-}

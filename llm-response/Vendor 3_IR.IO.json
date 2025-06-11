@@ -1,4 +1,0 @@
-{
-  "score": 9,
-  "justification": "Vendor 3 provides clear evidence of extensive OT and IoT integration ('extensive OT and IoT integration capabilities'), supports standard protocols (Modbus, OPC UA, BACnet, MQTT, AMQP), and demonstrates secure, real-time data acquisition into Digital Twin systems. The offering is robust, with strong compliance cited (ISA/IEC 62443, ISO/IEC 27001, NIST SP 800-53). However, there is slight ambiguity regarding scalability or specific examples of past integrations, so a perfect score is not given."
-}

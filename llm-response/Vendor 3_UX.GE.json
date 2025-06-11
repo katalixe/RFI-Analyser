@@ -1,4 +1,0 @@
-{
-  "score": 10,
-  "justification": "The vendor explicitly describes integration with game engines (Unity, Unreal, HLA/DIS-compliant platforms) for high-fidelity immersive visualizations, real-time synchronization with operational data, and support for interactive experiences (\"users interact with the Digital Twin in a highly interactive manner\"). Supported interfaces and security standards are listed, fully addressing requirements for immersive, interoperable, and secure Digital Twin environments."
-}

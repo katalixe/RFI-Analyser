@@ -1,4 +1,0 @@
-jsonCopyEdit{
-  "score": 10,
-  "justification": "Vendor 3 clearly provides an API gateway with support for REST, GraphQL, OpenAPI, and WebHooks, enabling exposure of services to internal, partner, and third-party developers. Security and best practice compliance are detailed (NIST SP 800-53 Rev. 5, ISO/IEC 27001, OWASP). Direct support for simplified integration ('without knowing how they are implemented') and secure access ('authentication,' 'rate limiting') is explicit."
-}

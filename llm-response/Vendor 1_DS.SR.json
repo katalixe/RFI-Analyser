@@ -1,4 +1,0 @@
-{
-  "score": 9,
-  "justification": "The vendor clearly describes a secure and scalable environment for storing, managing, and retrieving simulation models, including algorithmic codebases, business rules, and metadata ('provides a secure and scalable environment to store, manage, and retrieve...'). Adherence to NIST SP 800-53 standards is explicitly mentioned, covering security and compliance. The ability to register and manage a portfolio for improved configuration management and governance is directly supported. However, there is limited detail on how the system facilitates portfolio management, slightly limiting the completeness."
-}

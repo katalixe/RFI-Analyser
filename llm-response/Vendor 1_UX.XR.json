@@ -1,4 +1,0 @@
-{
-  "score": 9,
-  "justification": "The vendor’s offering explicitly addresses immersive and interactive XR experiences by providing live digital twins of physical environments, spatial anchors for precise tracking, and cloud remote rendering for high-fidelity visualizations. Interfaces are well-detailed, supporting industry standards (REST, MQTT, SDKs) and strong compliance (GDPR, ISO, SOC 2). The stated ability confirms enhancement of real-world objects with computer-generated information and user immersion. The only minor gap is the lack of explicit mention of auditory or haptic modalities."
-}

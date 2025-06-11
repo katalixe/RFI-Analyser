@@ -1,4 +1,0 @@
-{
-  "score": 10,
-  "justification": "Vendor 2 explicitly states the use of 'API-first architecture using Mendix and Teamcenter,' enabling publishing of RESTful and GraphQL APIs for 'internal and external consumers.' The mention of 'OpenAPI-compliant interfaces,' 'OAuth 2.0, and SAML,' and adherence to security standards directly evidences secure, standards-based integration. The ability statement further confirms external/internal access and integration simplicity."
-}

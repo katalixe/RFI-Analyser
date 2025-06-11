@@ -1,4 +1,0 @@
-{
-  "score": 9,
-  "justification": "Vendor 3 provides 'domain-specific data ingestion and lifecycle management using schema-aware data lakes' and enforces 'data quality, lineage, and retention policies tailored to each domain.' The solution also supports integration with key industry standards (IEC 61850, DICOM, ISO 15926) and ensures strong security and compliance. The ability statement confirms efficient handling of distinct data types. The response fully addresses the requirement, with only minor generalities (e.g., not naming specific use cases for all domains)."
-}

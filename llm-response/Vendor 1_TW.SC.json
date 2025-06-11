@@ -1,4 +1,0 @@
-{
-  "score": 9,
-  "justification": "The vendor provides robust identity and access management ('only compliant and authenticated devices can access'), unified infrastructure security, real-time threat detection, and secure key management meeting high standards (e.g., 'FIPS 140-2 Level 3 for HSM pools'). Interfaces adhere to security/compliance standards (GDPR, ISO, SOC 2, NIST SP 800-53). All core attributes of availability, integrity, and confidentiality are referenced, strongly supporting protection, but there’s no explicit mention of Digital Twins, making full coverage not completely explicit."
-}

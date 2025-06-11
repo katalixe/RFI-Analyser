@@ -1,4 +1,0 @@
-{
-  "score": 9,
-  "justification": "Vendor 3 explicitly states support for 'complex mathematical analytics such as engineering calculations, fluid dynamics, stress-strain analysis, and energy flow modeling,' and confirms these are 'tightly integrated' into the digital twin architecture for real-time/batch analysis, directly aligning with the requirement. Interface compatibility (Python, MATLAB, REST APIs) is clearly specified. The ability statement reiterates the purpose: 'perform mathematical and statical calculations to enable physics-based and other mathematical models.' Only minimal detail on statistical methods prevents a perfect score."
-}

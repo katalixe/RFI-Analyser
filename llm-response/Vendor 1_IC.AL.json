@@ -1,4 +1,0 @@
-{
-  "score": 9,
-  "justification": "The vendor explicitly supports real-time alerts and notifications through SignalR and Event Hub, with Power BI providing data-driven alerts. Interfaces for these components are detailed, referencing WebSockets, AMQP, and more. The stated ability covers display and management of alerts, queues, triggers, and notifications, directly relating to intervention and ongoing processes; however, implementation specifics (e.g., detailed management workflows) are not fully described."
-}

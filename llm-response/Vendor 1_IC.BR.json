@@ -1,4 +1,0 @@
-{
-  "score": 9,
-  "justification": "The vendor describes enabling business rule implementation via integration with Cloud 1 Logic Apps for automated workflows and decision-making, and states the ability to create, manage, and use business rules throughout the digital twin lifecycle. Explicitly listed interfaces (REST APIs, MQTT, DTDL) and adherence to security/compliance standards are also detailed. The only minor gap is lack of specific examples of rule management, but coverage is otherwise strong and explicit."
-}

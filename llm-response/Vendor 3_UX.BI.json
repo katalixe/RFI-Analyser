@@ -1,4 +1,0 @@
-{
-  "score": 9,
-  "justification": "Vendor 3 provides BI tools that enable data-driven decision-making, converting digital twin data into actionable insights through dashboards and reports with filtering, drill-down, and stakeholder metrics. The interface supports REST APIs, SQL, OData, and enterprise connectors, and complies with major standards. The vendor also highlights a business user-focused visual interface for insights and actions by various personas. One minor detail missing is explicit mention of real-time capability in the BI tool, although 'real-time decisions' is stated for the interface."
-}

@@ -1,4 +1,0 @@
-{
-  "score": 10,
-  "justification": "The response provides explicit, detailed support for federated learning: 'support federated learning by enabling multiple organizations to collaboratively train models on decentralized data while maintaining data privacy and security.' Both offerings mention compliance with security standards (GDPR, ISO, SOC 2). The ability statement clearly describes training across decentralized devices without data exchange, directly addressing privacy and heterogeneity requirements."
-}

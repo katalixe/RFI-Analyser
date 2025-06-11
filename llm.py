@@ -43,59 +43,6 @@ client = AzureOpenAI(
 #           for resp in all_responses:
 #               out_f.write(resp + "\n\n")
 
-def query_based_on_xls():
-    # all_responses = []
-    for vendor in list_unique_vendors():
-      xls = load_cpt_v1_sheet_from_azure(f"{vendor} - RFP.xlsx")
-      if xls is None:
-        print(f"No sheet for {vendor}")
-        continue
-      for idx, row in xls.iloc[5:].iterrows():  # Start from row 6 (index 5)
-
-        # Print only the values of column 8 and 9 (index 7 and 8)
-        category = row.iloc[0] if len(row) > 0 else None
-        uid = row.iloc[1] if len(row) > 1 else None
-        ability = row.iloc[3] if len(row) > 3 else None
-        purpose = row.iloc[4] if len(row) > 4 else None
-        offering = row.iloc[7] if len(row) > 7 else None
-        intefaces = row.iloc[8] if len(row) > 8 else None
-        
-        if uid:
-          prompt_prefix = f"This is about {vendor}"
-          prompt_suffix = (f"Offering:\n{offering}\nInterfaces:\n{intefaces}\nAbility:\n{ability} {purpose}")
-          prompt= """
-You are an expert RFP analyst responsible for evaluating a vendor's response to a specific Request for Proposal (RFP) criterion. You will receive structured input consisting of the vendor's Offering, Interfaces and Ability
-Your task is to:
-Strictly analyze the input content without making assumptions or adding information that is not explicitly stated.
-Factually evaluate how well the information supports the criterion (you will not be given the criterion explicitly, assume it is clear from context).
-Provide a short explanation (max 100 words) justifying your evaluation, citing exact phrases or elements from the input.
-Assign a score between 1 and 10, where:
-1 = Does not address the requirement at all
-5 = Partially addresses the requirement with limited evidence or vague statements
-10 = Fully and clearly meets the requirement with strong, explicit support
-Your output should be structured in JSON format as follows:
-jsonCopyEdit{"score": <integer between 1 and 10>,"justification": "<short explanation with direct references to vendor text>" }
-          """
-          # Store prompts
-          with open(f"./prompts/{vendor}-{uid}.prompt", "w") as out_f:
-            out_f.write(f"{prompt_prefix} {prompt} {prompt_suffix}")
-         
-          
-        #   response = client.chat.completions.create(
-        #     stream=False,
-        #     messages=[
-        #         {"role": "user", "content": f"{prompt_prefix} {prompt} {prompt_suffix}"},
-        #     ],
-        #     max_tokens=4096,
-        #     temperature=1.0,
-        #     top_p=1.0,
-        #     model=deployment,
-        # )
-        # if response.choices:
-        #   with open(f"./llm-response/{vendor}_{uid}.json", "w") as f:
-        #     f.write(response.choices[0].message.content)
-
-
 # def list_azure_files():
 #   # Replace with your Azure Storage connection string
 #   connection_string = os.getenv("CONNECTION_STRING")
@@ -135,7 +82,7 @@ def list_unique_vendors():
     except Exception as e:
         return {"error": str(e)}
 
-def load_cpt_v1_sheet_from_azure(filename):
+def load_xls(filename):
     """
     Downloads the specified XLS/XLSX file from Azure Blob Storage,
     loads the 'CPT-V1' sheet, and returns it as a pandas DataFrame.
@@ -166,21 +113,62 @@ def load_cpt_v1_sheet_from_azure(filename):
         print(f"Azure error: {e}")
         return None
 
+
 def main():
-  #(load_cpt_v1_sheet_from_azure("Vendor 3 - RFP.xlsx"))
-  query_based_on_xls()
-    # Load queries.yaml
-    # with open("queries.yaml", "r") as f:
-    #     queries = yaml.safe_load(f)
+    vendors = list_unique_vendors()
+    with concurrent.futures.ThreadPoolExecutor() as executor:
+        futures = []
+        for vendor in vendors:
+            futures.append(executor.submit(process_vendor, vendor))
+        concurrent.futures.wait(futures)
 
-    # with concurrent.futures.ThreadPoolExecutor() as executor:
-    #     futures = [
-    #         executor.submit(query_category, entry["category"], entry["prompts"])
-    #         for entry in queries
-    #     ]
-    #     concurrent.futures.wait(futures)
+def process_vendor(vendor):
+    xls = load_xls(f"{vendor} - RFP.xlsx")
+    if xls is None:
+        print(f"No sheet for {vendor}")
+        return
+    for idx, row in xls.iloc[5:].iterrows():  # Start from row 6 (index 5)
+        category = row.iloc[0] if len(row) > 0 else None
+        uid = row.iloc[1] if len(row) > 1 else None
+        ability = row.iloc[3] if len(row) > 3 else None
+        purpose = row.iloc[4] if len(row) > 4 else None
+        offering = row.iloc[7] if len(row) > 7 else None
+        intefaces = row.iloc[8] if len(row) > 8 else None
+        if uid:
+            prompt_prefix = f"This is about {vendor}"
+            prompt_suffix = (f"Offering:\n{offering}\nInterfaces:\n{intefaces}\nAbility:\n{ability} {purpose}")
+            prompt= """
+You are an expert RFP analyst responsible for evaluating a vendor's response to a specific Request for Proposal (RFP) criterion. You will receive structured input consisting of the vendor's Offering, Interfaces and Ability
+Your task is to:
+Strictly analyze the input content without making assumptions or adding information that is not explicitly stated.
+Factually evaluate how well the information supports the criterion (you will not be given the criterion explicitly, assume it is clear from context).
+Provide a short explanation (max 100 words) justifying your evaluation, citing exact phrases or elements from the input.
+Assign a score between 1 and 10, where:
+1 = Does not address the requirement at all
+5 = Partially addresses the requirement with limited evidence or vague statements
+10 = Fully and clearly meets the requirement with strong, explicit support
+But you need to be very strict here. The answers should follow a gaussian curve. If the answer is too perfect, that should be cause of suspicion as well.
+Your output should be structured in JSON format as follows:
+jsonCopyEdit{"score": <integer between 1 and 10>,"justification": "<short explanation with direct references to vendor text>" }
 
-    # client.close()
+            """
+            with open(f"./prompts/{vendor}-{uid}.prompt", "w") as out_f:
+                out_f.write(f"{prompt_prefix} {prompt} {prompt_suffix}")
+            response = client.chat.completions.create(
+                stream=False,
+                messages=[
+                    {"role": "user", "content": f"{prompt_prefix} {prompt} {prompt_suffix}"},
+                ],
+                max_tokens=4096,
+                temperature=0.8,
+                top_p=1.0,
+                model=deployment,
+            )
+            if response.choices:
+                with open(f"./llm-response/{vendor}_{uid}.json", "w") as f:
+                    f.write(response.choices[0].message.content)
+
+
 
 if __name__ == "__main__":
     main()

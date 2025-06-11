@@ -1,4 +1,0 @@
-{
-  "score": 9,
-  "justification": "Vendor 2 provides extensive support for simulation with Simcenter, mentioning 'high-fidelity modeling', 'multi-physics simulation', 'what-if analysis', and use of 'historical information, physical models, video, audio, and animation.' Integration with PLM, open formats (FMI, JT), and compliance with security standards (NIST SP 800-53, GDPR, ISO 27001) are specified. The offering supports both predictive maintenance and operator training. However, explicit mention of real-time simulation or scalability is absent, preventing a perfect score."
-}

@@ -1,4 +1,0 @@
-{
-  "score": 9,
-  "justification": "Vendor 2 provides 'seamless integration of Digital Twin applications through Teamcenter and Mendix' and supports 'bidirectional data movement and synchronization across diverse digital twin instances.' Explicit support for OPC UA, MQTT, REST APIs, and ISO/IEC 26550 is stated for interoperability. Security and governance standards (NIST SP 800-53, IEC 62443) are addressed, showing a strong, clear fit. Minor details around specific scenarios or extensibility could be clearer."
-}

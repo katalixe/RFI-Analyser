@@ -1,4 +1,0 @@
-{
-  "score": 9,
-  "justification": "Vendor 2 offers Teamcenter as a 'core Digital Twin Model Repository,' supporting 'centralized storage and governance,' 'structured metadata, version control, and traceability,' which aligns strongly with the requirement for managing digital twin models and their metadata. Explicit mention of 'formal data names, comprehensive data definitions, proper data structures, and precise data integrity rules' directly addresses model governance. The only slight gap is the lack of detailed examples of metadata management operations."
-}
