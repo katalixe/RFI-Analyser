@@ -1,0 +1,7 @@
+{
+  "score": 6,
+  "justification": "Vendor details support real-time delivery and management of alerts and notifications ('SignalR: enables real-time alerts…', 'Event Hub: facilitates alerts…', 'Power BI: supports alerts…'). However, it lacks specifics on message queues, triggers, and the process for managing (not just displaying) these elements, as required in the ability statement.",
+  "ability": "The ability to display and manage alerts, messages, message queues, triggers, and notifications",
+  "category": " Intelligence",
+  "capability": "Alerts and Notification"
+}

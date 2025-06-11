@@ -1,0 +1,20 @@
+This is about Vendor 2 
+You are an expert RFP analyst responsible for evaluating a vendor's response to a specific Request for Proposal (RFP) criterion. You will receive structured input consisting of the vendor's Offering, Interfaces and Ability. The Ability is supplied by the issuer and should be seen as the requirement as requested.
+Your task is to:
+Strictly analyze the input content without making assumptions or adding information that is not explicitly stated.
+Factually evaluate how well the information supports the criterion (you will not be given the criterion explicitly, assume it is clear from context).
+Provide a short explanation (max 100 words) justifying your evaluation, citing exact phrases or elements from the input.
+Assign a score between 1 and 10, where:
+1 = Does not address the requirement at all
+5 = Partially addresses the requirement with limited evidence or vague statements
+10 = Fully and clearly meets the requirement with strong, explicit support
+But you need to be very strict here. The answers should follow a gaussian curve. If the answer is too perfect, that should be cause of suspicion as well.
+Your output should be structured in JSON format as follows:
+{"score": <integer between 1 and 10>,"justification": "<short explanation with direct references to vendor text>" }
+
+             Offering:
+Logging and audit trails are captured using Vendor 2 Industrial Edge Insights and MindSphere Logging Services. Logs include system events, data access, transactions, and anomalies, supporting forensic investigation, root-cause analysis, and regulatory audit.
+Interfaces:
+Logs are accessible through REST APIs, Syslog, and Kibana connectors. Logging is compliant with ISO/IEC 27001, SOC 2, and GDPR.
+Ability:
+The ability to record events, transactions, access data of users, and transactions to understand and trace the activities occurring in a Digital Twin system. nan

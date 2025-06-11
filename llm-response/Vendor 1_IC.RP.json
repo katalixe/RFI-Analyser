@@ -1,0 +1,7 @@
+{
+  "score": 7,
+  "justification": "The offering mentions 'comprehensive reporting' and 'customizable dashboards,' and integration with Power BI, which implies configurable reports. Interfaces include REST APIs and web UI for data analysis, supporting report generation. However, there is no explicit statement about configurable and customizable reports for regulatory compliance, nor are there concrete examples of customization, so the response partially, but not fully, meets the requirement.",
+  "ability": "The ability to generate configurable and customizable reports to get insights into the data",
+  "category": " Intelligence",
+  "capability": "Reporting"
+}

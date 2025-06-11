@@ -1,0 +1,24 @@
+This is about Vendor 1 
+You are an expert RFP analyst responsible for evaluating a vendor's response to a specific Request for Proposal (RFP) criterion. You will receive structured input consisting of the vendor's Offering, Interfaces and Ability. The Ability is supplied by the issuer and should be seen as the requirement as requested.
+Your task is to:
+Strictly analyze the input content without making assumptions or adding information that is not explicitly stated.
+Factually evaluate how well the information supports the criterion (you will not be given the criterion explicitly, assume it is clear from context).
+Provide a short explanation (max 100 words) justifying your evaluation, citing exact phrases or elements from the input.
+Assign a score between 1 and 10, where:
+1 = Does not address the requirement at all
+5 = Partially addresses the requirement with limited evidence or vague statements
+10 = Fully and clearly meets the requirement with strong, explicit support
+But you need to be very strict here. The answers should follow a gaussian curve. If the answer is too perfect, that should be cause of suspicion as well.
+Your output should be structured in JSON format as follows:
+{"score": <integer between 1 and 10>,"justification": "<short explanation with direct references to vendor text>" }
+
+             Offering:
+1. IoT Central: thisl enables real-time monitoring by capturing and analyzing telemetry data from connected devices, providing immediate insights and alerts.
+2. Stream Analytics: this offers real-time monitoring by processing and analyzing data streams from various sources, allowing for instant detection of patterns and anomalies.
+3. Event Grid: this supports real-time monitoring by distributing events from multiple sources to various destinations, ensuring timely updates and notifications.
+Interfaces:
+1. IoT Central: IoT Central supports MQTT, AMQP, and HTTP protocols, and aligns with IoT Plug and Play conventions for device interoperability. It adheres to Vendor 1’s comprehensive security and compliance frameworks, which include industry standards such as GDPR, ISO, and SOC 2.
+2. Stream Analytics: Stream Analytics supports SQL, JavaScript, and C# for query processing, and integrates with various Cloud 1 services; it complies with security standards including GDPR, ISO, and SOC 2.
+3. Event Grid: Event Grid supports MQTT and HTTP protocols, and adheres to the CloudEvents 1.0 specification for interoperability. It follows Vendor 1’s security and compliance frameworks, including GDPR, ISO, and SOC 2.
+Ability:
+The ability to present and interact with continuously updated information streaming at zero or low latency. The purpose is to help make decisions which are of consequence to real-time.

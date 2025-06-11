@@ -1,0 +1,7 @@
+{
+  "score": 8,
+  "justification": "Vendor 2 describes automation of business processes—'asset commissioning, compliance verification, maintenance scheduling, and feedback loops'—using a 'workflow engine' that integrates with digital twin data, directly addressing process execution. Interfaces (BPMN, REST, SOAP) and security standards are specified. However, there is no explicit, detailed example showing end-to-end execution or repeatability, and outcomes are listed but not deeply evidenced. This limits full confidence.",
+  "ability": "The ability to execute a sequence of actions as a process flow to achieve specific business outcomes",
+  "category": " User Experience",
+  "capability": "Business Process Management & Workflow"
+}

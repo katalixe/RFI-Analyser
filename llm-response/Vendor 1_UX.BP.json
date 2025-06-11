@@ -1,0 +1,7 @@
+{
+  "score": 7,
+  "justification": "The Offering states PowerApps enables creation of custom apps that streamline business process management and workflow automation, but does not detail execution of process flows for Digital Twin outcomes. Interfaces mentions support for integration but is silent on process flow execution. Evidence is strong for general workflow but limited regarding Digital Twin-specific repeatable actions.",
+  "ability": "The ability to execute a sequence of actions as a process flow to achieve specific business outcomes",
+  "category": " User Experience",
+  "capability": "Business Process Management & Workflow"
+}

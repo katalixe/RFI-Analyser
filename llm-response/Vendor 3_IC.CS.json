@@ -1,0 +1,7 @@
+{
+  "score": 8,
+  "justification": "Vendor 3 expressly describes 'modular development capabilities' and composition using 'pre-built components, templates, and service blocks,' aligning with the requirement for packaged, reusable business capabilities (PBCs). The text mentions enabling both business and technical users, supporting citizen development. Interfaces list low-code integration tools, reinforcing usability. However, while 'reducing duplication and time to value' is implied with 'rapidly compose and recompose', the answer does not mention PBCs by name or detail governance/reuse mechanisms beyond general terms, so it falls slightly short of perfection.",
+  "ability": "The ability to use a modular digital twin application development approach to rapidly compose and recompose digital twin services that deliver use case specific outcomes.",
+  "category": " Intelligence",
+  "capability": "Composition "
+}

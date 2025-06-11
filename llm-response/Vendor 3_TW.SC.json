@@ -1,0 +1,7 @@
+{
+  "score": 9,
+  "justification": "Vendor 3 details a 'multi-layered security architecture' with RBAC, MFA, encryption, and 'continuous threat monitoring,' directly addressing protection from unauthorized access, change, or destruction. Compliance with relevant standards (ISO/IEC 27001, IEC 62443) further supports this. The offering explicitly covers 'edge, cloud, and hybrid deployments,' aligning with the need to protect equipment, systems, and data. However, while comprehensive, there is some lack of specific implementation or operational examples that would remove all doubt.",
+  "ability": "The ability to protected Digital Twins from unintended or unauthorized access, change or destruction. Security concerns equipment, systems and information, ensuring availability, integrity and confidentiality of information.",
+  "category": " Trustworthiness",
+  "capability": "Security"
+}

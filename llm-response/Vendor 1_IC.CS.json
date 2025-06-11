@@ -1,0 +1,7 @@
+{
+  "score": 5,
+  "justification": "The response describes enabling composition of digital models from various data sources ('compose complex digital models... integrating various data sources'), but does not explicitly mention modularity, packaged/reusable business capabilities (PBCs), or citizen development. There is no reference to rapid recomposition or reducing duplication as required. Support for open standards and APIs is stated, but direct support for the specified modular approach and citizen development is vague or missing.",
+  "ability": "The ability to use a modular digital twin application development approach to rapidly compose and recompose digital twin services that deliver use case specific outcomes.",
+  "category": " Intelligence",
+  "capability": "Composition "
+}

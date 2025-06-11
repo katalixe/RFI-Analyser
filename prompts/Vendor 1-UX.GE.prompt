@@ -1,0 +1,24 @@
+This is about Vendor 1 
+You are an expert RFP analyst responsible for evaluating a vendor's response to a specific Request for Proposal (RFP) criterion. You will receive structured input consisting of the vendor's Offering, Interfaces and Ability. The Ability is supplied by the issuer and should be seen as the requirement as requested.
+Your task is to:
+Strictly analyze the input content without making assumptions or adding information that is not explicitly stated.
+Factually evaluate how well the information supports the criterion (you will not be given the criterion explicitly, assume it is clear from context).
+Provide a short explanation (max 100 words) justifying your evaluation, citing exact phrases or elements from the input.
+Assign a score between 1 and 10, where:
+1 = Does not address the requirement at all
+5 = Partially addresses the requirement with limited evidence or vague statements
+10 = Fully and clearly meets the requirement with strong, explicit support
+But you need to be very strict here. The answers should follow a gaussian curve. If the answer is too perfect, that should be cause of suspicion as well.
+Your output should be structured in JSON format as follows:
+{"score": <integer between 1 and 10>,"justification": "<short explanation with direct references to vendor text>" }
+
+             Offering:
+1. Cloud 1 Remote Rendering - Unity: Cloud 1 Remote Rendering with Unity allows for high-fidelity 3D model visualization, enabling real-time rendering of complex scenes directly within the Unity engine.
+2. Cloud 1 Remote Rendering - Unreal: Cloud 1 Remote Rendering with Unreal Engine leverages cloud computing to stream high-quality, interactive 3D content, enhancing the visual experience in Unreal-based applications.
+3. Cloud 1 Remote Rendering - Other HLA & DIS compliant engines: Cloud 1 Remote Rendering supports HLA & DIS compliant engines by providing real-time, high-resolution 3D rendering capabilities for simulation and training environment.
+Interfaces:
+1. Cloud 1 Remote Rendering for Unity supports REST APIs and integrates with Unity’s OpenXR settings, adhering to Vendor 1’s security and compliance frameworks, including GDPR, ISO, and SOC 2.
+2. Cloud 1 Remote Rendering for Unreal supports REST APIs and integrates with Unreal Engine’s Pixel Streaming technology, following Vendor 1’s security standards such as GDPR, ISO, and SOC 2.
+3. Cloud 1 Remote Rendering for HLA & DIS compliant engines supports REST APIs and integrates with various simulation protocols, adhering to Vendor 1’s comprehensive security and compliance frameworks, including GDPR, ISO, and SOC 2.
+Ability:
+The ability to create immersive virtual worlds and interactive experiences with gaming engine technology The purpose it to enable Digital Twins in a digital metaverse where users interact with the Digital Twin in a highly interactive manner

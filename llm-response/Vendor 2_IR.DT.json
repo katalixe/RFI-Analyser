@@ -1,0 +1,7 @@
+{
+  "score": 8,
+  "justification": "Vendor 2 states 'seamless integration of Digital Twin applications through Teamcenter and Mendix' with 'bidirectional data movement and synchronization,' which directly addresses interoperability. Interfaces listed (OPC UA, MQTT, REST APIs, ISO/IEC 26550) support standardized integration. However, while strong, the evidence is mostly descriptive and lacks concrete implementation examples or demonstration of integration with existing, heterogeneous digital twins, which prevents a perfect score.",
+  "ability": "The ability to integrate or access information from existing digital twin instances ",
+  "category": " Integration",
+  "capability": "Digital Twin Integration"
+}

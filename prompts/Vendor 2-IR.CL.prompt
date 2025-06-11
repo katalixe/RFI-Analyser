@@ -1,0 +1,22 @@
+This is about Vendor 2 
+You are an expert RFP analyst responsible for evaluating a vendor's response to a specific Request for Proposal (RFP) criterion. You will receive structured input consisting of the vendor's Offering, Interfaces and Ability. The Ability is supplied by the issuer and should be seen as the requirement as requested.
+Your task is to:
+Strictly analyze the input content without making assumptions or adding information that is not explicitly stated.
+Factually evaluate how well the information supports the criterion (you will not be given the criterion explicitly, assume it is clear from context).
+Provide a short explanation (max 100 words) justifying your evaluation, citing exact phrases or elements from the input.
+Assign a score between 1 and 10, where:
+1 = Does not address the requirement at all
+5 = Partially addresses the requirement with limited evidence or vague statements
+10 = Fully and clearly meets the requirement with strong, explicit support
+But you need to be very strict here. The answers should follow a gaussian curve. If the answer is too perfect, that should be cause of suspicion as well.
+Your output should be structured in JSON format as follows:
+{"score": <integer between 1 and 10>,"justification": "<short explanation with direct references to vendor text>" }
+
+             Offering:
+Cloud 2 – Vendor 2 Xcelerator + MS Teams Integration:
+Vendor 2 provides integration between Digital Twin systems and collaboration platforms like MS Teams and Slack using the Xcelerator platform with built-in connectors and bot integration frameworks. This enables conversational UI for interaction with Digital Twin data and services.
+
+Interfaces:
+Cloud 2 supports integration via secure APIs and bot frameworks. It adheres to NIST SP 800-53 Rev. 5 and ISO/IEC 27001, ensuring data integrity and secure collaboration across distributed environments.
+Ability:
+The ability for the digital twin to interface with platforms like Yammer, Jabber, Teams, Slack The purpose is to integrate collaboration platforms to provide Digital Twin users with a conversational user interface

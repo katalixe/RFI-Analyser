@@ -1,0 +1,7 @@
+{
+  "score": 8,
+  "justification": "The vendor clearly states 'seamless integration with collaboration platforms like Yammer, Jabber, Teams, and Slack' and provides 'a conversational user interface through its robust bot framework.' This directly aligns with the requirement. However, the description is somewhat high-level and lacks detail on practical deployment or limitations, making it less than a perfect score.",
+  "ability": "The ability for the digital twin to interface with platforms like Yammer, Jabber, Teams, Slack",
+  "category": " Integration",
+  "capability": "Collaboration platform integration"
+}

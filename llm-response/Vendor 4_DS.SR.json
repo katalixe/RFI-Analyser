@@ -1,0 +1,7 @@
+{
+  "score": 1,
+  "justification": "The Offering and Interfaces sections do not explicitly mention any ability to store, manage, retrieve, or register simulation model codebase, business rules, or metadata. No reference to a central repository, configuration management, or model governance is present.",
+  "ability": "The ability to store, manage and retrieve the algorithmic codebase, business rules and meta data that describe a simulation model.",
+  "category": " Data Services",
+  "capability": "Simulation Model Repository"
+}

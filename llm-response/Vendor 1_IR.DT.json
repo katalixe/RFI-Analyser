@@ -1,0 +1,7 @@
+{
+  "score": 7,
+  "justification": "The response describes tools for integration (‘enabling efficient data movement, transformation, and synchronization’ and ‘allowing secure and scalable integration of Digital Twin applications’), and mentions ‘interoperability between multiple Digital Twin applications.’ However, there is no explicit reference to accessing information from existing digital twin instances specifically, or details on how integration with external/legacy Digital Twins is achieved. The description is comprehensive but slightly generic, lacking direct evidence of full interoperability with pre-existing systems.",
+  "ability": "The ability to integrate or access information from existing digital twin instances ",
+  "category": " Integration",
+  "capability": "Digital Twin Integration"
+}

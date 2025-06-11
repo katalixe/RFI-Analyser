@@ -1,0 +1,7 @@
+{
+  "score": 9,
+  "justification": "Vendor 3 provides a 'workflow engine... that automates business processes tied to Digital Twin behavior' and allows workflows to be 'defined visually or through rule logic,' explicitly supporting 'a sequence of actions as a process flow.' Support for manual approval, integration, and escalation further demonstrates ability to deliver business outcomes. Interfaces like BPMN 2.0 reinforce the process orientation. Very strong evidence, but as with most vendor statements, lacks direct proof of real-world effectiveness or case studies, causing a slight deduction.",
+  "ability": "The ability to execute a sequence of actions as a process flow to achieve specific business outcomes",
+  "category": " User Experience",
+  "capability": "Business Process Management & Workflow"
+}

@@ -1,0 +1,7 @@
+{
+  "score": 1,
+  "justification": "The offering and interfaces provided do not mention any capability related to automated configuration, management, or workflow coordination for systems, applications, or digital twins. There is no evidence supporting the required ability.",
+  "ability": "The ability to coordinate the automated configuration, management, and coordination of  systems, applications, digital twins and services.",
+  "category": " Intelligence",
+  "capability": "Orchestration"
+}

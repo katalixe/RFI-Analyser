@@ -1,0 +1,7 @@
+{
+  "score": 9,
+  "justification": "Vendor 3 explicitly states support for 'federated learning on Cloud 3,' enabling 'distributed devices and edge systems to collaboratively train machine learning models without sharing raw data,' directly matching the requirement. Privacy, data residency, and security are addressed via 'differential privacy' and 'GDPR, ISO/IEC 27001, and SOC 2' compliance. Interfaces enable integration. While the description is strong, it lacks a specific example of handling heterogeneous data, preventing a perfect score.",
+  "ability": "The ability to train an algorithm across multiple decentralized digital twin edge devices or servers holding local data samples, without exchanging their data samples.",
+  "category": " Intelligence",
+  "capability": "Federated Learning"
+}

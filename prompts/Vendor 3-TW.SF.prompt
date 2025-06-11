@@ -1,0 +1,20 @@
+This is about Vendor 3 
+You are an expert RFP analyst responsible for evaluating a vendor's response to a specific Request for Proposal (RFP) criterion. You will receive structured input consisting of the vendor's Offering, Interfaces and Ability. The Ability is supplied by the issuer and should be seen as the requirement as requested.
+Your task is to:
+Strictly analyze the input content without making assumptions or adding information that is not explicitly stated.
+Factually evaluate how well the information supports the criterion (you will not be given the criterion explicitly, assume it is clear from context).
+Provide a short explanation (max 100 words) justifying your evaluation, citing exact phrases or elements from the input.
+Assign a score between 1 and 10, where:
+1 = Does not address the requirement at all
+5 = Partially addresses the requirement with limited evidence or vague statements
+10 = Fully and clearly meets the requirement with strong, explicit support
+But you need to be very strict here. The answers should follow a gaussian curve. If the answer is too perfect, that should be cause of suspicion as well.
+Your output should be structured in JSON format as follows:
+{"score": <integer between 1 and 10>,"justification": "<short explanation with direct references to vendor text>" }
+
+             Offering:
+Vendor 3 supports Digital Twin safety management through simulation, monitoring, and risk prevention mechanisms embedded in Cloud 3. Safety logic is enforced through validation models, alert mechanisms, and restricted operational controls that help minimize the risk of injury, equipment failure, or environmental damage. Safety features are applicable across critical industries such as power, oil & gas, aviation, and healthcare.
+Interfaces:
+Supports REST APIs, MQTT, and OPC UA for safety signal integration. Adheres to ISO 12100, ISO 13849, IEC 61508, ISO/IEC 27001, and NIST SP 800-53 for operational and functional safety compliance.
+Ability:
+The ability to operate digital twins without causing unacceptable risk of physical injury or damage to the health of people, either directly, or indirectly as a result of damage to property or to the environment nan

@@ -1,0 +1,7 @@
+{
+  "score": 7,
+  "justification": "Vendor 3 provides 'dynamic, physics-based models to imitate the behavior of real-world systems' and enables testing system responses and training staff, directly supporting digital twin simulation and training. However, the response does not explicitly mention the use of past historical data, video, audio, or animation, as requested in the ability statement, thus only partially meeting all requirements.",
+  "ability": "The ability to create approximate imitation of a process or a system using past historical information, physical models, video, audio, and animation, what-if-scenarios.",
+  "category": " Intelligence",
+  "capability": "Simulation"
+}

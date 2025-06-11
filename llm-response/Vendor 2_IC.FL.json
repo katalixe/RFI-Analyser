@@ -1,0 +1,7 @@
+{
+  "score": 8,
+  "justification": "The offering explicitly mentions 'federated learning via Vendor 2 AI Edge, allowing algorithm training across decentralized edge nodes without transmitting raw data,' which directly supports training without sharing data. It states the benefits ('preserves data sovereignty, enhances privacy'), addressing privacy and security concerns. However, while interfaces 'support RESTful interfaces and edge container orchestration,' details around integration with multiple actors or handling heterogeneous data are implied but not detailed, resulting in a deduction for specificity.",
+  "ability": "The ability to train an algorithm across multiple decentralized digital twin edge devices or servers holding local data samples, without exchanging their data samples.",
+  "category": " Intelligence",
+  "capability": "Federated Learning"
+}

@@ -1,0 +1,7 @@
+{
+  "score": 8,
+  "justification": "Vendor 3 states that they provide a 'robust integration framework' enabling 'seamless communication between multiple Digital Twin applications and platforms,' with 'real-time' access and correlation. Explicit mention of 'integration' and 'interoperability' across instances supports the requirement. The interfaces listed (OPC UA, MQTT, REST, IEC 61499), plus compliance/security, reinforce technical ability. However, while strong, there are minimal concrete examples or implementation specifics, preventing a perfect score.",
+  "ability": "The ability to integrate or access information from existing digital twin instances ",
+  "category": " Integration",
+  "capability": "Digital Twin Integration"
+}

@@ -1,0 +1,7 @@
+{
+  "score": 8,
+  "justification": "Vendor 2 describes 'defining and managing business rules' with 'rule-based triggers, automated decision trees, and custom logic' to control Digital Twin behavior 'throughout its lifecycle.' This directly addresses the requirement. However, no explicit evidence is provided for use beyond initial creation or how rule management is applied in ongoing scenarios. The description is strong but could use clearer demonstration or examples.",
+  "ability": "The ability to create, manage and use business rules that influence the digital twin behavior throughout its lifecycle",
+  "category": " Intelligence",
+  "capability": "Business Rules"
+}

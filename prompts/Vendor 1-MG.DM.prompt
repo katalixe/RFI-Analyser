@@ -1,0 +1,28 @@
+This is about Vendor 1 
+You are an expert RFP analyst responsible for evaluating a vendor's response to a specific Request for Proposal (RFP) criterion. You will receive structured input consisting of the vendor's Offering, Interfaces and Ability. The Ability is supplied by the issuer and should be seen as the requirement as requested.
+Your task is to:
+Strictly analyze the input content without making assumptions or adding information that is not explicitly stated.
+Factually evaluate how well the information supports the criterion (you will not be given the criterion explicitly, assume it is clear from context).
+Provide a short explanation (max 100 words) justifying your evaluation, citing exact phrases or elements from the input.
+Assign a score between 1 and 10, where:
+1 = Does not address the requirement at all
+5 = Partially addresses the requirement with limited evidence or vague statements
+10 = Fully and clearly meets the requirement with strong, explicit support
+But you need to be very strict here. The answers should follow a gaussian curve. If the answer is too perfect, that should be cause of suspicion as well.
+Your output should be structured in JSON format as follows:
+{"score": <integer between 1 and 10>,"justification": "<short explanation with direct references to vendor text>" }
+
+             Offering:
+1. Cloud 1 Digital Twins: this enables comprehensive device management by integrating with Cloud 1 IoT Hub to monitor, manage, and update IoT devices with high-level security and scalability.
+2. Cloud 1 IoT Hub: this provides robust device management capabilities, including device provisioning, configuration, monitoring, and updates, ensuring secure and reliable communication between IoT applications and devices.
+3. Cloud 1 IoT Hub Device Provisioning Service: this simplifies device management by enabling zero-touch, just-in-time provisioning of millions of devices to the appropriate IoT hub without human intervention.
+4. Cloud 1 Device Update for IoT Hub: this facilitates device management by providing an end-to-end platform for deploying over-the-air updates to IoT devices, ensuring they remain secure and up-to-date.
+5. Cloud 1 Monitor: Cloud 1 Monitor enhances device management by collecting, analyzing, and responding to monitoring data from cloud and on-premises environments, maximizing the availability and performance of applications and services.
+Interfaces:
+1. Cloud 1 Digital Twins supports REST APIs, MQTT, and the Digital Twins Definition Language (DTDL), which is based on open W3C standards such as JSON-LD and RDF. It adheres to Vendor 1’s comprehensive security and compliance frameworks, including industry standards such as GDPR, ISO, and SOC 2.
+2. Cloud 1 IoT Hub supports MQTT, AMQP, and HTTPS protocols, and complies with various security standards including GDPR, ISO, and SOC 2. 
+3. Cloud 1 IoT Hub Device Provisioning Service supports HTTPS, AMQP, and MQTT protocols, and adheres to Vendor 1’s security and compliance frameworks, including GDPR, ISO, and SOC 2. 
+4. Cloud 1 Device Update for IoT Hub supports REST APIs and integrates with IoT Plug and Play interfaces, adhering to Vendor 1’s security and compliance frameworks, including GDPR, ISO, and SOC 2. 
+5. Cloud 1 Monitor supports REST APIs and integrates with various Cloud 1 services and third-party tools, adhering to Vendor 1’s security and compliance frameworks, including GDPR, ISO, and SOC 2. 
+Ability:
+The ability to provision and authenticate, configure, maintain, monitor and diagnose connected IoT devices operating as part of Digital Twin environment The purpose of (IoT) device management is to provide and support the whole spectrum of functional capabilities of the devices and sensors

@@ -1,0 +1,7 @@
+{
+  "score": 9,
+  "justification": "The response details 'intelligent tiered storage' categorizing data into 'Hot, Cool, and Archive layers' based on 'real-time access, aging, and compliance needs.' 'Automated lifecycle policies' and preservation for 'long-term analytics and regulatory auditing' directly address the ability. The linkage to reducing cost is implicit in 'cost-efficiency.' However, there is no explicit mention of user-driven data organization or customization, slightly limiting the completeness.",
+  "ability": "The ability to store, organize and retrieve data  based on how frequently it will be accessed and how long it will be retained.",
+  "category": " Data Services",
+  "capability": "Data Storage and Archive Services"
+}

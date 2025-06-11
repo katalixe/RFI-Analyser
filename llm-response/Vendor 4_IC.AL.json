@@ -1,0 +1,7 @@
+{
+  "score": 1,
+  "justification": "There is no mention of the ability to display or manage alerts, messages, message queues, triggers, or notifications. The Offering and Interfaces sections do not address these requirements at all.",
+  "ability": "The ability to display and manage alerts, messages, message queues, triggers, and notifications",
+  "category": " Intelligence",
+  "capability": "Alerts and Notification"
+}

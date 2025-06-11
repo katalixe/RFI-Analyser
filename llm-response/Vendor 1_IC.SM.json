@@ -1,0 +1,7 @@
+{
+  "score": 5,
+  "justification": "The Offering mentions 'engineering design and simulation' and 'user collaboration', indicating simulation capability. However, there is no explicit reference to creating 'approximate imitation', use of 'historical information, physical models, video, audio, animation', or training scenarios involving digital twins. Support for simulation is asserted, but detail and alignment to the full Ability are limited.",
+  "ability": "The ability to create approximate imitation of a process or a system using past historical information, physical models, video, audio, and animation, what-if-scenarios.",
+  "category": " Intelligence",
+  "capability": "Simulation"
+}

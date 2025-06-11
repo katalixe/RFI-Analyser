@@ -1,0 +1,7 @@
+{
+  "score": 9,
+  "justification": "The vendor offers a 'flexible business rules engine' that 'governs how Digital Twins behave and respond,' with rules definable 'visually or through scripting' and triggerable in multiple ways. Interfaces like BPMN 2.0, DMN, and JavaScript support creation and management. This directly supports the required ability. Strong, explicit support is provided, though some lifecycle specifics could be expanded.",
+  "ability": "The ability to create, manage and use business rules that influence the digital twin behavior throughout its lifecycle",
+  "category": " Intelligence",
+  "capability": "Business Rules"
+}

@@ -1,0 +1,7 @@
+{
+  "score": 9,
+  "justification": "Both 'Cloud 1 Machine Learning' and 'Vendor 1 Fabric' explicitly cite support for federated learning enabling collaborative model training without sharing data, directly addressing privacy and security. Phrases such as 'train models on decentralized data while maintaining data privacy and security' and 'collaborative analytics across different organizational boundaries' match requirements. Interfaces mention compliance and integration but are less specific on digital twin edge device support, which lowers certainty for a perfect score.",
+  "ability": "The ability to train an algorithm across multiple decentralized digital twin edge devices or servers holding local data samples, without exchanging their data samples.",
+  "category": " Intelligence",
+  "capability": "Federated Learning"
+}

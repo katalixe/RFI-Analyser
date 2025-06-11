@@ -1,0 +1,7 @@
+{
+  "score": 8,
+  "justification": "Vendor 2 describes leveraging ‘Xcelerator technologies’ for ‘immersive Extended Reality (XR) experiences’ that enable users to ‘simulate, interact with, and collaborate’ on digital models, which closely aligns with the requirement for interactive and immersive simulation. However, while visual and to an extent interface (REST APIs, OpenXR) modalities are clear, explicit mention of auditory and haptic enhancement is missing, making the response strong but not perfectly comprehensive or detailed regarding all perceptual modalities.",
+  "ability": "The ability to provide an interactive experience of a real-world environment where the objects that reside in the real world are enhanced by computer-generated perceptual information such as visual, auditory, haptic etc.  environment.",
+  "category": " User Experience",
+  "capability": "Extended Reality (XR)"
+}

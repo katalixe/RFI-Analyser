@@ -1,0 +1,7 @@
+{
+  "score": 7,
+  "justification": "The vendor addresses risk mitigation by referencing robust security measures ('role-based access control (RBAC)', 'encryption'), 'security best practices', and 'compliance with industry standards,' which are relevant to preventing unacceptable risks. However, while strong on security and monitoring, there is no direct, explicit evidence about assessing or managing specific physical injury, health, or environmental risks beyond general risk mitigation language.",
+  "ability": "The ability to operate digital twins without causing unacceptable risk of physical injury or damage to the health of people, either directly, or indirectly as a result of damage to property or to the environment",
+  "category": " Trustworthiness",
+  "capability": "Safety"
+}

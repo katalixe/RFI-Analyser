@@ -1,0 +1,7 @@
+{
+  "score": 9,
+  "justification": "Vendor 3 explicitly addresses the requirement by offering a repository that 'stores the runtime state of Digital Twin assets,' including telemetry, configuration, and state, and highlights capabilities to 'store, manage and retrieve' instance data. Integration with standards (ISA-95, IEC 61499) and real-time accuracy are also explicitly supported. However, there is a lack of direct mention of conformance to a specific digital twin model, leaving a minor gap.",
+  "ability": "The ability to store, manage and retrieve digital twin instance data that conforms to the requirements of the digital twin model",
+  "category": " Data Services",
+  "capability": "Digital Twin Instance Repository"
+}

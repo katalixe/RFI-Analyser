@@ -1,0 +1,7 @@
+{
+  "score": 8,
+  "justification": "Vendor 2 explicitly describes integration with MS Teams and Slack through the Xcelerator platform, enabling a conversational UI ('bot integration frameworks'). However, there is no mention of Yammer or Jabber, which are also specified in the requirement. Security standards and API support are stated, but the lack of full platform coverage prevents a higher score.",
+  "ability": "The ability for the digital twin to interface with platforms like Yammer, Jabber, Teams, Slack",
+  "category": " Integration",
+  "capability": "Collaboration platform integration"
+}

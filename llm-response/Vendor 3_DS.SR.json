@@ -1,0 +1,7 @@
+{
+  "score": 8,
+  "justification": "Vendor 3 explicitly provides 'simulation model management capabilities, allowing users to register, version, and execute algorithmic and rule-based simulations,' and supports 'model federation, parameter control, and result synchronization.' Interfaces mention standards and APIs for asset management. However, while most components are addressed, 'configuration management and model governance' are implied but not stated explicitly, and the level of detail on 'metadata' is limited. Thus, it nearly—but not perfectly—meets the requirement.",
+  "ability": "The ability to store, manage and retrieve the algorithmic codebase, business rules and meta data that describe a simulation model.",
+  "category": " Data Services",
+  "capability": "Simulation Model Repository"
+}

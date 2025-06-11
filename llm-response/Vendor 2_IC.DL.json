@@ -1,0 +1,7 @@
+{
+  "score": 9,
+  "justification": "Vendor 2 explicitly states support for 'tamper-proof transaction logging through integration with Hyperledger Fabric and Ethereum-based distributed ledgers' and smart contracts, directly addressing the requirements for immutable records and automation. The mention of 'GDPR, SOC 2, and ISO 27001' compliance further supports security and integrity. However, it does not describe actual deployment scenarios or limitations, slightly reducing confidence in fully practical implementation.",
+  "ability": "The ability to use distributed ledgers for digital twin applications that require immutable data for digital twin instances, transactions and automation (smart contracts)",
+  "category": " Intelligence",
+  "capability": "Distributed Ledger and Smart Contracts"
+}

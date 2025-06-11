@@ -1,0 +1,7 @@
+{
+  "score": 8,
+  "justification": "The Offering states it can 'store, manage, and retrieve simulation models, including algorithmic codebases, business rules, and metadata,' directly covering the requested abilities. The phrase 'facilitating efficient simulation model repository management' aligns with central repository requirements. However, there is no explicit mention of configuration management or model governance, which are indirectly implied but not detailed.",
+  "ability": "The ability to store, manage and retrieve the algorithmic codebase, business rules and meta data that describe a simulation model.",
+  "category": " Data Services",
+  "capability": "Simulation Model Repository"
+}

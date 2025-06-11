@@ -1,0 +1,7 @@
+{
+  "score": 8,
+  "justification": "The vendor provides three clear offerings (Event Grid, Cloud 1 Service Bus, IoT Central) each explicitly stating the facilitation of integration with control systems, IoT devices/sensors, and SCADA, as well as interoperability between OT, IoT applications, and Digital Twin systems. All services mention compliance with NIST SP 800-53 Rev. 5 and FedRAMP. However, the descriptions are somewhat high-level, focusing more on features and compliance rather than providing concrete examples or detailed evidence of direct integration capability, slightly limiting completeness.",
+  "ability": "The ability to integrate directly with control systems and IOT devices/sensors, SCADA ",
+  "category": " Integration",
+  "capability": "OT/IoT system integration"
+}

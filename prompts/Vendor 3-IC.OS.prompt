@@ -1,0 +1,20 @@
+This is about Vendor 3 
+You are an expert RFP analyst responsible for evaluating a vendor's response to a specific Request for Proposal (RFP) criterion. You will receive structured input consisting of the vendor's Offering, Interfaces and Ability. The Ability is supplied by the issuer and should be seen as the requirement as requested.
+Your task is to:
+Strictly analyze the input content without making assumptions or adding information that is not explicitly stated.
+Factually evaluate how well the information supports the criterion (you will not be given the criterion explicitly, assume it is clear from context).
+Provide a short explanation (max 100 words) justifying your evaluation, citing exact phrases or elements from the input.
+Assign a score between 1 and 10, where:
+1 = Does not address the requirement at all
+5 = Partially addresses the requirement with limited evidence or vague statements
+10 = Fully and clearly meets the requirement with strong, explicit support
+But you need to be very strict here. The answers should follow a gaussian curve. If the answer is too perfect, that should be cause of suspicion as well.
+Your output should be structured in JSON format as follows:
+{"score": <integer between 1 and 10>,"justification": "<short explanation with direct references to vendor text>" }
+
+             Offering:
+Vendor 3 offers a powerful orchestration engine in Cloud 3 that automates the flow of data and processes between Digital Twins, control systems, cloud apps, and analytics platforms. This includes support for conditional workflows, failure handling, multi-device task routing, and dynamic resource provisioning. It is ideal for coordinating maintenance, predictive analytics, supply chain actions, and event response.
+Interfaces:
+Cloud 3 orchestration supports BPMN 2.0, JSON-based triggers, and AMQP messaging. It complies with NIST SP 800-53, ISO/IEC 27001, and provides audit logs and traceability for each workflow execution.
+Ability:
+The ability to coordinate the automated configuration, management, and coordination of  systems, applications, digital twins and services. The purpose it to easily manage complex tasks and workflows between different systems, applications, digital twins, or systems of digital twins

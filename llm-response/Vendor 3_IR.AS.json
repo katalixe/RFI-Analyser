@@ -1,0 +1,7 @@
+{
+  "score": 9,
+  "justification": "Vendor 3 explicitly describes an API gateway that 'allows Digital Twin applications to expose services and data to internal teams, partners, and third-party systems' and provides 'secure access to telemetry, asset status, analytics, and control interfaces.' Supported interfaces (OpenAPI, REST, GraphQL, WebHooks) are clearly listed, and relevant security compliances are stated. However, while 'simplifying Digital Twin development' is implied, the text does not provide explicit evidence that integration abstracts underlying implementations, slightly weakening alignment with the ability.",
+  "ability": "The ability for the digital twin to publish APIs to external, partner, and internal developers to access data and services.",
+  "category": " Integration",
+  "capability": "API Services"
+}

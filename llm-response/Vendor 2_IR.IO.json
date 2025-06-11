@@ -1,0 +1,7 @@
+{
+  "score": 8,
+  "justification": "Vendor 2 describes 'bi-directional communication between control systems, IoT sensors, SCADA, and Cloud 2' and details protocol support (OPC UA, MQTT, Modbus, REST APIs) specifically for control system integration. Mention of 'device management, protocol translation' and 'condition monitoring' further supports strong integration ability. However, while Digital Twin is implied via data management and analysis, explicit mention of Digital Twin integration is missing, making the response nearly complete but not perfect.",
+  "ability": "The ability to integrate directly with control systems and IOT devices/sensors, SCADA ",
+  "category": " Integration",
+  "capability": "OT/IoT system integration"
+}

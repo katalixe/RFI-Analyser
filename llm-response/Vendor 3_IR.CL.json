@@ -1,0 +1,7 @@
+{
+  "score": 7,
+  "justification": "Vendor 3 explicitly supports integration with Microsoft Teams and Slack via connectors and APIs, and mentions 'enterprise service portals' generally. It enables conversational UIs for interacting with digital twins in collaboration tools. However, there is no explicit mention of Yammer or Jabber support, which is required. The claim of 'platforms such as' is suggestive but not definitive for full coverage.",
+  "ability": "The ability for the digital twin to interface with platforms like Yammer, Jabber, Teams, Slack",
+  "category": " Integration",
+  "capability": "Collaboration platform integration"
+}

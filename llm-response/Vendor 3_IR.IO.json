@@ -1,0 +1,7 @@
+{
+  "score": 9,
+  "justification": "Vendor 3 clearly addresses the requirement by offering 'extensive OT and IoT integration capabilities' with support for 'real-time data acquisition from industrial assets, SCADA, and sensor networks' and listing specific protocols (Modbus, OPC UA, BACnet, MQTT, AMQP). Security compliance is also mentioned. However, while the response is thorough, terms like 'extensive' lack quantification and 'seamlessly' is subjective, leaving minor room for stricter evidence.",
+  "ability": "The ability to integrate directly with control systems and IOT devices/sensors, SCADA ",
+  "category": " Integration",
+  "capability": "OT/IoT system integration"
+}

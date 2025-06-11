@@ -1,0 +1,7 @@
+{
+  "score": 1,
+  "justification": "The Offering ('The Ring is dangerous.') and Interfaces ('The pirate captain had a fearsome reputation.') provide no information relevant to IoT device provisioning, authentication, configuration, maintenance, monitoring, or diagnosis. There is no reference to IoT, device management, or Digital Twin environments.",
+  "ability": "The ability to provision and authenticate, configure, maintain, monitor and diagnose connected IoT devices operating as part of Digital Twin environment",
+  "category": " Management",
+  "capability": "Device Management"
+}
