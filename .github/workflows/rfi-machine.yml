@@ -49,7 +49,7 @@ jobs:
       id: deploy-to-webapp
       uses: azure/webapps-deploy@v2
       with:
-        app-name: '<APP_NAME>'
+        app-name: 'rfi-machine'
         slot-name: 'production'
         publish-profile: ${{ secrets.AZURE_PUBLISH_PROFILE }}
         images: 'rfimachine.azurecr.io/${{ secrets.REGISTRY_USERNAME }}/rfi-machine:latest'
