@@ -152,6 +152,37 @@
                     vendorCategoryAverages[cat][vendor] = count > 0 ? (sum / count) : null;
                 }
             }
+            // Calculate overall average per vendor
+            const overallAverages = {};
+            for (const vendor of vendors) {
+                let sum = 0, count = 0;
+                for (const cat of sortedCategories) {
+                    for (const uid of uidGroups[cat]) {
+                        const fname = fileMap[vendor] && fileMap[vendor][uid];
+                        if (fname) {
+                            if (!window._llmJsonCache) window._llmJsonCache = {};
+                            let dataPromise;
+                            if (window._llmJsonCache[fname]) {
+                                dataPromise = Promise.resolve(window._llmJsonCache[fname]);
+                            } else {
+                                dataPromise = fetch(`/llm-response/${fname}`)
+                                    .then(resp => resp.json())
+                                    .then(data => {
+                                        window._llmJsonCache[fname] = data;
+                                        return data;
+                                    });
+                            }
+                            await dataPromise.then(data => {
+                                if (typeof data.score === 'number') {
+                                    sum += data.score;
+                                    count++;
+                                }
+                            });
+                        }
+                    }
+                }
+                overallAverages[vendor] = count > 0 ? (sum / count) : null;
+            }
             // Table body
             const tbody = document.querySelector('#vendor-table tbody');
             tbody.innerHTML = '';
@@ -252,6 +283,21 @@
                     if (arrow) arrow.textContent = isOpen ? '▼' : '▲';
                 });
             });
+            // Add overall average row at the end
+            const overallTr = document.createElement('tr');
+            overallTr.style.background = '#e0e7ef';
+            const overallLabelTd = document.createElement('td');
+            overallLabelTd.textContent = 'OVERALL';
+            overallLabelTd.style.fontWeight = 'bold';
+            overallTr.appendChild(overallLabelTd);
+            vendors.forEach(vendor => {
+                const avgTd = document.createElement('td');
+                const avg = overallAverages[vendor];
+                avgTd.textContent = avg !== null ? avg.toFixed(2) : '-';
+                avgTd.style.fontWeight = 'bold';
+                overallTr.appendChild(avgTd);
+            });
+            tbody.appendChild(overallTr);
         }
         window.addEventListener('DOMContentLoaded', loadVendorsAndUIDs);
 
