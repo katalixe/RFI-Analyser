@@ -1,3 +1,15 @@
-- category: Score
+- category: Functional
   prompts:
-    - Make a score of all submissions
+  - Make a score of all submissions
+- category: Non-Functional
+  prompts:
+  - Make a score of all submissions based on the non-functional requirements
+- category: Benefits
+  prompts:
+  - Make a score of all submissions based on the benefits they provide
+- category: Risk
+  prompts:
+  - Make a score of all submissions with the following criteria
+  - The score should be between 0 and 100.
+  - The score should be based on the quality of the submission.
+  - The score should take into account the originality of the submission.

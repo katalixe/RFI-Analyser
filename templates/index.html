@@ -20,16 +20,19 @@
         {% endfor %}
     </div>
 
-    <div id="responses"></div>
+    <div id="responses" style="text-align:left; margin-top:30px;"></div>
 
     <script>
         function fetchResponses(category) {
             fetch(`/category/${category}/llm_response`)
                 .then(response => response.json())
                 .then(data => {
-                    document.getElementById("responses").innerHTML = `<p>${data.response || data.error}</p>`;
+                    const content = data.response || data.error || '';
+                    // Render markdown as HTML
+                    document.getElementById("responses").innerHTML = marked.parse(content);
                 });
         }
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </body>
 </html>

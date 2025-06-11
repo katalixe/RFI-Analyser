@@ -1,46 +1,53 @@
-import requests
 import os
+import yaml
+from openai import AzureOpenAI
+import concurrent.futures
 
-# Replace with your actual Azure API key
-api_key = "D2kx7t7xZnvQdnrZ21Og1LYJDghunWN5FRbtUQgSy9DeHcHGenZMJQQJ99BFACHYHv6XJ3w3AAAAACOGzCGf"
-endpoint = "https://rfi-analyser-resource.cognitiveservices.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview"
+endpoint = "https://rfi-analyser-resource.cognitiveservices.azure.com/"
+model_name = "gpt-4o"
+deployment = "gpt-4o"
 
-headers = {
-    "Content-Type": "application/json",
-    "Authorization": f"Bearer {api_key}"
-}
+subscription_key = "3ZKsWfold1xEyHPOLADYYDTRlsTUhjqPLIYE4NKd6MW1KhJXdo7sJQQJ99BFAC5RqLJXJ3w3AAAAACOGUZPH"
+api_version = "2024-12-01-preview"
 
-data = {
-    "messages": [
-        {
-            "role": "user",
-            "content": "I am going to Paris, what should I see?"
-        },
-        {
-            "role": "assistant",
-            "content": (
-                "Paris, the capital of France, is known for its stunning architecture, art museums, historical landmarks, "
-                "and romantic atmosphere. Here are some of the top attractions to see in Paris:\n\n"
-                "1. The Eiffel Tower: The iconic Eiffel Tower is one of the most recognizable landmarks in the world "
-                "and offers breathtaking views of the city.\n"
-                "2. The Louvre Museum: The Louvre is one of the world's largest and most famous museums, housing an "
-                "impressive collection of art and artifacts, including the Mona Lisa.\n"
-                "3. Notre-Dame Cathedral: This beautiful cathedral is one of the most famous landmarks in Paris and is "
-                "known for its Gothic architecture and stunning stained glass windows.\n\n"
-                "These are just a few of the many attractions that Paris has to offer. With so much to see and do, it's no "
-                "wonder that Paris is one of the most popular tourist destinations in the world."
-            )
-        },
-        {
-            "role": "user",
-            "content": "What is so great about #1?"
-        }
-    ],
-    "max_completion_tokens": 100000,
-    "model": "o4-mini"
-}
+client = AzureOpenAI(
+    api_version=api_version,
+    azure_endpoint=endpoint,
+    api_key=subscription_key,
+)
 
-response = requests.post(endpoint, headers=headers, json=data)
+def query_category(category, prompts):
+    all_responses = []
+    for prompt in prompts:
+        response = client.chat.completions.create(
+            stream=False,
+            messages=[
+                {"role": "user", "content": prompt},
+            ],
+            max_tokens=4096,
+            temperature=1.0,
+            top_p=1.0,
+            model=deployment,
+        )
+        if response.choices:
+            all_responses.append(response.choices[0].message.content)
+    with open(f"{category}.md", "w") as out_f:
+        for resp in all_responses:
+            out_f.write(resp + "\n\n")
 
-print(response.status_code)
-print(response.json())
+def main():
+    # Load queries.yaml
+    with open("queries.yaml", "r") as f:
+        queries = yaml.safe_load(f)
+
+    with concurrent.futures.ThreadPoolExecutor() as executor:
+        futures = [
+            executor.submit(query_category, entry["category"], entry["prompts"])
+            for entry in queries
+        ]
+        concurrent.futures.wait(futures)
+
+    client.close()
+
+if __name__ == "__main__":
+    main()
