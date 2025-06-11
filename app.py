@@ -2,8 +2,10 @@ from fastapi import FastAPI, Request
 from fastapi.templating import Jinja2Templates
 from fastapi.responses import HTMLResponse
 from fastapi.responses import PlainTextResponse
+from fastapi.responses import JSONResponse
 import yaml
 import os
+from azure.storage.blob import BlobServiceClient
 
 app = FastAPI()
 templates = Jinja2Templates(directory="templates")
@@ -52,3 +54,24 @@ def get_llm_response(category_name: str):
     with open(filename, "r") as f:
         content = f.read()
     return {"response": content}
+
+@app.get("/azure-files")
+def list_azure_files():
+  # Replace with your Azure Storage connection string
+  connection_string = os.getenv("CONNECTION_STRING")
+  container_name = "resources"  # Update if your container name is different
+  prefix = "data/"
+  if not connection_string:
+    return {"error": "AZURE_STORAGE_CONNECTION_STRING environment variable not set."}
+  try:
+    blob_service_client = BlobServiceClient.from_connection_string(connection_string)
+    container_client = blob_service_client.get_container_client(container_name)
+    files = [
+      os.path.basename(blob.name)
+      for blob in container_client.list_blobs(name_starts_with=prefix)
+      if blob.name.startswith(prefix)
+    ]
+    return {"files": files}
+  except Exception as e:
+    return {"error": str(e)}
+

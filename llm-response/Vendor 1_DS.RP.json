@@ -1,0 +1,4 @@
+{
+  "score": 9,
+  "justification": "The offering explicitly describes a robust framework for registering and managing digital twin models in a centralized repository with strong configuration management and model governance. The ability section details storage, management, and retrieval of metadata, including formal data names, data definitions, structures, and integrity rules. Additionally, interfaces note standards compliance for interoperability. However, details on retrieval mechanisms are slightly less specific, preventing a perfect score."
+}

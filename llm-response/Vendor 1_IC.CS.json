@@ -1,0 +1,4 @@
+{
+  "score": 9,
+  "justification": "The offering describes composability of complex digital models ('composition of complex digital models by integrating various data sources') and explicitly mentions modularity ('modular digital twin application development approach') and reuse ('packaged, reusable business capabilities (PBCs)'). The interfaces support open standards (REST APIs, MQTT, DTDL) and compliance. The ability statement strongly supports rapid composition and reduced duplication. Evidence is clear and specific, but a slight deduction is applied as details on citizen development enablement are limited."
+}

@@ -1,0 +1,4 @@
+{
+  "score": 9,
+  "justification": "Vendor 2 explicitly offers 'real-time rendering of large models and point cloud data from LiDAR and scanning systems,' and enables 'visual inspection, annotation, and remote collaboration.' Their interface support includes widely used 3D formats and REST APIs, and they comply with relevant standards (ISO 16792, ISO 27001). The ability section reiterates rendering and interaction with large point cloud datasets. This fully addresses requirements for 3D/point cloud rendering and interaction, with only minor missing detail on end-user usability specifics."
+}

@@ -1,0 +1,4 @@
+{
+  "score": 9,
+  "justification": "The response demonstrates strong support by detailing automated orchestration of digital twin workflows ('enables automated orchestration'), broad protocol support ('MQTT, AMQP, and REST'), compliance with standards ('CloudEvents' and 'NIST SP 800-53'), and explicit ability to manage complex systems ('coordinate the automated configuration... and management of systems, applications, digital twins and services'). Minor ambiguity remains in how deeply the orchestration is implemented, preventing a perfect score."
+}

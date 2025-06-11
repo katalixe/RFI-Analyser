@@ -1,0 +1,4 @@
+{
+  "score": 10,
+  "justification": "Vendor 3 explicitly states 'rich visualization tools that allow users to explore Digital Twin hierarchies, relationships, and dependencies using interactive graphs and 3D interfaces.' The ability to 'query complex entity networks' and 'navigate digital twin ecosystems with ease' is clearly supported. Interfaces support industry standards (DTDL, RDF, SPARQL, REST APIs), and compliance with ISO/IEC 27001 and W3C is specified, meeting requirements for both visualization and interoperability."
+}

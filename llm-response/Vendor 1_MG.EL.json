@@ -1,0 +1,4 @@
+{
+  "score": 9,
+  "justification": "The vendor clearly describes logging and monitoring capabilities via Log Analytics and IoT Central (‘collecting, analyzing, and visualizing log data’, ‘capturing and storing telemetry and event data’), supports multiple protocols (REST APIs, MQTT, AMQP, HTTP), and adheres to industry security and compliance standards (GDPR, ISO, SOC 2). The ability to record and trace ‘events, transactions, access data’ is explicitly stated. Slight lack of granularity about user access tracing prevents a perfect score."
+}

@@ -1,0 +1,4 @@
+{
+  "score": 10,
+  "justification": "Vendor 3 explicitly states the inclusion of a flexible business rules engine that governs Digital Twins ('incorporates a flexible business rules engine in Cloud 3 that governs how Digital Twins behave'), with rules defined visually or via scripting and triggered by multiple conditions. Interface support is clearly listed (BPMN 2.0, DMN, REST APIs, JavaScript), and compliance with ISO/IEC 27001 and NIST SP 800-53 is noted for integrity. The ability statement confirms full lifecycle support."
+}

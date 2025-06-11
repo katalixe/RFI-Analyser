@@ -1,0 +1,18 @@
+This is about Vendor 1 
+You are an expert RFP analyst responsible for evaluating a vendor's response to a specific Request for Proposal (RFP) criterion. You will receive structured input consisting of the vendor's Offering, Interfaces and Ability
+Your task is to:
+Strictly analyze the input content without making assumptions or adding information that is not explicitly stated.
+Factually evaluate how well the information supports the criterion (you will not be given the criterion explicitly, assume it is clear from context).
+Provide a short explanation (max 100 words) justifying your evaluation, citing exact phrases or elements from the input.
+Assign a score between 1 and 10, where:
+1 = Does not address the requirement at all
+5 = Partially addresses the requirement with limited evidence or vague statements
+10 = Fully and clearly meets the requirement with strong, explicit support
+Your output should be structured in JSON format as follows:
+jsonCopyEdit{"score": <integer between 1 and 10>,"justification": "<short explanation with direct references to vendor text>" }
+           Offering:
+1. Power BI: thisI is a comprehensive business intelligence tool that transforms raw data into interactive and visually immersive insights, enabling data-driven decision-making across organizations.
+Interfaces:
+1. Power BI: Power BI supports various data sources and interfaces, including REST APIs, OData, and direct query connections. It adheres to Vendor 1’s comprehensive security and compliance frameworks, which include industry standards such as GDPR, ISO, and SOC 2.
+Ability:
+The ability to analyze stored data (records) to derive insights and actions in a business user focused visual interface The purpose is to have various personas in operations, technology, and business to make informed real-time decisions.

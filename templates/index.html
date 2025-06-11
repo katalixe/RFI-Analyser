@@ -5,33 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LLM Response Categories</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        .container { max-width: 600px; margin: auto; text-align: center; }
-        .category { margin: 10px; padding: 10px; border: 1px solid #ccc; cursor: pointer; }
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f7f7fa; }
+        .container { max-width: 900px; margin: auto; text-align: center; }
+        h1 { margin-bottom: 30px; }
+        #vendor-table { width: 100%; border-collapse: collapse; background: #fff; box-shadow: 0 2px 8px #0001; }
+        #vendor-table th, #vendor-table td { padding: 14px 10px; }
+        #vendor-table th { background: #f0f0f5; font-weight: 600; border-bottom: 2px solid #e0e0e0; }
+        #vendor-table tr { border-bottom: 1px solid #f0f0f0; transition: background 0.2s; }
+        #vendor-table tr:hover { background: #f5f7fa; }
+        #vendor-table td { border: none; }
+        .expand-btn { background: #4f8cff; color: #fff; border: none; border-radius: 4px; padding: 6px 18px; cursor: pointer; font-size: 1em; transition: background 0.2s; }
+        .expand-btn:hover { background: #2563eb; }
+        .expand-row { display: none; background: #f9fbff; }
+        .expand-content { text-align: left; padding: 18px 30px; border-top: 1px solid #e0e0e0; }
+        #responses { display: none; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>LLM Response Categories</h1>
-        {% for category in categories %}
-            <div class="category" onclick="fetchResponses('{{ category }}')">
-                {{ category }}
-            </div>
-        {% endfor %}
+        <h1>Vendor Comparison</h1>
+        <table id="vendor-table">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <!-- Vendor columns will be inserted here -->
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be inserted here -->
+            </tbody>
+        </table>
     </div>
+    <div id="responses"></div>
 
-    <div id="responses" style="text-align:left; margin-top:30px;"></div>
-
+    <script id="categories-data" type="application/json">
+        {{ categories|tojson }}
+    </script>
     <script>
-        function fetchResponses(category) {
-            fetch(`/category/${category}/llm_response`)
-                .then(response => response.json())
-                .then(data => {
-                    const content = data.response || data.error || '';
-                    // Render markdown as HTML
-                    document.getElementById("responses").innerHTML = marked.parse(content);
-                });
+        function getCategories() {
+            return JSON.parse(document.getElementById('categories-data').textContent);
         }
+        async function loadVendorsAndCategories() {
+            const filesResp = await fetch('/azure-files');
+            const filesData = await filesResp.json();
+            const files = filesData.files || [];
+            const vendors = [...new Set(files.map(f => f.split('-')[0]))];
+            const categories = getCategories();
+            const theadRow = document.querySelector('#vendor-table thead tr');
+            vendors.forEach(vendor => {
+                const th = document.createElement('th');
+                th.textContent = vendor;
+                theadRow.appendChild(th);
+            });
+            const tbody = document.querySelector('#vendor-table tbody');
+            categories.forEach((category, rowIdx) => {
+                const tr = document.createElement('tr');
+                const tdCat = document.createElement('td');
+                tdCat.textContent = category;
+                tr.appendChild(tdCat);
+                vendors.forEach((vendor, colIdx) => {
+                    const td = document.createElement('td');
+                    const fname = files.find(f => f.startsWith(vendor + '-') && f.includes(category));
+                    if (fname) {
+                        const btn = document.createElement('button');
+                        btn.className = 'expand-btn';
+                        btn.textContent = 'Expand';
+                        btn.onclick = () => toggleExpand(rowIdx, colIdx, fname, btn);
+                        td.appendChild(btn);
+                    } else {
+                        td.textContent = '-';
+                    }
+                    tr.appendChild(td);
+                });
+                tbody.appendChild(tr);
+                // Add hidden expand row for each category row (one per vendor cell)
+                vendors.forEach((vendor, colIdx) => {
+                    const expandTr = document.createElement('tr');
+                    expandTr.className = 'expand-row';
+                    expandTr.id = `expand-row-${rowIdx}-${colIdx}`;
+                    const expandTd = document.createElement('td');
+                    expandTd.colSpan = vendors.length + 1;
+                    expandTd.className = 'expand-content';
+                    expandTr.appendChild(expandTd);
+                    tbody.appendChild(expandTr);
+                });
+            });
+        }
+        async function toggleExpand(rowIdx, colIdx, fname, btn) {
+            const expandRow = document.getElementById(`expand-row-${rowIdx}-${colIdx}`);
+            if (expandRow.style.display === 'table-row') {
+                expandRow.style.display = 'none';
+                btn.textContent = 'Expand';
+                return;
+            }
+            // Hide all other expand rows in this row
+            document.querySelectorAll(`.expand-row[id^='expand-row-${rowIdx}-']`).forEach(r => {
+                r.style.display = 'none';
+                const b = r.previousSibling.querySelector('.expand-btn');
+                if (b) b.textContent = 'Expand';
+            });
+            // Fetch and show markdown
+            const resp = await fetch(`/blob-md/${fname}`);
+            const data = await resp.json();
+            expandRow.querySelector('.expand-content').innerHTML = marked.parse(data.response || data.error || '');
+            expandRow.style.display = 'table-row';
+            btn.textContent = 'Collapse';
+        }
+        window.onload = loadVendorsAndCategories;
     </script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </body>

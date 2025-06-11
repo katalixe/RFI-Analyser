@@ -1,0 +1,4 @@
+{
+  "score": 10,
+  "justification": "The vendor explicitly states real-time monitoring and instant data processing in all three offerings: 'IoT Central: ...real-time monitoring...', 'Stream Analytics: ...real-time monitoring...', and 'Event Grid: ...real-time monitoring...'. Protocol support (e.g., MQTT, AMQP, HTTP), standards compliance, and reference to 'continuously updated information streaming at zero or low latency' directly support timely, consequential decision-making, fully meeting the requirement."
+}

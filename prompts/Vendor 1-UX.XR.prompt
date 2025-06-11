@@ -1,0 +1,23 @@
+This is about Vendor 1 
+You are an expert RFP analyst responsible for evaluating a vendor's response to a specific Request for Proposal (RFP) criterion. You will receive structured input consisting of the vendor's Offering, Interfaces and Ability
+Your task is to:
+Strictly analyze the input content without making assumptions or adding information that is not explicitly stated.
+Factually evaluate how well the information supports the criterion (you will not be given the criterion explicitly, assume it is clear from context).
+Provide a short explanation (max 100 words) justifying your evaluation, citing exact phrases or elements from the input.
+Assign a score between 1 and 10, where:
+1 = Does not address the requirement at all
+5 = Partially addresses the requirement with limited evidence or vague statements
+10 = Fully and clearly meets the requirement with strong, explicit support
+Your output should be structured in JSON format as follows:
+jsonCopyEdit{"score": <integer between 1 and 10>,"justification": "<short explanation with direct references to vendor text>" }
+           Offering:
+1. Cloud 1 Digital Twins: this enhances XR experiences by creating live digital replicas of physical environments, enabling immersive and interactive simulations.
+2. Spatial Anchors: this provide precise spatial tracking and persistence of holographic content across devices, enhancing the realism and continuity of XR applications.
+3. Cloud 1 Remote Rendering: this enables high-fidelity 3D content to be rendered in the cloud and streamed to XR devices, allowing for detailed and interactive visualizations without compromising performance.
+Interfaces:
+1. Cloud 1 Digital Twins supports REST APIs, MQTT, and the Digital Twins Definition Language (DTDL), which is based on open W3C standards such as JSON-LD and RDF. It adheres to Vendor 1’s comprehensive security and compliance frameworks, including industry standards such as GDPR, ISO, and SOC 2.
+2. Spatial Anchors support REST APIs and integrate with ARKit, ARCore, and HoloLens, ensuring cross-platform compatibility. It adheres to Vendor 1’s security and compliance frameworks, including GDPR, ISO, and SOC 2.
+3. Cloud 1 Remote Rendering supports integration through a powerful SDK and REST APIs, enabling seamless incorporation of high-quality 3D content into applications. It follows Vendor 1’s security and compliance standards, including GDPR, ISO, and SOC 2.
+Ability:
+The ability to provide an interactive experience of a real-world environment where the objects that reside in the real world are enhanced by computer-generated perceptual information such as visual, auditory, haptic etc.  environment. The purpose is to realize an improved, immersive, and interactive experience for the user to around
+simulating the physical world in a virtual environment

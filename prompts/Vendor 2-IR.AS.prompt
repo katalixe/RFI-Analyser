@@ -1,0 +1,19 @@
+This is about Vendor 2 
+You are an expert RFP analyst responsible for evaluating a vendor's response to a specific Request for Proposal (RFP) criterion. You will receive structured input consisting of the vendor's Offering, Interfaces and Ability
+Your task is to:
+Strictly analyze the input content without making assumptions or adding information that is not explicitly stated.
+Factually evaluate how well the information supports the criterion (you will not be given the criterion explicitly, assume it is clear from context).
+Provide a short explanation (max 100 words) justifying your evaluation, citing exact phrases or elements from the input.
+Assign a score between 1 and 10, where:
+1 = Does not address the requirement at all
+5 = Partially addresses the requirement with limited evidence or vague statements
+10 = Fully and clearly meets the requirement with strong, explicit support
+Your output should be structured in JSON format as follows:
+jsonCopyEdit{"score": <integer between 1 and 10>,"justification": "<short explanation with direct references to vendor text>" }
+           Offering:
+Cloud 2 – Mendix API Gateway + Teamcenter:
+Vendor 2 facilitates API-first architecture using Mendix and Teamcenter, enabling Digital Twin systems to publish RESTful and GraphQL APIs for both internal and external consumers. This simplifies integration with third-party applications and partner ecosystems.
+Interfaces:
+Cloud 2 provides OpenAPI-compliant interfaces with full support for OData, OAuth 2.0, and SAML. Security and compliance are ensured via adherence to NIST SP 800-53 Rev. 5, GDPR, and ISO/IEC 27001.
+Ability:
+The ability for the digital twin to publish APIs to external, partner, and internal developers to access data and services. The purpose is to simplify Digital Twin development by allowing Digital to integrate to products and services without knowing how they are implemented 

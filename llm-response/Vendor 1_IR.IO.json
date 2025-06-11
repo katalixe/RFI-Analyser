@@ -1,0 +1,4 @@
+{
+  "score": 9,
+  "justification": "The vendor provides explicit offerings (Event Grid, Cloud 1 Service Bus, IoT Central) all described as enabling seamless, robust, and comprehensive integration with control systems, IoT devices/sensors, and SCADA for real-time data flow. Compliance with NIST SP 800-53 Rev. 5 and FedRAMP across interfaces strengthens support. The justification is strong and clear, but there is minor repetition and lack of detail on specific technical methods (e.g., exact protocols used), preventing a perfect score."
+}

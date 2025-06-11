@@ -1,0 +1,4 @@
+{
+  "score": 10,
+  "justification": "Vendor 3 fully addresses the requirement: 'supports federated learning on Cloud 3, allowing distributed devices and edge systems to collaboratively train machine learning models without sharing raw data' and emphasizes privacy and data security ('respects data residency regulations', 'adheres to GDPR, ISO/IEC 27001, and SOC 2'); interfaces support is comprehensive (Python SDKs, ONNX, TensorFlow Federated, REST APIs); ability matches 'train...across multiple decentralized...edge devices...without exchanging their data samples'."
+}

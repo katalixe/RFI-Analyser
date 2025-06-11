@@ -1,15 +1,19 @@
-- category: Functional
+- category: Data Services
   prompts:
-  - Make a score of all submissions
-- category: Non-Functional
+  - What are the key features of the data services provided by the company?
+- category: Integration
   prompts:
-  - Make a score of all submissions based on the non-functional requirements
-- category: Benefits
+  - How does the company integrate its data services with existing systems?
+- category: Intelligence
   prompts:
-  - Make a score of all submissions based on the benefits they provide
-- category: Risk
+  - What intelligence capabilities does the company offer to enhance data analysis?
+- category: User Experience
   prompts:
-  - Make a score of all submissions with the following criteria
-  - The score should be between 0 and 100.
-  - The score should be based on the quality of the submission.
-  - The score should take into account the originality of the submission.
+  - How does the company ensure a user-friendly experience in its data services?
+- category: Management
+  prompts:
+  - What management tools are available for overseeing data services?
+- category: Trustworthiness
+  prompts:
+  - How does the company ensure the trustworthiness of its data services?
+  

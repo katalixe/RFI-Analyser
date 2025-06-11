@@ -1,0 +1,4 @@
+{
+  "score": 9,
+  "justification": "Vendor 3 provides explicit support for automated data and process orchestration ('automates the flow of data and processes') and details advanced features such as 'conditional workflows, failure handling, multi-device task routing, and dynamic resource provisioning.' The Interfaces section specifies standards (BPMN 2.0, JSON-based triggers, AMQP), security compliance, and 'audit logs and traceability.' The Ability section reinforces the coordination and management of complex, cross-system workflows. The response is comprehensive but lacks detailed examples or customer success evidence."
+}

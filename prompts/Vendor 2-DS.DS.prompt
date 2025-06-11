@@ -1,0 +1,18 @@
+This is about Vendor 2 
+You are an expert RFP analyst responsible for evaluating a vendor's response to a specific Request for Proposal (RFP) criterion. You will receive structured input consisting of the vendor's Offering, Interfaces and Ability
+Your task is to:
+Strictly analyze the input content without making assumptions or adding information that is not explicitly stated.
+Factually evaluate how well the information supports the criterion (you will not be given the criterion explicitly, assume it is clear from context).
+Provide a short explanation (max 100 words) justifying your evaluation, citing exact phrases or elements from the input.
+Assign a score between 1 and 10, where:
+1 = Does not address the requirement at all
+5 = Partially addresses the requirement with limited evidence or vague statements
+10 = Fully and clearly meets the requirement with strong, explicit support
+Your output should be structured in JSON format as follows:
+jsonCopyEdit{"score": <integer between 1 and 10>,"justification": "<short explanation with direct references to vendor text>" }
+           Offering:
+Cloud 2 – Simcenter + Mendix: Vendor 2 offers domain-specific data management via Simcenter (for simulation and physics-based data) and Mendix Data Hub (for low-code enterprise data orchestration). Together, they enable scalable, structured storage and retrieval of engineering, simulation, and OT datasets across various domains.
+Interfaces:
+Cloud 2 adheres to ISO 15926, NIST SP 800-53 for security and encryption, and supports domain-specific APIs, ISA-95/ISA-99, and industrial ontologies for interoperability and data quality assurance.
+Ability:
+The ability to efficiently handle, store, and retrieve data based on the distinct characteristics inherent to specific data types. The purpose is to store, manage and retrieve domain-specific data. 

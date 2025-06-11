@@ -1,0 +1,4 @@
+{
+  "score": 9,
+  "justification": "Vendor 3 thoroughly describes the offering ('high-performance simulation environments', 'dynamic, physics-based models'), supported interfaces (FMI, Modelica, SysML, REST APIs), and purpose/ability ('imitate the behavior of a physical system', 'train maintenance or operational staff'). Compliance with relevant standards is stated. The only minor gap is limited detail on specific workflows or customization, but all main requirement areas are strongly covered."
+}

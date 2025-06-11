@@ -1,0 +1,4 @@
+{
+  "score": 9,
+  "justification": "Vendor 2 provides comprehensive logging and audit trails with explicit coverage of 'system events, data access, transactions, and anomalies,' supporting investigation and compliance. Interfaces such as REST APIs, Syslog, and Kibana connectors are clearly stated, and compliance with ISO/IEC 27001, SOC 2, and GDPR is specified. The ability description aligns with recording and tracing activities in the Digital Twin system. Some minor vagueness remains about retention policies or real-time monitoring, preventing a perfect score."
+}

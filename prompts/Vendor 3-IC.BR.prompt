@@ -1,0 +1,18 @@
+This is about Vendor 3 
+You are an expert RFP analyst responsible for evaluating a vendor's response to a specific Request for Proposal (RFP) criterion. You will receive structured input consisting of the vendor's Offering, Interfaces and Ability
+Your task is to:
+Strictly analyze the input content without making assumptions or adding information that is not explicitly stated.
+Factually evaluate how well the information supports the criterion (you will not be given the criterion explicitly, assume it is clear from context).
+Provide a short explanation (max 100 words) justifying your evaluation, citing exact phrases or elements from the input.
+Assign a score between 1 and 10, where:
+1 = Does not address the requirement at all
+5 = Partially addresses the requirement with limited evidence or vague statements
+10 = Fully and clearly meets the requirement with strong, explicit support
+Your output should be structured in JSON format as follows:
+jsonCopyEdit{"score": <integer between 1 and 10>,"justification": "<short explanation with direct references to vendor text>" }
+           Offering:
+Vendor 3 incorporates a flexible business rules engine in Cloud 3 that governs how Digital Twins behave and respond to various operational conditions. These rules can be defined visually or through scripting, and are triggered based on asset states, events, schedules, or analytics.
+Interfaces:
+Cloud 3 supports BPMN 2.0, DMN, REST APIs, and JavaScript rule engines. It adheres to ISO/IEC 27001 and NIST SP 800-53 to ensure rule execution integrity and auditability.
+Ability:
+The ability to create, manage and use business rules that influence the digital twin behavior throughout its lifecycle nan

@@ -1,0 +1,4 @@
+{
+  "score": 10,
+  "justification": "Vendor 2 explicitly details integration with Hyperledger Fabric and Ethereum for tamper-proof transaction logging, smart contracts, and audit trails. Interfaces listed (REST APIs, JSON-LD, Ethereum-compatible) demonstrate technical compatibility. Compliance with GDPR, SOC 2, and ISO 27001 is stated for secure, immutable recordkeeping. The ability section confirms use of distributed ledgers for immutable digital twin workflows and automation via smart contracts."
+}

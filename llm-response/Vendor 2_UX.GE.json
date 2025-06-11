@@ -1,0 +1,4 @@
+{
+  "score": 9,
+  "justification": "Vendor 2 provides explicit support for immersive visualization using industry-leading platforms (Unity, Unreal Engine, Simcenter AR/VR) and standards (OpenXR, FBX/OBJ, JT, FMI). The integration with MindSphere and Teamcenter, use of SDKs and REST APIs, and clear articulation of interactive capabilities ('highly interactive manner') strongly support a comprehensive solution. However, minor details (such as user management or device compatibility) are not specified, preventing a perfect score."
+}

@@ -5,3 +5,6 @@ uvicorn
 openai
 jinja2
 requests
+azure-storage-blob
+pandas
+openpyxl

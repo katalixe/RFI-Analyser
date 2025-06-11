@@ -1,0 +1,4 @@
+{
+  "score": 9,
+  "justification": "The vendor explicitly describes robust security measures—'role-based access control (RBAC)', 'encryption', and 'compliance with industry standards'—to prevent unauthorized access and mitigate physical/environmental risks. Interfaces support 'DTDL', REST APIs, and KQL, providing integration and monitoring capabilities. The ability statement directly aligns with operating digital twins safely. However, practical implementation evidence (such as certifications or real-world deployment examples) is not provided, preventing a perfect score."
+}

@@ -1,0 +1,4 @@
+{
+  "score": 10,
+  "justification": "Vendor 3 explicitly states the ability to 'store, manage and retrieve digital twin instance data' that 'conforms to the requirements of the digital twin model.' The Offering details a repository for runtime state, telemetry, and configuration, while Interfaces support integration via standard protocols (OPC UA, MQTT, HTTPS). This thoroughly and clearly supports the requirement."
+}

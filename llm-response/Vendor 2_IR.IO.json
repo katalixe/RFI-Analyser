@@ -1,0 +1,4 @@
+{
+  "score": 9,
+  "justification": "Vendor 2 demonstrates strong support for integrated OT/IoT and Digital Twin data flow, citing 'bi-directional communication between control systems, IoT sensors, SCADA, and Cloud 2' and direct integration 'via MindSphere and Industrial Edge.' Interface support is explicit (OPC UA, MQTT, Modbus, and REST APIs) and security standards are adhered to. However, while Digital Twin integration is implied by 'data to flow between Digital Twin systems,' absolute clarity or concrete examples of Digital Twin interoperability are not provided."
+}
