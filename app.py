@@ -44,6 +44,7 @@ def get_category_prompts(category_name: str):
 
 @app.get("/")
 def home(request: Request):
+    
     queries = load_yaml_queries()
     categories = [category["category"] for category in queries]
     return templates.TemplateResponse("index.html", {"request": request, "categories": categories})
