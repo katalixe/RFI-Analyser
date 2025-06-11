@@ -3,6 +3,7 @@ from fastapi.templating import Jinja2Templates
 from fastapi.responses import HTMLResponse
 from fastapi.responses import PlainTextResponse
 from fastapi.responses import JSONResponse
+from fastapi.responses import FileResponse
 import yaml
 import os
 from azure.storage.blob import BlobServiceClient
@@ -71,7 +72,24 @@ def list_azure_files():
       for blob in container_client.list_blobs(name_starts_with=prefix)
       if blob.name.startswith(prefix)
     ]
-    return {"files": files}
+    return {"files": files.sort()}
   except Exception as e:
     return {"error": str(e)}
+
+@app.get("/list-llm-files")
+def list_llm_files():
+    folder = "llm-response"
+    files = [f for f in os.listdir(folder) if f.endswith('.json')]
+    return {"files": sorted(files)}
+
+@app.get("/llm-response/{filename}")
+def get_llm_file(filename: str):
+    folder = "llm-response"
+    file_path = os.path.join(folder, filename)
+    if not os.path.exists(file_path):
+        return JSONResponse({"error": "File not found"}, status_code=404)
+    with open(file_path, "r") as f:
+        import json
+        data = json.load(f)
+    return JSONResponse(data)
 

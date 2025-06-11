@@ -130,6 +130,7 @@ def process_vendor(vendor):
     for idx, row in xls.iloc[5:].iterrows():  # Start from row 6 (index 5)
         category = row.iloc[0] if len(row) > 0 else None
         uid = row.iloc[1] if len(row) > 1 else None
+        capability = row.iloc[2] if len(row) > 2 else None
         ability = row.iloc[3] if len(row) > 3 else None
         purpose = row.iloc[4] if len(row) > 4 else None
         offering = row.iloc[7] if len(row) > 7 else None
@@ -170,6 +171,8 @@ Your output should be structured in JSON format as follows:
               try:
                 result = json.loads(response.choices[0].message.content)
                 result['ability'] = ability
+                result['category'] = category.split('.')[1].strip('')
+                result['capability'] = capability
                 with open(f"./llm-response/{vendor}_{uid}.json", "w") as f:
                     json.dump(result, f, ensure_ascii=False, indent=2)
               except Exception as e:

@@ -19,11 +19,18 @@
         .expand-row { display: none; background: #f9fbff; }
         .expand-content { text-align: left; padding: 18px 30px; border-top: 1px solid #e0e0e0; }
         #responses { display: none; }
+        .score-red { background: #ffdddd !important; color: #b91c1c; font-weight: bold; }
+        .score-yellow { background: #fffacc !important; color: #694c36; font-weight: bold; }
+        .score-green { background: #e6ffed !important; color: #15803d; font-weight: bold; }
+        #score-tooltip { display: none; }
+        /* Add style for pointer and transition */
+        .category-header td { cursor: pointer; user-select: none; transition: background 0.2s; }
+        .category-header td:hover { background: #e0e7ef !important; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Vendor Comparison</h1>
+        <h1>RFI AI machine 🚀</h1>
         <table id="vendor-table">
             <thead>
                 <tr>
@@ -42,77 +49,284 @@
         {{ categories|tojson }}
     </script>
     <script>
-        function getCategories() {
-            return JSON.parse(document.getElementById('categories-data').textContent);
+        function parseFileName(fname) {
+            // Example: Vendor 1_MG.DM.json
+            const match = fname.match(/^(.*?)_(.*?)\.json$/);
+            if (!match) return null;
+            return { vendor: match[1], uid: match[2], fname };
         }
-        async function loadVendorsAndCategories() {
-            const filesResp = await fetch('/azure-files');
+
+        function getScoreColor(score) {
+            if (score >= 1 && score <= 3) return 'score-red';
+            if (score >= 4 && score <= 7) return 'score-yellow';
+            if (score >= 8 && score <= 10) return 'score-green';
+            return '';
+        }
+
+        async function loadVendorsAndUIDs() {
+            const filesResp = await fetch('/list-llm-files');
             const filesData = await filesResp.json();
             const files = filesData.files || [];
-            const vendors = [...new Set(files.map(f => f.split('-')[0]))];
-            const categories = getCategories();
+            const fileInfo = files.map(parseFileName).filter(Boolean);
+            const vendors = [...new Set(fileInfo.map(f => f.vendor))];
+            const uids = [...new Set(fileInfo.map(f => f.uid))];
+            const fileMap = {};
+            fileInfo.forEach(f => {
+                if (!fileMap[f.vendor]) fileMap[f.vendor] = {};
+                fileMap[f.vendor][f.uid] = f.fname;
+            });
+            // Table header
             const theadRow = document.querySelector('#vendor-table thead tr');
+            theadRow.innerHTML = '';
+            const thUid = document.createElement('th');
+            thUid.textContent = 'UID';
+            theadRow.appendChild(thUid);
             vendors.forEach(vendor => {
                 const th = document.createElement('th');
                 th.textContent = vendor;
                 theadRow.appendChild(th);
             });
-            const tbody = document.querySelector('#vendor-table tbody');
-            categories.forEach((category, rowIdx) => {
-                const tr = document.createElement('tr');
-                const tdCat = document.createElement('td');
-                tdCat.textContent = category;
-                tr.appendChild(tdCat);
-                vendors.forEach((vendor, colIdx) => {
-                    const td = document.createElement('td');
-                    const fname = files.find(f => f.startsWith(vendor + '-') && f.includes(category));
+            // Map UID to category by reading the 'category' field from the first available vendor file for each UID
+            const uidToCategory = {};
+            const categoryPromises = uids.map(uid => {
+                for (let v = 0; v < vendors.length; v++) {
+                    const vendor = vendors[v];
+                    const fname = fileMap[vendor] && fileMap[vendor][uid];
                     if (fname) {
-                        const btn = document.createElement('button');
-                        btn.className = 'expand-btn';
-                        btn.textContent = 'Expand';
-                        btn.onclick = () => toggleExpand(rowIdx, colIdx, fname, btn);
-                        td.appendChild(btn);
-                    } else {
-                        td.textContent = '-';
+                        return fetch(`/llm-response/${fname}`)
+                            .then(resp => resp.json())
+                            .then(data => {
+                                if (data.category) {
+                                    uidToCategory[uid] = data.category;
+                                } else {
+                                    uidToCategory[uid] = uid.split('.')[0]; // fallback
+                                }
+                            });
                     }
-                    tr.appendChild(td);
-                });
-                tbody.appendChild(tr);
-                // Add hidden expand row for each category row (one per vendor cell)
-                vendors.forEach((vendor, colIdx) => {
-                    const expandTr = document.createElement('tr');
-                    expandTr.className = 'expand-row';
-                    expandTr.id = `expand-row-${rowIdx}-${colIdx}`;
-                    const expandTd = document.createElement('td');
-                    expandTd.colSpan = vendors.length + 1;
-                    expandTd.className = 'expand-content';
-                    expandTr.appendChild(expandTd);
-                    tbody.appendChild(expandTr);
-                });
+                }
+                uidToCategory[uid] = uid.split('.')[0]; // fallback
+                return Promise.resolve();
             });
-        }
-        async function toggleExpand(rowIdx, colIdx, fname, btn) {
-            const expandRow = document.getElementById(`expand-row-${rowIdx}-${colIdx}`);
-            if (expandRow.style.display === 'table-row') {
-                expandRow.style.display = 'none';
-                btn.textContent = 'Expand';
-                return;
+            await Promise.all(categoryPromises);
+            // Group UIDs by category name from JSON
+            const uidGroups = {};
+            uids.forEach(uid => {
+                const cat = uidToCategory[uid];
+                if (!uidGroups[cat]) uidGroups[cat] = [];
+                uidGroups[cat].push(uid);
+            });
+            // Sort categories and UIDs within each category
+            const sortedCategories = Object.keys(uidGroups).sort();
+            sortedCategories.forEach(cat => uidGroups[cat].sort());
+            // Calculate average score per vendor per category
+            const vendorCategoryAverages = {};
+            for (const cat of sortedCategories) {
+                vendorCategoryAverages[cat] = {};
+                for (const vendor of vendors) {
+                    let sum = 0, count = 0;
+                    for (const uid of uidGroups[cat]) {
+                        const fname = fileMap[vendor] && fileMap[vendor][uid];
+                        if (fname) {
+                            // Use synchronous fetch since we already fetch these files for cell population
+                            // We'll use a cache to avoid refetching
+                            if (!window._llmJsonCache) window._llmJsonCache = {};
+                            let dataPromise;
+                            if (window._llmJsonCache[fname]) {
+                                dataPromise = Promise.resolve(window._llmJsonCache[fname]);
+                            } else {
+                                dataPromise = fetch(`/llm-response/${fname}`)
+                                    .then(resp => resp.json())
+                                    .then(data => {
+                                        window._llmJsonCache[fname] = data;
+                                        return data;
+                                    });
+                            }
+                            await dataPromise.then(data => {
+                                if (typeof data.score === 'number') {
+                                    sum += data.score;
+                                    count++;
+                                }
+                            });
+                        }
+                    }
+                    vendorCategoryAverages[cat][vendor] = count > 0 ? (sum / count) : null;
+                }
             }
-            // Hide all other expand rows in this row
-            document.querySelectorAll(`.expand-row[id^='expand-row-${rowIdx}-']`).forEach(r => {
-                r.style.display = 'none';
-                const b = r.previousSibling.querySelector('.expand-btn');
-                if (b) b.textContent = 'Expand';
+            // Table body
+            const tbody = document.querySelector('#vendor-table tbody');
+            tbody.innerHTML = '';
+            sortedCategories.forEach((cat, catIdx) => {
+                // Category header row (collapsible)
+                const catTr = document.createElement('tr');
+                catTr.className = 'category-header';
+                const catTd = document.createElement('td');
+                catTd.textContent = cat + ' ▼';
+                catTd.colSpan = vendors.length + 1;
+                catTd.style.background = '#f0f0f5';
+                catTd.style.fontWeight = 'bold';
+                catTd.style.textAlign = 'left';
+                catTd.style.cursor = 'pointer';
+                catTr.appendChild(catTd);
+                tbody.appendChild(catTr);
+                // UID rows for this category (initially hidden)
+                uidGroups[cat].forEach(uid => {
+                    const tr = document.createElement('tr');
+                    tr.className = `cat-group cat-group-${catIdx}`;
+                    tr.style.display = 'none';
+                    const tdUid = document.createElement('td');
+                    tdUid.textContent = uid;
+                    tdUid.className = 'uid-cell';
+                    // Fetch ability from the first available vendor file for this UID
+                    let abilityFetched = false;
+                    for (let v = 0; v < vendors.length && !abilityFetched; v++) {
+                        const vendor = vendors[v];
+                        const fname = fileMap[vendor] && fileMap[vendor][uid];
+                        if (fname) {
+                            fetch(`/llm-response/${fname}`)
+                                .then(resp => resp.json())
+                                .then(data => {
+                                    if (data.ability) {
+                                        tdUid.setAttribute('data-ability', data.ability);
+                                        tdUid.classList.add('has-ability');
+                                    }
+                                });
+                            abilityFetched = true;
+                        }
+                    }
+                    tr.appendChild(tdUid);
+                    for (let colIdx = 0; colIdx < vendors.length; colIdx++) {
+                        const vendor = vendors[colIdx];
+                        const td = document.createElement('td');
+                        const fname = fileMap[vendor] && fileMap[vendor][uid];
+                        if (fname) {
+                            td.textContent = '...';
+                            fetch(`/llm-response/${fname}`)
+                                .then(resp => resp.json())
+                                .then(data => {
+                                    if (typeof data.score === 'number') {
+                                        td.textContent = data.score;
+                                        td.className = getScoreColor(data.score);
+                                        if (data.justification) {
+                                            td.setAttribute('data-justification', data.justification);
+                                            td.classList.add('has-justification');
+                                        }
+                                    } else {
+                                        td.textContent = '-';
+                                    }
+                                })
+                                .catch(() => { td.textContent = '-'; });
+                        } else {
+                            td.textContent = '-';
+                        }
+                        tr.appendChild(td);
+                    }
+                    tbody.appendChild(tr);
+                });
+                // Add avg row for this category (initially hidden)
+                const avgTr = document.createElement('tr');
+                avgTr.className = `cat-group cat-group-${catIdx}`;
+                avgTr.style.display = 'none';
+                const avgLabelTd = document.createElement('td');
+                avgLabelTd.textContent = 'AVG';
+                avgLabelTd.style.fontWeight = 'bold';
+                avgLabelTd.style.background = '#f8fafc';
+                avgTr.appendChild(avgLabelTd);
+                vendors.forEach(vendor => {
+                    const avgTd = document.createElement('td');
+                    const avg = vendorCategoryAverages[cat][vendor];
+                    avgTd.textContent = avg !== null ? avg.toFixed(2) : '-';
+                    avgTd.style.fontWeight = 'bold';
+                    avgTd.style.background = '#f8fafc';
+                    avgTr.appendChild(avgTd);
+                });
+                tbody.appendChild(avgTr);
+                // Add click event to toggle this category
+                catTr.addEventListener('click', function() {
+                    const groupRows = tbody.querySelectorAll(`.cat-group-${catIdx}`);
+                    const isOpen = groupRows[0] && groupRows[0].style.display !== 'none';
+                    groupRows.forEach(row => {
+                        row.style.display = isOpen ? 'none' : '';
+                    });
+                    // Toggle arrow
+                    const arrow = catTd.querySelector('span[style*="float:right"]');
+                    if (arrow) arrow.textContent = isOpen ? '▼' : '▲';
+                });
             });
-            // Fetch and show markdown
-            const resp = await fetch(`/blob-md/${fname}`);
-            const data = await resp.json();
-            expandRow.querySelector('.expand-content').innerHTML = marked.parse(data.response || data.error || '');
-            expandRow.style.display = 'table-row';
-            btn.textContent = 'Collapse';
         }
-        window.onload = loadVendorsAndCategories;
+        window.addEventListener('DOMContentLoaded', loadVendorsAndUIDs);
+
+        // Tooltip logic (show on click, hide on outside click or second click)
+        document.addEventListener('click', function(e) {
+            const td = e.target.closest('td.has-justification');
+            let tooltip = document.getElementById('score-tooltip');
+            if (td && td.dataset.justification) {
+                if (!tooltip) {
+                    tooltip = document.createElement('div');
+                    tooltip.id = 'score-tooltip';
+                    document.body.appendChild(tooltip);
+                }
+                // Toggle tooltip
+                if (tooltip.style.display === 'block' && tooltip._lastTd === td) {
+                    tooltip.style.display = 'none';
+                    tooltip._lastTd = null;
+                    return;
+                }
+                tooltip.textContent = td.dataset.justification;
+                tooltip.style.display = 'block';
+                tooltip.style.position = 'fixed';
+                tooltip.style.background = '#222';
+                tooltip.style.color = '#fff';
+                tooltip.style.padding = '8px 14px';
+                tooltip.style.borderRadius = '6px';
+                tooltip.style.fontSize = '1em';
+                tooltip.style.maxWidth = '350px';
+                tooltip.style.zIndex = 1000;
+                // Position near the cell
+                const rect = td.getBoundingClientRect();
+                tooltip.style.left = (rect.right + 10) + 'px';
+                tooltip.style.top = (rect.top + window.scrollY) + 'px';
+                tooltip._lastTd = td;
+            } else {
+                if (tooltip) {
+                    tooltip.style.display = 'none';
+                    tooltip._lastTd = null;
+                }
+            }
+        });
+        // UID ability tooltip on hover
+        document.addEventListener('mouseover', function(e) {
+            const td = e.target.closest('td.uid-cell.has-ability');
+            if (td && td.dataset.ability) {
+                let tooltip = document.getElementById('uid-tooltip');
+                if (!tooltip) {
+                    tooltip = document.createElement('div');
+                    tooltip.id = 'uid-tooltip';
+                    document.body.appendChild(tooltip);
+                }
+                tooltip.textContent = td.dataset.ability;
+                tooltip.style.display = 'block';
+                tooltip.style.position = 'fixed';
+                tooltip.style.background = '#222';
+                tooltip.style.color = '#fff';
+                tooltip.style.padding = '8px 14px';
+                tooltip.style.borderRadius = '6px';
+                tooltip.style.fontSize = '1em';
+                tooltip.style.maxWidth = '350px';
+                tooltip.style.zIndex = 1000;
+                document.onmousemove = function(ev) {
+                    tooltip.style.left = (ev.clientX + 15) + 'px';
+                    tooltip.style.top = (ev.clientY + 10) + 'px';
+                };
+            }
+        });
+        document.addEventListener('mouseout', function(e) {
+            const td = e.target.closest('td.uid-cell.has-ability');
+            if (td) {
+                const tooltip = document.getElementById('uid-tooltip');
+                if (tooltip) tooltip.style.display = 'none';
+                document.onmousemove = null;
+            }
+        });
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </body>
 </html>
