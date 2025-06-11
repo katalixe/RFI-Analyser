@@ -1,6 +1,6 @@
 {
   "score": 8,
-  "justification": "Vendor 3 describes a 'powerful workflow engine' that 'automates business processes' tied to Digital Twin behavior and details support for 'workflow definition,' 'manual approval,' 'integration,' and 'escalation paths.' The interfaces list BPMN 2.0 and APIs for integration, which support process execution. However, the description does not provide concrete examples or evidence of 'effective, repeatable actions' delivering business outcomes, leaving some ambiguity.",
+  "justification": "The vendor explicitly describes a workflow engine that 'automates business processes tied to Digital Twin behavior' and enables 'a sequence of actions as a process flow.' Features such as visual and rule-based workflow definition, integration, and escalation paths show fulfillment. Interfaces with BPMN 2.0 and integration with enterprise systems further support the requirement. However, while the response is strong, it does not provide detailed real-world examples or direct experience, which prevents a perfect score.",
   "ability": "The ability to execute a sequence of actions as a process flow to achieve specific business outcomes",
   "category": " User Experience",
   "capability": "Business Process Management & Workflow"

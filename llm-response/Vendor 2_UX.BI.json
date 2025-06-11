@@ -1,6 +1,6 @@
 {
-  "score": 8,
-  "justification": "Vendor 2 describes 'integrated BI through Mendix Dashboards and MindSphere’s Insight Hub, enabling real-time and historical data analytics,' which supports business user analysis and visualization. It further notes the ability to 'visualize operational metrics, trigger alerts, and export analytics for cross-functional collaboration and decision-making.' However, while multiple features are listed, there is no explicit mention of tailored interfaces for various personas or detailed examples of business user focus beyond general terms.",
+  "score": 9,
+  "justification": "The response explicitly states 'integrated BI through Mendix Dashboards and MindSphere’s Insight Hub, enabling real-time and historical data analytics,' allowing 'business users to visualize operational metrics, trigger alerts, and export analytics.' Interfaces enable access via standard APIs and export formats. This closely aligns with the ability required. However, while strong, there could be more explicit breakdown on support for 'various personas,' so it's not a perfect 10.",
   "ability": "The ability to analyze stored data (records) to derive insights and actions in a business user focused visual interface",
   "category": " User Experience",
   "capability": "Business Intelligence "

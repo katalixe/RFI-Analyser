@@ -1,6 +1,6 @@
 {
   "score": 8,
-  "justification": "Vendor 2 explicitly describes 'interactive graph-based visualization of digital twin hierarchies' through 'Entity Explorer' and 'customizable UI components,' matching the requirement for interactive, user-friendly navigation. However, there is limited detail on how business users engage with or interact with the hierarchies beyond generic terms like 'view, query, and navigate.' The evidence is strong but would benefit from more specific examples of user-friendly interaction.",
+  "justification": "Vendor 2 offers 'interactive graph-based visualization of digital twin hierarchies' using 'Teamcenter’s Entity Explorer and Mendix’s customizable UI components' which aligns closely with the ability to present entities and relationships in an interactive, user-friendly way. However, the description focuses on interface support and standards rather than giving detailed examples of user experience or specific interaction functionalities, preventing a perfect score.",
   "ability": "The ability to present Digital Twin entities and their hierarchical or graph-based relationships in an interactive way",
   "category": " User Experience",
   "capability": "Entity Relationship Visualization"

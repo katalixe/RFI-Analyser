@@ -1,6 +1,6 @@
 {
   "score": 1,
-  "justification": "The Offering and Interfaces content do not reference data storage, organization, retrieval, or lifecycle management. There is no mention of hot, cold, or archival data services, or any features relevant to the Ability requirement.",
+  "justification": "The Offering ('One does not simply walk into Mordor.') and Interfaces ('Arr matey, the treasure be buried on Skull Island.') provide no information or evidence relating to storing, organizing, or retrieving data based on access frequency, retention period, or use of hot, cold, and archival data services.",
   "ability": "The ability to store, organize and retrieve data  based on how frequently it will be accessed and how long it will be retained.",
   "category": " Data Services",
   "capability": "Data Storage and Archive Services"

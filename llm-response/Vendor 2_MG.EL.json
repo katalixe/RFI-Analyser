@@ -1,6 +1,6 @@
 {
   "score": 9,
-  "justification": "The response states logs include 'system events, data access, transactions, and anomalies,' directly addressing the ability to 'record events, transactions, access data of users, and transactions.' Interfaces support accessibility via REST APIs, Syslog, and Kibana, and logging is compliant with several security standards. However, while comprehensive, there is no explicit mention of user identification/detail granularity within logs, which prevents a perfect score.",
+  "justification": "Vendor 2 provides detailed logging—'system events, data access, transactions, and anomalies'—and explicitly supports 'forensic investigation, root-cause analysis, and regulatory audit,' which strongly aligns with the requirement to trace user activities. The offered interfaces—REST APIs, Syslog, Kibana—indicate accessible and integrable logs. Compliance with ISO/IEC 27001, SOC 2, and GDPR further supports rigor. However, there is no explicit statement about retention periods or user-specific context granularity, slightly lowering confidence for a perfect score.",
   "ability": "The ability to record events, transactions, access data of users, and transactions to understand and trace the activities occurring in a Digital Twin system.",
   "category": " Management",
   "capability": "Logging"

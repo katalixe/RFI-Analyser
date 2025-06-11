@@ -1,6 +1,6 @@
 {
-  "score": 7,
-  "justification": "The offering states 'comprehensive reporting by allowing users to visualize and analyze telemetry data... through customizable dashboards and integration with tools like Power BI,' which addresses the requirement of configurable and customizable reports. However, it does not explicitly mention report generation or regulatory compliance, making the support solid but not fully comprehensive.",
+  "score": 6,
+  "justification": "The vendor states 'comprehensive reporting' via 'customizable dashboards' and Power BI integration, and mentions REST APIs and web UI for analysis. However, explicit mention of 'configurable and customizable reports' as documents or exports, or support for regulatory compliance, is lacking. The response partially addresses the requirement but lacks complete, direct evidence.",
   "ability": "The ability to generate configurable and customizable reports to get insights into the data",
   "category": " Intelligence",
   "capability": "Reporting"

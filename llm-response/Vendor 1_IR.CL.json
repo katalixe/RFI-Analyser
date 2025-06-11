@@ -1,6 +1,6 @@
 {
   "score": 9,
-  "justification": "The Offering explicitly states 'seamless integration with collaboration platforms like Yammer, Jabber, Teams, and Slack' and provides 'a conversational user interface through its robust bot framework.' This directly addresses the requirement. Interfaces note compliance but do not add to collaboration evidence. No explicit implementation details or evidence of proven deployments result in a one-point deduction.",
+  "justification": "The Offering states 'enables seamless integration with collaboration platforms like Yammer, Jabber, Teams, and Slack' and explicitly provides 'a conversational user interface through its robust bot framework'; this closely aligns with the stated Ability. The answer is strong and specific, but the term 'seamless' is broad and there is no explicit mention of depth regarding user experience or limitations, so a perfect score is withheld.",
   "ability": "The ability for the digital twin to interface with platforms like Yammer, Jabber, Teams, Slack",
   "category": " Integration",
   "capability": "Collaboration platform integration"

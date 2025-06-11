@@ -1,6 +1,6 @@
 {
-  "score": 7,
-  "justification": "Vendor 2 explicitly cites integration with MS Teams and Slack through the Xcelerator platform with 'built-in connectors and bot integration frameworks,' directly supporting conversational UI. However, Yammer and Jabber are not mentioned, and references to API and security standards do not confirm coverage for all required platforms, partially limiting fulfillment of the full requirement.",
+  "score": 8,
+  "justification": "Vendor 2 explicitly states integration between Digital Twin systems and collaboration platforms like MS Teams and Slack ('provides integration ... with MS Teams and Slack') using Xcelerator and bot frameworks for conversational UI. Secure APIs and compliance are mentioned. However, no mention is made of Yammer or Jabber, which partially limits full coverage of the requirement.",
   "ability": "The ability for the digital twin to interface with platforms like Yammer, Jabber, Teams, Slack",
   "category": " Integration",
   "capability": "Collaboration platform integration"

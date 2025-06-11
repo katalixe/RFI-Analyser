@@ -1,6 +1,6 @@
 {
   "score": 9,
-  "justification": "Vendor 3 addresses the requirement by explicitly providing 'secure, tamper-proof recordkeeping and automation through distributed ledger technologies,' supporting 'smart contracts,' and ensuring 'immutable audit trails.' Interfaces include Ethereum and Hyperledger Fabric, aligning with systems supporting smart contracts. The mention of compliance (GDPR, ISO/IEC 27001, FIPS 140-2) further supports trustworthy interactions. However, while the response is detailed, it lacks explicit examples of integration specifically with digital twin architectures, slightly limiting completeness.",
+  "justification": "Vendor 3 explicitly states support for 'secure, tamper-proof recordkeeping and automation through distributed ledger technologies,' including 'support for smart contracts,' and 'immutable audit trails.' Interfaces with Ethereum and Hyperledger Fabric are listed, both supporting smart contracts and ledger immutability. Compliance with security standards is stated. However, there is a slight lack of detail on how immutable data is exposed specifically to digital twin applications, preventing a perfect score.",
   "ability": "The ability to use distributed ledgers for digital twin applications that require immutable data for digital twin instances, transactions and automation (smart contracts)",
   "category": " Intelligence",
   "capability": "Distributed Ledger and Smart Contracts"

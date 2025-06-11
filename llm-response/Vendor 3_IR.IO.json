@@ -1,6 +1,6 @@
 {
   "score": 9,
-  "justification": "Vendor 3 'offers extensive OT and IoT integration capabilities using Cloud 3 edge gateways and protocol bridges,' which 'enables real-time data acquisition from industrial assets, SCADA, and sensor networks,' directly supporting 'integration with control systems and IOT devices/sensors.' Interface details—'supports Modbus, OPC UA, BACnet, MQTT, and AMQP'—explicitly address the need for broad integration. However, while strong, there's no mention of specific Digital Twin frameworks or depth of bidirectionality, keeping it from a perfect score.",
+  "justification": "Vendor 3 provides 'extensive OT and IoT integration capabilities' and details both protocols ('Modbus, OPC UA, BACnet, MQTT, and AMQP') and architecture ('Cloud 3 edge gateways and protocol bridges') for real-time acquisition from 'industrial assets, SCADA, and sensor networks.' This directly meets the need for integration and data flow between OT, IoT, and Digital Twin systems. However, while comprehensive, there are no concrete deployment examples or quantitative performance metrics, hence not a perfect 10.",
   "ability": "The ability to integrate directly with control systems and IOT devices/sensors, SCADA ",
   "category": " Integration",
   "capability": "OT/IoT system integration"

@@ -1,6 +1,6 @@
 {
-  "score": 7,
-  "justification": "The vendor provides strong security measures: identity and access management (Entra), infrastructure and threat protection (Cloud 1 Security Center), real-time threat detection for IoT (Defender for IoT), and secure key management (Key Vault). Interfaces mention compliance with major security standards. However, there is no explicit mention of 'Digital Twins' or tailored protection for them, and safeguards against 'unintended or unauthorized access, change or destruction' are implied but not directly stated for Digital Twins.",
+  "score": 6,
+  "justification": "The offerings specify features like 'robust identity and access management,' 'advanced threat protection,' and 'secure key management,' which relate to protecting resources from unauthorized access and ensuring confidentiality, integrity, and availability. However, the response does not explicitly mention Digital Twins or give clear, targeted controls for protecting Digital Twins specifically, leaving partial alignment with the requirement.",
   "ability": "The ability to protected Digital Twins from unintended or unauthorized access, change or destruction. Security concerns equipment, systems and information, ensuring availability, integrity and confidentiality of information.",
   "category": " Trustworthiness",
   "capability": "Security"

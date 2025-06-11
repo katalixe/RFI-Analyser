@@ -1,6 +1,6 @@
 {
   "score": 8,
-  "justification": "Vendor 3 explicitly states 'simulation model management capabilities, allowing users to register, version, and execute algorithmic and rule-based simulations' and references collaborative workflows, which directly address managing and registering models. It also lists FMI, Modelica, and SysML for managing assets and adherence to industry standards. However, while storage and retrieval of the codebase is implied, explicit mention of storing/retrieving the 'algorithmic codebase, business rules and meta data' is missing, preventing a perfect score.",
+  "justification": "Vendor 3 states that Cloud 3 includes 'simulation model management capabilities, allowing users to register, version, and execute algorithmic and rule-based simulations.' It enables model registration and management in a central repository with support for model governance. However, while management of algorithmic codebase, business rules, and metadata is implied, the text does not explicitly mention dedicated metadata handling or detailed retrieval mechanisms, preventing a perfect score.",
   "ability": "The ability to store, manage and retrieve the algorithmic codebase, business rules and meta data that describe a simulation model.",
   "category": " Data Services",
   "capability": "Simulation Model Repository"

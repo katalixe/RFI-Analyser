@@ -1,6 +1,6 @@
 {
   "score": 2,
-  "justification": "The Offering ('I can't carry it for you, but I can carry you.') and Interfaces ('The pirates used a spyglass...') are metaphorical and do not mention integration with control systems, IoT devices, or SCADA. There is no direct or explicit evidence that the vendor supports technical integration as required.",
+  "justification": "The Offering and Interfaces sections do not mention integration capabilities, control systems, IoT, or SCADA. There is no explicit or implied reference to supporting interoperability with OT or IoT devices. The provided text is metaphorical and does not address technical integration at all.",
   "ability": "The ability to integrate directly with control systems and IOT devices/sensors, SCADA ",
   "category": " Integration",
   "capability": "OT/IoT system integration"

@@ -1,6 +1,6 @@
 {
   "score": 7,
-  "justification": "Vendor 3 states support for 'chat-based interfaces, voice interaction, and workflow automation using connectors to platforms such as Microsoft Teams, Slack, and enterprise service portals.' However, there is no explicit mention of Yammer or Jabber, and the reference to 'such as' suggests possible but not confirmed support for other platforms. The support for conversational UIs is clear, but coverage of all required platforms is only partially demonstrated.",
+  "justification": "Vendor 3 mentions integration with 'Microsoft Teams, Slack, and enterprise service portals' and emphasizes 'conversational UIs,' satisfying most collaboration requirements. However, there is no explicit reference to Yammer or Jabber as required. Support for 'chat-based interfaces' and 'voice interaction' is detailed, but the lack of mention for some platforms keeps it from a perfect score.",
   "ability": "The ability for the digital twin to interface with platforms like Yammer, Jabber, Teams, Slack",
   "category": " Integration",
   "capability": "Collaboration platform integration"

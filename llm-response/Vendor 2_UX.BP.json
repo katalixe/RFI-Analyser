@@ -1,6 +1,6 @@
 {
   "score": 8,
-  "justification": "Vendor 2 describes their Mendix Workflow Engine’s ability to automate business processes such as 'asset commissioning, compliance verification, maintenance scheduling, and feedback loops,' clearly aligning with the need for 'effective, repeatable actions.' The 'no-code/low-code model' supports deployment, and the use of BPMN, REST, and SOAP for interfaces addresses integration. However, while examples are given, there is limited explicit detail on sequencing or monitoring process outcomes, preventing a perfect score.",
+  "justification": "Vendor 2’s Mendix Workflow Engine 'allows for automation of business processes associated with digital twins' and supports 'maintenance scheduling' and 'compliance verification,' directly addressing sequenced process execution for business outcomes. The use of BPMN and secure, standardized interfaces (REST, SOAP) demonstrates capability for 'effective, repeatable actions.' However, while strong, evidence of actual repeatability and robustness across diverse business outcomes remains somewhat implicit, not exhaustively explicit.",
   "ability": "The ability to execute a sequence of actions as a process flow to achieve specific business outcomes",
   "category": " User Experience",
   "capability": "Business Process Management & Workflow"

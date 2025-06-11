@@ -1,6 +1,6 @@
 {
   "score": 8,
-  "justification": "Vendor 2 explicitly states support for federated learning 'via Vendor 2 AI Edge, allowing algorithm training across decentralized edge nodes without transmitting raw data,' which aligns with the requirement. The response mentions privacy, regulatory compliance, and support for ONNX and TensorFlow Lite. However, it does not clearly address aspects like model aggregation methods or handling of heterogeneous data beyond framework compatibility, leaving minor gaps.",
+  "justification": "Vendor 2 explicitly states support for 'federated learning via Vendor 2 AI Edge, allowing algorithm training across decentralized edge nodes without transmitting raw data' and notes enhanced privacy, data sovereignty, and compliance. This directly supports training across decentralized nodes while preserving privacy, matching the core requirement. However, the response does not elaborate on handling 'heterogeneous data' or detail how multiple actors are enabled simultaneously, which slightly limits completeness.",
   "ability": "The ability to train an algorithm across multiple decentralized digital twin edge devices or servers holding local data samples, without exchanging their data samples.",
   "category": " Intelligence",
   "capability": "Federated Learning"

@@ -1,6 +1,6 @@
 {
   "score": 8,
-  "justification": "The Offering describes 'real-time monitoring' and 'instant detection of patterns and anomalies,' citing 'immediate insights and alerts.' Interfaces support relevant protocols (MQTT, HTTP) and security compliance. However, there is no explicit reference to 'zero or low latency' metrics or interactive presentation—language like 'real-time' and 'instant' is strong but lacks quantitative latency evidence or concrete examples of user interaction.",
+  "justification": "The vendor provides solutions (IoT Central, Stream Analytics, Event Grid) that 'enable real-time monitoring,' 'provide immediate insights and alerts,' and allow 'instant detection of patterns and anomalies,' directly supporting 'continuously updated information streaming at zero or low latency.' However, no quantitative latency metrics or explicit interactivity features are detailed, thus not fully maximizing the score.",
   "ability": "The ability to present and interact with continuously updated information streaming at zero or low latency.",
   "category": " User Experience",
   "capability": "Real-time Monitoring"

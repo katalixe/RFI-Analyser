@@ -1,6 +1,6 @@
 {
-  "score": 8,
-  "justification": "Vendor 2 states the use of 'modular development and composition of Digital Twin services through reusable components in Mendix' and that these 'can be rapidly assembled and modified based on use-case-specific needs.' This directly supports modular, rapid composition. However, the response does not explicitly mention 'packaged, reusable business capabilities (PBCs)' or how citizen development is enabled, making the response strong but not perfect.",
+  "score": 7,
+  "justification": "Vendor 2 describes 'modular development and composition' via 'reusable components in Mendix' that can be 'rapidly assembled and modified based on use-case-specific needs,' directly supporting modularity, rapid composition, and reuse. However, it does not explicitly mention 'packaged, reusable business capabilities (PBCs)' nor 'citizen development,' and provides limited detail on reducing duplication and time to value beyond general claims.",
   "ability": "The ability to use a modular digital twin application development approach to rapidly compose and recompose digital twin services that deliver use case specific outcomes.",
   "category": " Intelligence",
   "capability": "Composition "

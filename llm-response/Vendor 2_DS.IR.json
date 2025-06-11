@@ -1,6 +1,6 @@
 {
   "score": 8,
-  "justification": "The Offering states 'an integrated Digital Twin Instance Repository by combining Teamcenter and MindSphere' and emphasizes 'store, manage and retrieve', explicitly covering the ability to store and retrieve digital twin instance state data. However, while synchronization and real-time capture are detailed, there is limited information on specific data management features (such as querying or versioning), so some detail is lacking for a perfect score.",
+  "justification": "Vendor 2 details 'an integrated Digital Twin Instance Repository' that 'supports real-time capture and synchronization of asset state data with the digital twin model,' which directly addresses the storage, management, and retrieval of digital twin instance data. However, while the text implies retrieval with 'synchronization,' explicit mention of retrieval mechanisms is slightly lacking. Interfaces (OPC UA, MQTT, REST APIs) suggest management and access without detailing retrieval operations.",
   "ability": "The ability to store, manage and retrieve digital twin instance data that conforms to the requirements of the digital twin model",
   "category": " Data Services",
   "capability": "Digital Twin Instance Repository"

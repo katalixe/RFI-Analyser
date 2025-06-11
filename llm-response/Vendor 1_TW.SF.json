@@ -1,6 +1,6 @@
 {
   "score": 7,
-  "justification": "The vendor provides specific security measures (RBAC, encryption) and mentions compliance with industry standards to mitigate safety risks: 'ensure safe and reliable monitoring... without causing unacceptable risks.' However, evidence primarily focuses on security controls rather than a direct, comprehensive demonstration of risk prevention for physical injury or environmental harm. No concrete examples or explicit safety protocols directly tied to physical safety are given.",
+  "justification": "The vendor describes robust security measures ('role-based access control (RBAC) and encryption') and compliance with 'industry standards' designed to mitigate risks that could lead to physical injury or health/environment/property damage. However, these are focused primarily on security and monitoring. There is no explicit evidence of specific safety risk analysis or mechanisms directly addressing 'unacceptable risk of physical injury or damage' beyond general security controls.",
   "ability": "The ability to operate digital twins without causing unacceptable risk of physical injury or damage to the health of people, either directly, or indirectly as a result of damage to property or to the environment",
   "category": " Trustworthiness",
   "capability": "Safety"

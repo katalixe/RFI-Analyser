@@ -1,6 +1,6 @@
 {
   "score": 8,
-  "justification": "Vendor 3 offers a 'flexible business rules engine' that governs Digital Twin behavior, and rules can be 'defined visually or through scripting,' which demonstrates strong support for rule creation and management. Interfaces such as 'BPMN 2.0, DMN, REST APIs, and JavaScript rule engines' facilitate integration and usage. The mention of compliance standards further supports integrity. However, details on managing the rules 'throughout its lifecycle' are not fully elaborated, so minor gaps remain.",
+  "justification": "Vendor 3 provides a 'flexible business rules engine...that governs how Digital Twins behave and respond' supporting creation and management of rules 'defined visually or through scripting' and triggered by various events, which directly addresses influencing behavior throughout lifecycle. Explicit support for BPMN 2.0, DMN, and REST APIs bolsters integration. While strong, it stops short of detailing management of rules over the full lifecycle or providing usage examples, hence not a perfect 10.",
   "ability": "The ability to create, manage and use business rules that influence the digital twin behavior throughout its lifecycle",
   "category": " Intelligence",
   "capability": "Business Rules"

@@ -1,6 +1,6 @@
 {
   "score": 7,
-  "justification": "The vendor describes 'immersive XR experiences,' 'real-time visualization, collaboration, and simulation,' and 'interaction with equipment, infrastructure, and data overlays,' which closely aligns with the enhanced and interactive requirements. However, while multiple modalities (AR, VR, MR) are mentioned, explicit reference to auditory or haptic enhancements is missing, and the 'improved user experience' is mostly implied, not detailed.",
+  "justification": "Vendor 3 describes 'immersive XR experiences' with 'real-time visualization, collaboration, and simulation,' and states that users can 'interact with equipment, infrastructure, and data overlays in context.' However, while the offering clearly mentions visual and interactive enhancement, references to 'auditory, haptic etc.' modalities are absent. The interfaces and compliance mention interoperability and security, but do not address sensory modalities directly required for full ability coverage.",
   "ability": "The ability to provide an interactive experience of a real-world environment where the objects that reside in the real world are enhanced by computer-generated perceptual information such as visual, auditory, haptic etc.  environment.",
   "category": " User Experience",
   "capability": "Extended Reality (XR)"

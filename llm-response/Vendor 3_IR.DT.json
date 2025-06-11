@@ -1,6 +1,6 @@
 {
   "score": 9,
-  "justification": "Vendor 3's Offering describes 'seamless communication between multiple Digital Twin applications,' 'access and correlate information across different twin instances in real-time,' and 'supports end-to-end data transformation, orchestration, and contextual synchronization,' directly addressing interoperable integration. Interfaces list relevant standards (OPC UA, MQTT, REST) and security protocols. The response is comprehensive and strongly aligned with the requirement, but lacks minor implementation detail or real-world examples, preventing a perfect score.",
+  "justification": "Vendor 3 provides 'a robust integration framework' through Cloud 3, allowing for 'seamless communication between multiple Digital Twin applications and platforms,' and 'access and correlate information across different twin instances in real-time.' Interfaces list major relevant protocols (OPC UA, MQTT, REST), and security standards are detailed. This directly addresses interoperability and integration as required. However, the response does not provide explicit coverage of legacy/non-standard twins, and little detail is given about onboarding or compatibility limitations, preventing a perfect score.",
   "ability": "The ability to integrate or access information from existing digital twin instances ",
   "category": " Integration",
   "capability": "Digital Twin Integration"

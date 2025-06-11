@@ -1,6 +1,6 @@
 {
-  "score": 9,
-  "justification": "Vendor 3 demonstrates a 'robust instance repository' for 'storing the runtime state of Digital Twin assets' including 'telemetry, configuration, and contextual state information.' Explicit mention of real-time data, integration, and standards-aligned interfaces supports storage, management, and retrieval; however, retrieval capabilities are not described in operational detail, preventing a perfect score.",
+  "score": 8,
+  "justification": "Vendor 3 details a 'robust instance repository' explicitly for 'storing the runtime state of Digital Twin assets' including telemetry, configuration, and state information, and supports 'retrieval' through integration interfaces. Real-time accuracy and standards adherence are mentioned. However, while storage and retrieval are described, explicit details on comprehensive management capabilities (e.g., versioning or lifecycle management) are not directly stated.",
   "ability": "The ability to store, manage and retrieve digital twin instance data that conforms to the requirements of the digital twin model",
   "category": " Data Services",
   "capability": "Digital Twin Instance Repository"

@@ -1,6 +1,6 @@
 {
   "score": 8,
-  "justification": "The Offering states the product provides 'a secure and scalable environment to store, manage, and retrieve simulation models, including algorithmic codebases, business rules, and metadata, facilitating efficient simulation model repository management.' This directly addresses the requirement for central storage, management, and retrieval of relevant simulation model assets. However, while management and governance are implied ('efficient simulation model repository management'), specifics of model governance or configuration management features are not detailed, leaving some ambiguity.",
+  "justification": "The Offering states the system 'provides a secure and scalable environment to store, manage, and retrieve simulation models, including algorithmic codebases, business rules, and metadata,' directly supporting the requirement. Reference to 'efficient simulation model repository management' reinforces its appropriateness. However, while it claims to facilitate 'portfolio management,' it does not provide explicit detail on configuration management or governance controls, only mentioning compliance via NIST SP 800-53 in Interfaces. Strong coverage, but lacking full specificity.",
   "ability": "The ability to store, manage and retrieve the algorithmic codebase, business rules and meta data that describe a simulation model.",
   "category": " Data Services",
   "capability": "Simulation Model Repository"

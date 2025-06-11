@@ -1,6 +1,6 @@
 {
   "score": 9,
-  "justification": "The response clearly describes 'tiered storage options (Hot, Cool, and Archive) allowing organizations to optimize storage costs by categorizing data based on access frequency and retention duration.' It also mentions long-term retention and compliance. However, specifics on retrieval mechanisms or user experience for organizing/retrieving data are not detailed, leaving a slight gap.",
+  "justification": "Vendor 2’s solution provides 'tiered storage options (Hot, Cool, and Archive)' and 'supports long-term historical data retention,' directly addressing the need to store, organize, and retrieve data by access frequency and retention duration. The offering’s purpose of optimizing storage costs aligns with reducing management effort. Interfaces mention compliance and lifecycle governance. However, explicit examples of data retrieval processes or automation specifics are not provided, preventing a perfect score.",
   "ability": "The ability to store, organize and retrieve data  based on how frequently it will be accessed and how long it will be retained.",
   "category": " Data Services",
   "capability": "Data Storage and Archive Services"

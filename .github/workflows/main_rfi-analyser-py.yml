@@ -32,6 +32,9 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Populate data
+        run: python llm.py
+      # Optional: Uncomment the following lines to run the app in development mode 
       # - name: Run Uvicorn server (dev mode)
       #   run: |
       #     source venv/bin/activate

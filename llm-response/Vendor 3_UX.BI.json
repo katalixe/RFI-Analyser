@@ -1,6 +1,6 @@
 {
   "score": 8,
-  "justification": "Vendor 3 offers 'BI tools on Cloud 3 that convert digital twin data into operational, strategic, and compliance insights' and provides 'visual dashboards and reports' with features like 'filtering, drill-down, trend detection, and stakeholder-specific metrics.' This directly addresses the need for data analysis to derive insights for various business personas. The support for REST APIs and data connectors enables integration. However, there is no explicit mention of real-time capability or confirmation that all key operational personas are fully supported, preventing a perfect score.",
+  "justification": "Vendor 3 states that BI tools provide 'visual dashboards and reports' and support 'filtering, drill-down, trend detection, and stakeholder-specific metrics,' directly addressing business user-focused visual analysis. The mention of stakeholder-specific metrics implies alignment with different personas. However, while it indicates operational and strategic insights, there is no explicit reference to real-time data or immediate decision-making capabilities; this ambiguity prevents a perfect score.",
   "ability": "The ability to analyze stored data (records) to derive insights and actions in a business user focused visual interface",
   "category": " User Experience",
   "capability": "Business Intelligence "

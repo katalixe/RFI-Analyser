@@ -1,6 +1,6 @@
 {
   "score": 7,
-  "justification": "Vendor 2 describes 'real-time alerting and notification capabilities,' including 'role-based notifications' and 'condition-based alerts,' which partially align with managing alerts, messages, and notifications. Protocol support (WebSockets, MQTT, HTTP) implies technical compatibility. However, there is no explicit mention of 'displaying and managing alerts, message queues, or triggers,' nor detailed evidence of intervention mechanisms for ongoing processes as required. The response is strong on delivery and compliance but lacks direct confirmation of management and intervention functions.",
+  "justification": "Vendor 2 details 'real-time alerting and notification capabilities,' 'role-based notifications,' and 'condition-based alerts,' supporting the ability to display and manage alerts and notifications. However, management of 'message queues,' 'triggers,' or in-depth control/management features are not explicitly confirmed, lowering confidence in full coverage.",
   "ability": "The ability to display and manage alerts, messages, message queues, triggers, and notifications",
   "category": " Intelligence",
   "capability": "Alerts and Notification"

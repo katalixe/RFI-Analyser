@@ -1,6 +1,6 @@
 {
   "score": 8,
-  "justification": "Vendor 3 describes simulation, monitoring, and risk prevention as part of Digital Twin safety management, including validation models and alert mechanisms to minimize risk of injury, equipment failure, or environmental damage. Explicit mention of ISO 12100, ISO 13849, and IEC 61508 supports compliance for operational and functional safety. However, there is no direct statement confirming prevention of 'unacceptable risk' or evidence of real-world application; therefore, the response is strong but not flawless.",
+  "justification": "Vendor 3 explicitly addresses Digital Twin safety management via 'simulation, monitoring, and risk prevention mechanisms' and references 'validation models, alert mechanisms, and restricted operational controls.' It claims to minimize risk of injury and damage, and applies to high-risk industries. Interfaces support safety signal integration and compliance with relevant safety standards (ISO 12100, ISO 13849, IEC 61508). However, while the claims are strong, there is minor lack of specific operational detail or real-world evidence, so a perfect 10 is not justified.",
   "ability": "The ability to operate digital twins without causing unacceptable risk of physical injury or damage to the health of people, either directly, or indirectly as a result of damage to property or to the environment",
   "category": " Trustworthiness",
   "capability": "Safety"

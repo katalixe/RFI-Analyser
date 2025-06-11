@@ -1,6 +1,6 @@
 {
   "score": 9,
-  "justification": "The vendor explicitly states support for federated learning, enabling collaborative model training on decentralized data 'while maintaining data privacy and security' (Cloud 1 Machine Learning) and 'enabling collaborative analytics across different organizational boundaries' (Vendor 1 Fabric). Integration with security standards (GDPR, ISO, SOC 2) directly addresses privacy and compliance. Interfaces support open frameworks and integration. However, the description does not specifically mention 'digital twin edge devices,' so a perfect score is not warranted.",
+  "justification": "The vendor states Cloud 1 Machine Learning 'supports federated learning by enabling multiple organizations to collaboratively train models on decentralized data while maintaining data privacy and security.' Similarly, Vendor 1 Fabric 'enables collaborative analytics across different organizational boundaries.' Interfaces and compliance are detailed. However, there is no explicit, detailed mention of 'digital twin edge devices' or specifics about edge deployment, slightly limiting full alignment with all technical nuances of the requirement.",
   "ability": "The ability to train an algorithm across multiple decentralized digital twin edge devices or servers holding local data samples, without exchanging their data samples.",
   "category": " Intelligence",
   "capability": "Federated Learning"

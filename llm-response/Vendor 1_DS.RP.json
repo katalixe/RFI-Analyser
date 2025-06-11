@@ -1,6 +1,6 @@
 {
   "score": 8,
-  "justification": "The vendor states a 'centralized repository' for registering and managing Digital Twin models, enhancing configuration management and model governance, directly aligning with the requirement to centrally store and manage metadata. However, while references to model governance and configuration management are explicit, there is no detailed mention of handling formal data names, definitions, structures, or data integrity rules. The support for version control and collaboration implies strong management, but the lack of explicit statements about data structure and integrity requirements keeps this shy of a perfect score.",
+  "justification": "The Offering states, 'Cloud 1 Digital Twins allows organizations to register and manage a wide array of Digital Twin models in a centralized repository, improving configuration management and model governance,' directly satisfying the need to store and manage metadata centrally. However, it does not explicitly mention support for 'formal data names,' 'comprehensive data definitions,' or 'precise data integrity rules,' making its coverage strong but not fully comprehensive.",
   "ability": "The ability to store, manage and retrieve the meta data that describe the digital twin model. The model can include formal data names, comprehensive data definitions, proper data structures, and precise data integrity rules. ",
   "category": " Data Services",
   "capability": "Digital Twin Model Repository"

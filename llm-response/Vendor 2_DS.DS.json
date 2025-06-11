@@ -1,6 +1,6 @@
 {
-  "score": 8,
-  "justification": "The response states the use of Simcenter for 'domain-specific data management' and Mendix for 'structured storage and retrieval of engineering, simulation, and OT datasets,' directly addressing management and retrieval of specific data types. However, while scalability and structure are mentioned, there is limited detail about efficiency or explicit handling of data characteristics, preventing a perfect score.",
+  "score": 7,
+  "justification": "Vendor 2 demonstrates support for domain-specific data management with 'Simcenter (for simulation and physics-based data)' and 'Mendix Data Hub (for low-code enterprise data orchestration)'. The statement 'scalable, structured storage and retrieval of engineering, simulation, and OT datasets' directly aligns with the ability. However, evidence for 'efficiently handle' and more detail on retrieval mechanisms is somewhat general and lacks explicit examples or quantifiable metrics.",
   "ability": "The ability to efficiently handle, store, and retrieve data based on the distinct characteristics inherent to specific data types.",
   "category": " Data Services",
   "capability": "Domain Specific Data Management"

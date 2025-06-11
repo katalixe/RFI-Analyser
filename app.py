@@ -94,7 +94,7 @@ def get_llm_file(filename: str):
         data = json.load(f)
     return JSONResponse(data)
 
-@app.post("/refresh")
+@app.get("/refresh")
 def run_llm_main():
     try:
         llm_main()

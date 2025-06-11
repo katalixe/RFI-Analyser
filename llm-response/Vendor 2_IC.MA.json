@@ -1,6 +1,6 @@
 {
   "score": 8,
-  "justification": "Vendor 2 cites 'complex mathematical analytics using simulation tools like Simcenter Amesim and HEEDS for model-based engineering and optimization,' which aligns directly with performing mathematical calculations for physics-based models. However, while it mentions simulation and optimization, it is somewhat general and does not specifically mention statistical calculations or provide direct examples of analytics usage in digital twins.",
+  "justification": "Vendor 2 states support for 'complex mathematical analytics using simulation tools like Simcenter Amesim and HEEDS for model-based engineering and optimization', clearly aligning with the ability to perform mathematical and statistical calculations for physics-based models. However, there is no explicit mention of 'statistical calculations,' and the link to Digital twin analytics, while strongly implied, is not directly stated.",
   "ability": "The ability to perform mathematical and statical calculations to enable physics-based and other mathematical models",
   "category": " Intelligence",
   "capability": "Mathematical Analytics (Engineering Calculations)"

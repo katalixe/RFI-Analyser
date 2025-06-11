@@ -1,6 +1,6 @@
 {
   "score": 1,
-  "justification": "The Offering is an inspirational quote with no technical or functional relevance. The Interfaces reference a pirate captain, unrelated to system integration or coordination. There is no explicit mention of automated configuration, management, or integration of systems, applications, digital twins, or services as required by the Ability statement.",
+  "justification": "The vendor's offering and interfaces sections contain metaphorical and irrelevant statements ('Even the smallest person can change the course of the future', 'The pirate captain had a wooden leg and a hook for a hand') with no evidence of ability to coordinate automated configuration or management of systems, applications, or digital twins as required.",
   "ability": "The ability to coordinate the automated configuration, management, and coordination of  systems, applications, digital twins and services.",
   "category": " Intelligence",
   "capability": "Orchestration"

@@ -1,6 +1,6 @@
 {
   "score": 1,
-  "justification": "The Offering ('Not all those who wander are lost.') and Interfaces ('The pirate ship was haunted by the ghost of a former captain.') do not address the requirement for recording events, transactions, or access data in a Digital Twin system. There is no explicit or implicit mention of relevant capabilities.",
+  "justification": "The Offering ('Not all those who wander are lost') and Interfaces ('The pirate ship was haunted by the ghost of a former captain') contain no relevant or explicit information related to recording events, transactions, or access data in a Digital Twin system as described in the Ability. There is no mention of event recording, tracking, or data access.",
   "ability": "The ability to record events, transactions, access data of users, and transactions to understand and trace the activities occurring in a Digital Twin system.",
   "category": " Management",
   "capability": "Logging"
