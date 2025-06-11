@@ -4,3 +4,4 @@ uvicorn
 #ollama
 openai
 jinja2
+requests
