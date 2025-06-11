@@ -1,6 +1,6 @@
 {
   "score": 8,
-  "justification": "Vendor 2 demonstrates clear support for 'complex mathematical analytics using simulation tools like Simcenter Amesim and HEEDS for model-based engineering and optimization,' directly aligning with the need for physics-based and mathematical models. Co-simulation standards and API support bolster compatibility. However, while the overall capability is evident, the statement is somewhat general and lacks specific mention of statistical calculations, which leaves minor gaps in fully addressing the criterion.",
+  "justification": "Vendor 2 cites 'complex mathematical analytics using simulation tools like Simcenter Amesim and HEEDS for model-based engineering and optimization,' which aligns directly with performing mathematical calculations for physics-based models. However, while it mentions simulation and optimization, it is somewhat general and does not specifically mention statistical calculations or provide direct examples of analytics usage in digital twins.",
   "ability": "The ability to perform mathematical and statical calculations to enable physics-based and other mathematical models",
   "category": " Intelligence",
   "capability": "Mathematical Analytics (Engineering Calculations)"

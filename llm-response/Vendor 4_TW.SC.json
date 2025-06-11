@@ -1,6 +1,6 @@
 {
   "score": 1,
-  "justification": "The Offering ('My precious.') and Interfaces ('The pirates sang sea shanties as they sailed.') provide no information related to protecting Digital Twins, security measures, or addressing availability, integrity, or confidentiality. There is no evidence of how security requirements are met.",
+  "justification": "The Offering ('My precious.') and Interfaces ('The pirates sang sea shanties...') do not address the requirement for protecting Digital Twins or addressing security concerns in any way. There is no mention of security, access control, integrity, confidentiality, or availability.",
   "ability": "The ability to protected Digital Twins from unintended or unauthorized access, change or destruction. Security concerns equipment, systems and information, ensuring availability, integrity and confidentiality of information.",
   "category": " Trustworthiness",
   "capability": "Security"

@@ -1,6 +1,6 @@
 {
   "score": 7,
-  "justification": "The Offering describes a 'managed and decentralized ledger... ensuring data integrity and tamper-proof storage' which addresses requirements for immutability and trustworthy automation. Interfaces support REST APIs and mention secure enclaves, aligning with security needs. However, explicit support for 'digital twin applications' and 'smart contracts' is not clearly stated. The response is strong on ledger immutability and integration but lacks direct evidence of digital twin and smart contract functionality.",
+  "justification": "The Offering references a 'managed and decentralized ledger...backed by blockchain, ensuring data integrity and tamper-proof storage,' which aligns with the need for immutability and distributed ledger use. REST APIs and secure enclaves are mentioned as interfaces, supportive of integration and security. However, there is no explicit mention of specific support for digital twin applications, transaction automation, or smart contract execution, which are required for full alignment with the criterion.",
   "ability": "The ability to use distributed ledgers for digital twin applications that require immutable data for digital twin instances, transactions and automation (smart contracts)",
   "category": " Intelligence",
   "capability": "Distributed Ledger and Smart Contracts"

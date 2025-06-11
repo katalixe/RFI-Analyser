@@ -1,6 +1,6 @@
 {
   "score": 9,
-  "justification": "Vendor 2 describes a 'centralized Simulation Model Repository' for managing 'algorithmic models, business rules, test cases, and simulation metadata,' explicitly supporting 'standardize and govern simulation assets.' The mention of Teamcenter for 'versioning, governance, and traceability' aligns with configuration management and model governance. However, while 'retrieve' is implied, explicit retrieval mechanisms are not detailed, preventing a perfect score.",
+  "justification": "Vendor 2 clearly details the provision of a 'centralized Simulation Model Repository', capability to manage 'algorithmic models, business rules, test cases, and simulation metadata', and support for 'model versioning, governance, and traceability.' These directly map to the ability to store, manage, and retrieve models and metadata. Reference to open standards (FMI, JT) and integration further solidifies the response, though exact retrieval workflows are not deeply detailed.",
   "ability": "The ability to store, manage and retrieve the algorithmic codebase, business rules and meta data that describe a simulation model.",
   "category": " Data Services",
   "capability": "Simulation Model Repository"

@@ -1,6 +1,6 @@
 {
   "score": 9,
-  "justification": "Vendor 3 explicitly states support for 'complex mathematical analytics such as engineering calculations, fluid dynamics, stress-strain analysis, and energy flow modeling,' which directly aligns with the ability to perform mathematical and statistical calculations. The mention of integration 'into the digital twin architecture' addresses use within digital twin analytics. Interface support for Python, MATLAB, and HPC strengthens the case. However, statistical calculations are not expressly referenced, which leaves a minor gap for a perfect score.",
+  "justification": "Vendor 3 'provides specialized computational tools...to support complex mathematical analytics' including 'engineering calculations, fluid dynamics, stress-strain analysis, and energy flow modeling', which 'are tightly integrated into the digital twin architecture.' This directly aligns with the requirement to 'perform mathematical and statical calculations to enable physics-based and other mathematical models.' The explicit mention of real-time and batch-based analysis for mission-critical applications further reinforces suitability. Interfaces supporting Python/MATLAB also substantiate usability. No explicit mention of statistical calculations, preventing a perfect score.",
   "ability": "The ability to perform mathematical and statical calculations to enable physics-based and other mathematical models",
   "category": " Intelligence",
   "capability": "Mathematical Analytics (Engineering Calculations)"

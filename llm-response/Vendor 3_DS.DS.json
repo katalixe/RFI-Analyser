@@ -1,6 +1,6 @@
 {
   "score": 8,
-  "justification": "Vendor 3 'supports domain-specific data ingestion and lifecycle management using schema-aware data lakes' and enforces 'data quality, lineage, and retention policies tailored to each domain.' This directly supports efficient handling, storage, and retrieval of domain-specific data. The mention of 'integration with industry-specific data standards' further evidences domain-specific support. However, efficiency is implied but not quantitatively demonstrated, and retrieval specifics are not detailed, preventing a perfect score.",
+  "justification": "Vendor 3 'supports domain-specific data ingestion and lifecycle management using schema-aware data lakes' and enforces 'data quality, lineage, and retention policies tailored to each domain,' directly addressing distinct characteristics of data types. Interfaces mention integration with standards like IEC 61850 and ISO 15926, showing support for domain specificity. However, there is limited detail on actual retrieval mechanisms and efficiency beyond schema awareness and standard integration.",
   "ability": "The ability to efficiently handle, store, and retrieve data based on the distinct characteristics inherent to specific data types.",
   "category": " Data Services",
   "capability": "Domain Specific Data Management"

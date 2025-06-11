@@ -1,6 +1,6 @@
 {
   "score": 1,
-  "justification": "The vendor's Offering and Interfaces do not mention distributed ledgers, digital twin applications, immutable data, or smart contracts. There is no evidence in the provided text that any part of the Ability requirement is addressed.",
+  "justification": "The vendor's Offering ('Even the smallest person...') and Interfaces ('The pirate captain...') do not mention distributed ledgers, digital twins, immutable data, or smart contracts. There is no explicit or implicit connection to the required ability.",
   "ability": "The ability to use distributed ledgers for digital twin applications that require immutable data for digital twin instances, transactions and automation (smart contracts)",
   "category": " Intelligence",
   "capability": "Distributed Ledger and Smart Contracts"

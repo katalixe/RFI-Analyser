@@ -1,6 +1,6 @@
 {
   "score": 9,
-  "justification": "The response details 'intelligent tiered storage' categorizing data into 'Hot, Cool, and Archive layers' based on 'real-time access, aging, and compliance needs.' 'Automated lifecycle policies' and preservation for 'long-term analytics and regulatory auditing' directly address the ability. The linkage to reducing cost is implicit in 'cost-efficiency.' However, there is no explicit mention of user-driven data organization or customization, slightly limiting the completeness.",
+  "justification": "Vendor 3 'enables intelligent tiered storage in Cloud 3 that classifies Digital Twin data into Hot, Cool, and Archive layers based on real-time access, aging, and compliance needs.' 'Automated lifecycle policies' address cost and management effort. The offering closely matches the required ability to store, organize, and retrieve data by access frequency and retention duration. While strong, there are no specific examples of retrieval processes or end-user experience, slightly limiting clarity.",
   "ability": "The ability to store, organize and retrieve data  based on how frequently it will be accessed and how long it will be retained.",
   "category": " Data Services",
   "capability": "Data Storage and Archive Services"

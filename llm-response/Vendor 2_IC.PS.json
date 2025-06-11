@@ -1,6 +1,6 @@
 {
   "score": 7,
-  "justification": "Vendor 2 describes 'prescriptive decision-making using built-in ML engines and rule-based systems' and mentions insights from digital twin simulations, aligning with requirements for recommendations based on business rules and AI logic. However, while it references 'suggest the best next actions' and leverages analytics/workflow, there is no explicit mention of workflow creation or specific mechanisms for action delivery, leaving some ambiguity about full compliance.",
+  "justification": "Vendor 2 states that it enables prescriptive decision-making using 'built-in ML engines and rule-based systems,' and that insights are derived from digital twin simulations. This demonstrates alignment with the requirement for prescriptive recommendations leveraging analytics, business rules, and digital twins. However, there is no explicit mention of combining workflow or how actions are delivered to ensure business outcomes, so supporting detail is only partial.",
   "ability": "The ability to create prescriptive recommendations based on business rules and AI logic to suggest the best next actions to take when a pre-determined event happens. ",
   "category": " Intelligence",
   "capability": "Prescriptive Recommendations"

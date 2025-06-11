@@ -1,6 +1,6 @@
 {
   "score": 8,
-  "justification": "Vendor 2 describes integrating safety protocols via simulation, validation, and real-time analytics, with explicit mention of mitigating scenarios like equipment failure and environmental hazards before deployment ('modeled and mitigated virtually'). They reference safety standards (IEC 61508, ISO 13849), giving evidence of compliance with best practices. However, while strong, there is no explicit statement or quantified assurance regarding 'unacceptable risk' levels, leaving a slight gap in fully meeting the requirement.",
+  "justification": "Vendor 2 provides concrete evidence of safety integration through simulation, validation, and real-time analytics ('Simcenter Safety Analysis, MindSphere Health Monitoring, SIPLUS extreme hardware...mitigated virtually'). Interfaces detail standard protocols and compliance with safety and data standards ('IEC 61508, ISO 13849'). However, while strong, the response does not detail how risk acceptability thresholds are set or monitored in practice. Therefore, while thorough, it lacks ultimate clarity on the ongoing assessment and operationalization of 'unacceptable risk,' justifying a score below perfect.",
   "ability": "The ability to operate digital twins without causing unacceptable risk of physical injury or damage to the health of people, either directly, or indirectly as a result of damage to property or to the environment",
   "category": " Trustworthiness",
   "capability": "Safety"

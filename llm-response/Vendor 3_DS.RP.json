@@ -1,6 +1,6 @@
 {
   "score": 8,
-  "justification": "Vendor 3 addresses metadata management explicitly: 'supports metadata tagging, change history tracking, and model validation' and offers 'a centralized model repository.' Versioning and governance are supported via 'version, and manage complex asset hierarchies' and 'secure model governance and versioning workflows.' However, there is limited explicit mention of 'formal data names, comprehensive data definitions, proper data structures, and precise data integrity rules,' so full coverage is not clear.",
+  "justification": "Vendor 3's offering describes a 'centralized model repository', 'support for engineering ontologies', and 'metadata tagging', directly addressing storage and management of metadata and data structures. 'Change history tracking' and 'model validation' support configuration management and integrity. The interfaces mention ISO standards and REST APIs, supporting retrieval and governance. However, while 'comprehensive data definitions', 'data integrity rules', and 'proper data structures' are implied, they are not explicitly detailed, preventing a perfect score.",
   "ability": "The ability to store, manage and retrieve the meta data that describe the digital twin model. The model can include formal data names, comprehensive data definitions, proper data structures, and precise data integrity rules. ",
   "category": " Data Services",
   "capability": "Digital Twin Model Repository"

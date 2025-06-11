@@ -1,6 +1,6 @@
 {
   "score": 1,
-  "justification": "The Offering and Interfaces sections do not mention algorithms, training, decentralized devices, data privacy, or machine learning. No reference is made to data, security, or any of the explicit requirements in the Ability statement.",
+  "justification": "The Offering and Interfaces do not reference algorithm training, digital twins, edge devices, federated learning, data privacy, or security. There is no explicit or implicit evidence that the requirement for decentralized algorithm training without data sharing is addressed.",
   "ability": "The ability to train an algorithm across multiple decentralized digital twin edge devices or servers holding local data samples, without exchanging their data samples.",
   "category": " Intelligence",
   "capability": "Federated Learning"

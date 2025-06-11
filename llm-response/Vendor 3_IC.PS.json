@@ -1,6 +1,6 @@
 {
   "score": 9,
-  "justification": "The Offering explicitly states 'delivering prescriptive guidance using embedded AI, operational rules, and contextual awareness' and describes suggesting 'optimal next steps' (e.g., prevent a fault, adjust a parameter), directly mapping to the requirement for prescriptive recommendations. However, while strong, minor details about the workflow and full integration with business outcomes are described generally ('to create actions and deliver business outcomes') rather than providing concrete examples or methods, slightly limiting completeness.",
+  "justification": "Vendor 3 explicitly states Cloud 3 'delivers prescriptive guidance using embedded AI, operational rules, and contextual awareness' and 'suggests optimal next steps – whether to prevent a fault, adjust a parameter, or dispatch a maintenance team,' directly matching the requirement for prescriptive recommendations based on analytics, business rules, and workflow. However, no concrete examples or evidence of workflow integration are provided, which slightly limits completeness.",
   "ability": "The ability to create prescriptive recommendations based on business rules and AI logic to suggest the best next actions to take when a pre-determined event happens. ",
   "category": " Intelligence",
   "capability": "Prescriptive Recommendations"

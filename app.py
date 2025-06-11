@@ -7,6 +7,7 @@ from fastapi.responses import FileResponse
 import yaml
 import os
 from azure.storage.blob import BlobServiceClient
+from llm import main as llm_main
 
 app = FastAPI()
 templates = Jinja2Templates(directory="templates")
@@ -92,4 +93,12 @@ def get_llm_file(filename: str):
         import json
         data = json.load(f)
     return JSONResponse(data)
+
+@app.post("/refresh")
+def run_llm_main():
+    try:
+        llm_main()
+        return {"status": "success"}
+    except Exception as e:
+        return JSONResponse({"status": "error", "error": str(e)}, status_code=500)
 

@@ -1,6 +1,6 @@
 {
-  "score": 9,
-  "justification": "The Offering explicitly describes real-time monitoring, capturing, and analysis of telemetry and data streams ('real-time monitoring by capturing and analyzing telemetry data,' 'processing and analyzing data streams,' 'instant detection'), directly supporting continuous, low-latency information. Interfaces detail support for relevant protocols and compliance standards, but lack explicit reference to user-facing presentation or interactive capabilities. The evidence is strong for real-time data delivery and analysis, but is slightly weakened by the omission of interactive features, justifying a score of 9.",
+  "score": 8,
+  "justification": "The Offering describes 'real-time monitoring' and 'instant detection of patterns and anomalies,' citing 'immediate insights and alerts.' Interfaces support relevant protocols (MQTT, HTTP) and security compliance. However, there is no explicit reference to 'zero or low latency' metrics or interactive presentation—language like 'real-time' and 'instant' is strong but lacks quantitative latency evidence or concrete examples of user interaction.",
   "ability": "The ability to present and interact with continuously updated information streaming at zero or low latency.",
   "category": " User Experience",
   "capability": "Real-time Monitoring"

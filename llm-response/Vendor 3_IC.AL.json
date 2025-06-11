@@ -1,6 +1,6 @@
 {
   "score": 7,
-  "justification": "Vendor 3 clearly addresses the ability to trigger and route alerts, escalate anomalies, and tailor notifications by various criteria (severity, asset type, etc.). Interfaces include multiple integration methods and security features. However, there is no explicit mention of the capability to 'display and manage' alerts, message queues, or triggers within a user interface; the response focuses on notification delivery and integration, not full lifecycle alert management.",
+  "justification": "Vendor 3 offers advanced alerting, real-time notification, and escalation, with notifications 'tailored by severity, asset type, location, or operational context.' Interfaces (Webhooks, REST APIs, MQTT) enable integration and action triggering. However, while 'display and manage' functions are implied, there is no explicit mention of managing message queues, or direct user management/display interfaces for alerts and triggers, which limits full alignment with the requirement.",
   "ability": "The ability to display and manage alerts, messages, message queues, triggers, and notifications",
   "category": " Intelligence",
   "capability": "Alerts and Notification"

@@ -1,6 +1,6 @@
 {
-  "score": 7,
-  "justification": "The Offering states it provides a 'robust environment for performing complex mathematical analytics and engineering calculations,' which aligns with the ability to perform mathematical and statistical calculations for physics-based models. However, it does not specifically mention 'statistical' calculations, nor does it directly reference digital twin analytics, making the match strong but not fully comprehensive.",
+  "score": 8,
+  "justification": "The Offering specifies ‘complex mathematical analytics and engineering calculations’ explicitly, which supports the requirement for performing mathematical and physical model computations. However, there is no direct mention of ‘statistical calculations’ or Digital Twin-specific analytics. The description is strong but does not provide exhaustive coverage or examples relating to the full breadth of the requirement.",
   "ability": "The ability to perform mathematical and statical calculations to enable physics-based and other mathematical models",
   "category": " Intelligence",
   "capability": "Mathematical Analytics (Engineering Calculations)"

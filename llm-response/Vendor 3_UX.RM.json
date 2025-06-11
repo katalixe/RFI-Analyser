@@ -1,6 +1,6 @@
 {
-  "score": 9,
-  "justification": "Vendor 3 claims 'real-time monitoring,' 'observe asset behavior...with minimal latency,' and 'real-time data streams are visualized,' directly addressing low-latency streaming and presentation. Supported interfaces (MQTT, WebSockets) and standards bolster reliability. However, while 'visualized in dashboards' and 'event-driven workflows' imply interactivity, there is no explicit mention of user interaction with streaming data, preventing a perfect score.",
+  "score": 8,
+  "justification": "Vendor 3 states 'real-time monitoring', 'minimal latency', and 'real-time data streams...visualized in dashboards', directly addressing the need for continuous, low-latency information for real-time decisions. However, while 'minimal latency' is claimed and interfaces are robust, there is no explicit definition of latency performance or demonstration of true zero or sub-second latency. Interaction capabilities with streaming data are not detailed.",
   "ability": "The ability to present and interact with continuously updated information streaming at zero or low latency.",
   "category": " User Experience",
   "capability": "Real-time Monitoring"

@@ -1,6 +1,6 @@
 {
   "score": 8,
-  "justification": "Vendor 2 describes 'automated orchestration of Digital Twin workflows,' including 'configuration, coordination, and automation of distributed systems, edge devices, and digital twins at scale.' Interfaces (MQTT, AMQP, REST) and compliance are covered. However, while the support for managing and coordinating between systems is clear, the explanation is moderately high-level and does not provide concrete examples or details demonstrating ease or depth of managing 'complex tasks and workflows.'",
+  "justification": "Vendor 2 states the 'enables automated orchestration of Digital Twin workflows' and 'configuration, coordination, and automation of distributed systems, edge devices, and digital twins at scale.' Their offering suggests effective support for coordination and management per the requirement. They also provide 'MQTT, AMQP, and REST interfaces' plus compliance standards, supporting multi-system integration. However, there is no explicit mention of managing 'applications' or 'services' beyond systems/devices/digital twins, which leaves a minor gap versus the full ability description.",
   "ability": "The ability to coordinate the automated configuration, management, and coordination of  systems, applications, digital twins and services.",
   "category": " Intelligence",
   "capability": "Orchestration"

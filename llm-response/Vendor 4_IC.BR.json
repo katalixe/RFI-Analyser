@@ -1,6 +1,6 @@
 {
   "score": 1,
-  "justification": "The vendor's Offering ('The Ring is addictive') and Interfaces ('The pirate ship was haunted by the ghost of a former captain') provide no evidence or reference to the ability to create, manage, or use business rules for digital twin behavior. The response does not address the requirement in any recognizable way.",
+  "justification": "The Offering only states 'The Ring is addictive,' which is unrelated to business rules or digital twin behavior. The Interfaces mention a haunted pirate ship, which does not reference any digital twin or business rules functionality. There is no evidence provided that addresses the ability to create, manage, or use business rules for digital twins as required.",
   "ability": "The ability to create, manage and use business rules that influence the digital twin behavior throughout its lifecycle",
   "category": " Intelligence",
   "capability": "Business Rules"

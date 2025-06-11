@@ -1,6 +1,6 @@
 {
   "score": 8,
-  "justification": "Vendor 3 offers simulation, monitoring, and risk prevention mechanisms embedded in Cloud 3 and enforces safety via validation models, alerts, and restricted controls, specifically 'to minimize the risk of injury, equipment failure, or environmental damage.' The interface supports relevant standards (ISO 12100, IEC 61508), directly addressing operational safety. However, explicit processes or real-world operational evidence are not provided, which prevents a perfect score.",
+  "justification": "Vendor 3 describes simulation, monitoring, and risk prevention as part of Digital Twin safety management, including validation models and alert mechanisms to minimize risk of injury, equipment failure, or environmental damage. Explicit mention of ISO 12100, ISO 13849, and IEC 61508 supports compliance for operational and functional safety. However, there is no direct statement confirming prevention of 'unacceptable risk' or evidence of real-world application; therefore, the response is strong but not flawless.",
   "ability": "The ability to operate digital twins without causing unacceptable risk of physical injury or damage to the health of people, either directly, or indirectly as a result of damage to property or to the environment",
   "category": " Trustworthiness",
   "capability": "Safety"

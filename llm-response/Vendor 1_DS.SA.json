@@ -1,6 +1,6 @@
 {
   "score": 8,
-  "justification": "The Offering describes 'scalable storage solutions with tiered options (Hot, Cool, and Archive) to efficiently manage data based on access frequency and retention needs,' directly addressing storage, organization, and retrieval by frequency and retention. The link between tiered options and cost-efficiency is implied, but explicit mention of retrieval mechanisms or automation is missing, limiting a perfect score.",
+  "justification": "The vendor explicitly mentions 'scalable storage solutions with tiered options (Hot, Cool, and Archive) to efficiently manage data based on access frequency and retention needs,' directly addressing storage, organization, and retrieval according to access frequency and retention. However, there is no specific mention of mechanisms for retrieving data (e.g., interfaces or workflows), so full evidence is slightly lacking.",
   "ability": "The ability to store, organize and retrieve data  based on how frequently it will be accessed and how long it will be retained.",
   "category": " Data Services",
   "capability": "Data Storage and Archive Services"

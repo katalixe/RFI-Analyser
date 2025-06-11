@@ -1,6 +1,6 @@
 {
   "score": 8,
-  "justification": "Vendor 2 states an 'interactive graph-based visualization of digital twin hierarchies' with user abilities to 'view, query, and navigate through connected digital entities,' directly matching the requirement for interactive navigation and presentation of relationships. However, user friendliness for business users is not explicitly detailed, and the language is somewhat technical rather than focusing on ease-of-use, preventing a perfect score.",
+  "justification": "Vendor 2 explicitly describes 'interactive graph-based visualization of digital twin hierarchies' through 'Entity Explorer' and 'customizable UI components,' matching the requirement for interactive, user-friendly navigation. However, there is limited detail on how business users engage with or interact with the hierarchies beyond generic terms like 'view, query, and navigate.' The evidence is strong but would benefit from more specific examples of user-friendly interaction.",
   "ability": "The ability to present Digital Twin entities and their hierarchical or graph-based relationships in an interactive way",
   "category": " User Experience",
   "capability": "Entity Relationship Visualization"

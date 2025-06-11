@@ -1,6 +1,6 @@
 {
   "score": 9,
-  "justification": "Vendor 2 'facilitates API-first architecture...enabling Digital Twin systems to publish RESTful and GraphQL APIs for both internal and external consumers,' directly supporting API exposure to various developer groups. The mention of 'OpenAPI-compliant interfaces' and integration with third-party and partner ecosystems further substantiates this. However, there is no explicit mention of abstracting underlying implementation complexity for developers, which would have fully addressed the criterion.",
+  "justification": "Vendor 2 explicitly states API-first architecture ('enabling Digital Twin systems to publish RESTful and GraphQL APIs for both internal and external consumers') and supports integration ('simplifies integration with third-party applications and partner ecosystems'). OpenAPI-compliant interfaces, OData, OAuth 2.0, SAML, and security standards are detailed, directly aligning with the requirement. However, while strong, the response does not expound on ease of use for developers unfamiliar with product internals, so is not absolutely perfect.",
   "ability": "The ability for the digital twin to publish APIs to external, partner, and internal developers to access data and services.",
   "category": " Integration",
   "capability": "API Services"

@@ -1,6 +1,6 @@
 {
   "score": 7,
-  "justification": "Vendor 2 'offers real-time alerting and notification capabilities,' including 'role-based notifications, condition-based alerts, and escalation workflows,' aligning with the requirement to 'display and manage alerts...triggers, and notifications.' However, the response lacks direct mention of 'message queues' and does not specify the full extent of alert/message management. The interface list and compliance information support secure and resilient delivery but do not address message/alert display or manual intervention in depth.",
+  "justification": "Vendor 2 describes 'real-time alerting and notification capabilities,' including 'role-based notifications' and 'condition-based alerts,' which partially align with managing alerts, messages, and notifications. Protocol support (WebSockets, MQTT, HTTP) implies technical compatibility. However, there is no explicit mention of 'displaying and managing alerts, message queues, or triggers,' nor detailed evidence of intervention mechanisms for ongoing processes as required. The response is strong on delivery and compliance but lacks direct confirmation of management and intervention functions.",
   "ability": "The ability to display and manage alerts, messages, message queues, triggers, and notifications",
   "category": " Intelligence",
   "capability": "Alerts and Notification"
