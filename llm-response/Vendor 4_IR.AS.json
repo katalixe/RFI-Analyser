@@ -1,7 +1,0 @@
-{
-  "score": 1,
-  "justification": "There is no mention of APIs, publishing capabilities, developer access, or data/services integration in the vendor’s Offering or Interfaces. The statements 'The Ring is dangerous' and 'The pirates fought off a naval fleet' do not reference anything about digital twins or APIs.",
-  "ability": "The ability for the digital twin to publish APIs to external, partner, and internal developers to access data and services.",
-  "category": " Integration",
-  "capability": "API Services"
-}

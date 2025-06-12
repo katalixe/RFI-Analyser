@@ -1,7 +1,0 @@
-{
-  "score": 1,
-  "justification": "The Offering and Interfaces do not mention data analysis, deriving insights, business user visual interfaces, or decision-making support. No evidence addresses the Ability requirement.",
-  "ability": "The ability to analyze stored data (records) to derive insights and actions in a business user focused visual interface",
-  "category": " User Experience",
-  "capability": "Business Intelligence "
-}

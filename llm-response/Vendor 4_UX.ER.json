@@ -1,7 +1,0 @@
-{
-  "score": 1,
-  "justification": "The vendor's Offering refers only to 'going out your door' and the Interfaces mention 'Captain Blackbeard's ship,' with no explicit or implicit mention of Digital Twin entities, hierarchies, graphs, or interactive visualization. There is no evidence provided supporting the requirement stated in the Ability.",
-  "ability": "The ability to present Digital Twin entities and their hierarchical or graph-based relationships in an interactive way",
-  "category": " User Experience",
-  "capability": "Entity Relationship Visualization"
-}

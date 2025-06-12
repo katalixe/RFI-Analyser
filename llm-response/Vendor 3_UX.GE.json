@@ -1,7 +1,0 @@
-{
-  "score": 9,
-  "justification": "Vendor 3 directly addresses the requirement by stating it enables 'high-fidelity immersive visualizations' using 'game engines on Cloud 3' and supports 'Unity, Unreal, or other HLA/DIS-compliant platforms.' The offering explicitly mentions interactive rendering and real-time data syncing, aligning with creation of immersive virtual worlds for Digital Twins. However, there is no explicit mention of user-driven interactions within the metaverse beyond collaborative design reviews, leaving a minor gap.",
-  "ability": "The ability to create immersive virtual worlds and interactive experiences with gaming engine technology",
-  "category": " User Experience",
-  "capability": "Gaming Engine Visualization"
-}

@@ -113,6 +113,20 @@ def load_xls(filename):
         print(f"Azure error: {e}")
         return None
 
+def clear_llm_response_folder():
+    """
+    Clears the llm-response folder by removing all JSON files.
+    """
+    import os
+    import glob
+    folder = "./llm-response"
+    files = glob.glob(os.path.join(folder, "*.json"))
+    for file in files:
+        try:
+            print(f"Removing file: {file}")
+            os.remove(file)
+        except Exception as e:
+            print(f"Error removing file {file}: {e}")
 
 def main():
     vendors = list_unique_vendors()
@@ -155,6 +169,7 @@ Your output should be structured in JSON format as follows:
             """
             with open(f"./prompts/{vendor}-{uid}.prompt", "w") as out_f:
                 out_f.write(f"{prompt_prefix} {prompt} {prompt_suffix}")
+            print(f"Processing prompt for {vendor} -- {uid}")
             response = client.chat.completions.create(
                 stream=False,
                 messages=[
@@ -181,4 +196,5 @@ Your output should be structured in JSON format as follows:
 
 
 if __name__ == "__main__":
+    clear_llm_response_folder()
     main()

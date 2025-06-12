@@ -1,7 +1,0 @@
-{
-  "score": 8,
-  "justification": "Vendor 2 demonstrates integration of safety protocols in digital twin deployments using 'simulation, validation, and real-time analytics,' explicitly mentioning risk mitigation for 'equipment failure, human error, and environmental hazards.' Conformance to standards like IEC 61508 and ISO 13849 strengthens their claim. However, while coverage appears thorough, explicit evidence of ongoing monitoring or a detailed process for consistently avoiding all 'unacceptable risk' could be clearer.",
-  "ability": "The ability to operate digital twins without causing unacceptable risk of physical injury or damage to the health of people, either directly, or indirectly as a result of damage to property or to the environment",
-  "category": " Trustworthiness",
-  "capability": "Safety"
-}

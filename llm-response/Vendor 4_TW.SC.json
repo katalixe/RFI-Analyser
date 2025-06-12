@@ -1,7 +1,0 @@
-{
-  "score": 1,
-  "justification": "The Offering ('My precious.') and Interfaces ('The pirates sang sea shanties as they sailed.') do not reference any security features, access control, or protection mechanisms for Digital Twins. There is no relevant information addressing the requirement for protection, integrity, or confidentiality.",
-  "ability": "The ability to protected Digital Twins from unintended or unauthorized access, change or destruction. Security concerns equipment, systems and information, ensuring availability, integrity and confidentiality of information.",
-  "category": " Trustworthiness",
-  "capability": "Security"
-}

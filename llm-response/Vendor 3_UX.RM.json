@@ -1,7 +1,0 @@
-{
-  "score": 8,
-  "justification": "Vendor 3 provides 'real-time monitoring' with 'minimal latency,' offering dashboards for visualization and integration with workflows. The interface support (MQTT, OPC UA, AMQP, WebSockets, REST APIs) enables interaction with streams. However, 'zero or low latency' is addressed only as 'minimal latency,' which lacks explicit performance metrics, and direct evidence of interactive capabilities beyond visualization is somewhat implicit.",
-  "ability": "The ability to present and interact with continuously updated information streaming at zero or low latency.",
-  "category": " User Experience",
-  "capability": "Real-time Monitoring"
-}

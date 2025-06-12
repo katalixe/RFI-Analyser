@@ -1,7 +1,0 @@
-{
-  "score": 9,
-  "justification": "Vendor 2 explicitly describes a centralized Simulation Model Repository that 'manages algorithmic models, business rules, test cases, and simulation metadata,' directly aligning with the requirement to 'store, manage and retrieve the algorithmic codebase, business rules and meta data.' The solution's focus on versioning, governance, and traceability supports improved configuration management. However, there is minimal direct mention of retrieval functionality, preventing a perfect score.",
-  "ability": "The ability to store, manage and retrieve the algorithmic codebase, business rules and meta data that describe a simulation model.",
-  "category": " Data Services",
-  "capability": "Simulation Model Repository"
-}

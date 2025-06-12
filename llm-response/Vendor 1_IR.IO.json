@@ -1,7 +1,0 @@
-{
-  "score": 8,
-  "justification": "The response explicitly details offerings (Event Grid, Cloud 1 Service Bus, IoT Central) that 'facilitate seamless integration...with control systems, IoT devices/sensors, and SCADA' and enable 'real-time data flow and interoperability between OT and IoT applications and Digital Twin systems.' However, examples or evidence of practical implementations and specific integration protocols are not provided, slightly limiting completeness.",
-  "ability": "The ability to integrate directly with control systems and IOT devices/sensors, SCADA ",
-  "category": " Integration",
-  "capability": "OT/IoT system integration"
-}

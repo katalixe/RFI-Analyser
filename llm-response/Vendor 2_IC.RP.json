@@ -1,7 +1,0 @@
-{
-  "score": 8,
-  "justification": "Vendor 2 states 'customizable, real-time reporting through MindSphere and Mendix’s dashboarding tools,' and notes support for 'aggregat[ing] telemetry and digital twin data into visual insights,' directly addressing configurability and stakeholder insights. Compliance reporting is also referenced. However, it does not detail the granularity or specific customization options, making the response strong but not perfectly exhaustive.",
-  "ability": "The ability to generate configurable and customizable reports to get insights into the data",
-  "category": " Intelligence",
-  "capability": "Reporting"
-}

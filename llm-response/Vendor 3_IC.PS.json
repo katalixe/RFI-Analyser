@@ -1,7 +1,0 @@
-{
-  "score": 8,
-  "justification": "The Offering states 'Cloud 3 enables Digital Twins to go beyond diagnostics by delivering prescriptive guidance using embedded AI, operational rules, and contextual awareness', and describes delivering 'optimal next steps.' This aligns strongly with the Ability's requirement for prescriptive recommendations using business rules and AI. However, while the mechanism is outlined, there is a lack of detail about workflow integration or how business outcomes are tracked, preventing a perfect score.",
-  "ability": "The ability to create prescriptive recommendations based on business rules and AI logic to suggest the best next actions to take when a pre-determined event happens. ",
-  "category": " Intelligence",
-  "capability": "Prescriptive Recommendations"
-}

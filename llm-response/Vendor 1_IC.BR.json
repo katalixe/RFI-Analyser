@@ -1,7 +1,0 @@
-{
-  "score": 5,
-  "justification": "The vendor states that Cloud 1 Digital Twins 'enables the implementation of business rules by integrating with Cloud 1 Logic Apps,' which partially addresses the need to create and use business rules. However, there is no explicit mention of capabilities for managing business rules or influencing digital twin behavior 'throughout its lifecycle.' The evidence is limited and somewhat vague.",
-  "ability": "The ability to create, manage and use business rules that influence the digital twin behavior throughout its lifecycle",
-  "category": " Intelligence",
-  "capability": "Business Rules"
-}

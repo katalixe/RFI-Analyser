@@ -1,7 +1,0 @@
-{
-  "score": 8,
-  "justification": "Vendor 2 provides strong evidence of fulfilling the security requirement through 'end-to-end digital twin security' and compliance with standards such as ISO 27001 and NIST SP 800-53. Explicit mention of OAuth 2.0, SAML, TLS 1.3 supports technical controls for access, integrity, and confidentiality. However, there's limited detail on specific mechanisms to prevent 'unintended or unauthorized change or destruction,' making the answer robust, yet not absolutely perfect.",
-  "ability": "The ability to protected Digital Twins from unintended or unauthorized access, change or destruction. Security concerns equipment, systems and information, ensuring availability, integrity and confidentiality of information.",
-  "category": " Trustworthiness",
-  "capability": "Security"
-}

@@ -1,7 +1,0 @@
-{
-  "score": 8,
-  "justification": "Vendor 2 clearly addresses device provisioning, onboarding, configuration, maintenance (firmware updates), monitoring, and diagnostics: 'supports secure device onboarding, configuration, firmware updates, diagnostics, and remote monitoring.' Compliance and protocol support are also listed. However, there is no explicit reference to operation 'as part of Digital Twin environment,' which leaves a minor gap in alignment with the requirement.",
-  "ability": "The ability to provision and authenticate, configure, maintain, monitor and diagnose connected IoT devices operating as part of Digital Twin environment",
-  "category": " Management",
-  "capability": "Device Management"
-}

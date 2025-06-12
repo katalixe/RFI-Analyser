@@ -1,7 +1,0 @@
-{
-  "score": 1,
-  "justification": "The Offering ('What's it got in its pocketses?') and Interfaces ('Land ho.') provide no information addressing the requirement for safe operation of digital twins, as specified in the Ability. There are no references to risk, injury, health, property, or environmental safety.",
-  "ability": "The ability to operate digital twins without causing unacceptable risk of physical injury or damage to the health of people, either directly, or indirectly as a result of damage to property or to the environment",
-  "category": " Trustworthiness",
-  "capability": "Safety"
-}

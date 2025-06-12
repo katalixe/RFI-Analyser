@@ -1,7 +1,0 @@
-{
-  "score": 9,
-  "justification": "Vendor 3 explicitly describes 'domain-specific data ingestion and lifecycle management,' employing 'schema-aware data lakes' and 'data quality, lineage, and retention policies tailored to each domain.' Examples include 'electrical grid analytics, aviation telemetry, and industrial asset categories,' showing alignment with efficient storage, management, and retrieval for varied data types. However, while strong, there is minimal mention of retrieval mechanics, preventing a perfect score.",
-  "ability": "The ability to efficiently handle, store, and retrieve data based on the distinct characteristics inherent to specific data types.",
-  "category": " Data Services",
-  "capability": "Domain Specific Data Management"
-}

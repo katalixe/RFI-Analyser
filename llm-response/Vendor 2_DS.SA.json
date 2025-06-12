@@ -1,7 +1,0 @@
-{
-  "score": 9,
-  "justification": "Vendor 2’s solution provides 'tiered storage options (Hot, Cool, and Archive)' and 'supports long-term historical data retention,' directly addressing the need to store, organize, and retrieve data by access frequency and retention duration. The offering’s purpose of optimizing storage costs aligns with reducing management effort. Interfaces mention compliance and lifecycle governance. However, explicit examples of data retrieval processes or automation specifics are not provided, preventing a perfect score.",
-  "ability": "The ability to store, organize and retrieve data  based on how frequently it will be accessed and how long it will be retained.",
-  "category": " Data Services",
-  "capability": "Data Storage and Archive Services"
-}

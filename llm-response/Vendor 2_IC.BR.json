@@ -1,7 +1,0 @@
-{
-  "score": 8,
-  "justification": "Vendor 2 states users can 'define and manage business rules through the Mendix low-code platform...to control Digital Twin behavior throughout its lifecycle,' directly aligning with the requirement. The mention of 'rule-based triggers, automated decision trees, and custom logic' provides evidence of functionality, but details on management workflows or precise rule deployment are somewhat high-level and lack granular procedural specifics.",
-  "ability": "The ability to create, manage and use business rules that influence the digital twin behavior throughout its lifecycle",
-  "category": " Intelligence",
-  "capability": "Business Rules"
-}

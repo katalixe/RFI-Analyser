@@ -1,7 +1,0 @@
-{
-  "score": 6,
-  "justification": "The Offering states Cloud 1 API Manager 'enables seamless integration' and 'simplifies Digital Twin development by abstracting backend complexities,' which relates to the ability required. However, there is no explicit mention of the capability for the digital twin to 'publish APIs to external, partner, and internal developers.' Support for compliance standards is listed, but concrete details on the publication or developer-access process are absent.",
-  "ability": "The ability for the digital twin to publish APIs to external, partner, and internal developers to access data and services.",
-  "category": " Integration",
-  "capability": "API Services"
-}

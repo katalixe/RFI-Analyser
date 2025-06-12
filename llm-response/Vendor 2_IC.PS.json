@@ -1,7 +1,0 @@
-{
-  "score": 7,
-  "justification": "Vendor 2's MindSphere Prescriptive AI Engine 'enables prescriptive decision-making using built-in ML engines and rule-based systems' and derives 'insights from sensor data, historical performance, and digital twin simulations.' This directly relates to creating prescriptive recommendations as required. However, the response does not detail the workflow/action mechanism or explicitly describe how business outcomes are delivered, which limits the evidence and prevents a full score.",
-  "ability": "The ability to create prescriptive recommendations based on business rules and AI logic to suggest the best next actions to take when a pre-determined event happens. ",
-  "category": " Intelligence",
-  "capability": "Prescriptive Recommendations"
-}

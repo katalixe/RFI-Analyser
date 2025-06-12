@@ -1,7 +1,0 @@
-{
-  "score": 7,
-  "justification": "Vendor 2’s Offering states the ability for ‘high-fidelity modeling, multi-physics simulation, and what-if analysis of digital twins’ and ‘operator training simulations,’ which aligns well with the requirements. Interfaces mention support for open formats and integration but do not specifically address use of video or audio. There is no clear reference to using ‘past historical information’ or all input types such as video and animation. The response is strong but not fully comprehensive.",
-  "ability": "The ability to create approximate imitation of a process or a system using past historical information, physical models, video, audio, and animation, what-if-scenarios.",
-  "category": " Intelligence",
-  "capability": "Simulation"
-}

@@ -1,7 +1,0 @@
-{
-  "score": 8,
-  "justification": "Vendor 3 states that BI tools provide 'visual dashboards and reports' and support 'filtering, drill-down, trend detection, and stakeholder-specific metrics,' directly addressing business user-focused visual analysis. The mention of stakeholder-specific metrics implies alignment with different personas. However, while it indicates operational and strategic insights, there is no explicit reference to real-time data or immediate decision-making capabilities; this ambiguity prevents a perfect score.",
-  "ability": "The ability to analyze stored data (records) to derive insights and actions in a business user focused visual interface",
-  "category": " User Experience",
-  "capability": "Business Intelligence "
-}

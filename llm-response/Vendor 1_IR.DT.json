@@ -1,7 +1,0 @@
-{
-  "score": 8,
-  "justification": "The vendor provides explicit offerings—'efficient data movement, transformation, and synchronization' and 'a unified platform for managing APIs'—that support integration and interoperability between Digital Twin applications. Furthermore, compliance with NIST SP 800-53 Rev. 5 and FedRAMP is detailed for interfaces. However, while the descriptions are strong, there is insufficient specific evidence of direct integration with existing third-party Digital Twin instances or technologies, preventing a perfect score.",
-  "ability": "The ability to integrate or access information from existing digital twin instances ",
-  "category": " Integration",
-  "capability": "Digital Twin Integration"
-}

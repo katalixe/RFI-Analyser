@@ -1,7 +1,0 @@
-{
-  "score": 1,
-  "justification": "The Offering ('My precious.') and Interfaces ('The pirate ship was attacked by a rival crew.') provide no relevant information on storing, managing, or retrieving metadata for digital twin models, nor do they reference data structures or central repositories.",
-  "ability": "The ability to store, manage and retrieve the meta data that describe the digital twin model. The model can include formal data names, comprehensive data definitions, proper data structures, and precise data integrity rules. ",
-  "category": " Data Services",
-  "capability": "Digital Twin Model Repository"
-}

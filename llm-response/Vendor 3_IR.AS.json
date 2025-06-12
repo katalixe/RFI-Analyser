@@ -1,7 +1,0 @@
-{
-  "score": 8,
-  "justification": "Vendor 3 explicitly states a 'full-fledged API gateway service ... allows Digital Twin applications to expose services and data to internal teams, partners, and third-party systems,' matching the requirement for publishing APIs to different audiences. The offering details security and developer-friendly interface support ('rate limiting, authentication, API versioning,' 'supports OpenAPI, REST, GraphQL, and WebHooks'). However, it does not explicitly mention abstraction of implementation details to simplify development, which is part of the criterion.",
-  "ability": "The ability for the digital twin to publish APIs to external, partner, and internal developers to access data and services.",
-  "category": " Integration",
-  "capability": "API Services"
-}

@@ -1,7 +1,0 @@
-{
-  "score": 9,
-  "justification": "Vendor 2 demonstrates 'powerful OT/IoT system integration via MindSphere and Industrial Edge, enabling bi-directional communication between control systems, IoT sensors, SCADA, and Cloud 2,' and lists supported protocols (OPC UA, MQTT, Modbus, REST APIs) critical for integration. The mention of 'real-time ingestion, processing, and analysis' and 'built-in connectors' further supports the requirement. However, while integration is well-detailed, explicit mention of seamless data flow with Digital Twin systems is implied but not directly stated, preventing a perfect score.",
-  "ability": "The ability to integrate directly with control systems and IOT devices/sensors, SCADA ",
-  "category": " Integration",
-  "capability": "OT/IoT system integration"
-}

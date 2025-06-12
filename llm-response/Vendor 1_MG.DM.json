@@ -1,7 +1,0 @@
-{
-  "score": 9,
-  "justification": "The response extensively covers device provisioning ('zero-touch, just-in-time provisioning'), authentication (implied via security frameworks: GDPR, ISO, SOC 2), configuration, maintenance ('updates'), monitoring, and diagnostics across Digital Twin and IoT Hub offerings. Interfaces support standard protocols (MQTT, REST, DTDL) and compliance. However, while monitoring and diagnostic capabilities are stated ('collecting, analyzing, and responding to monitoring data'), explicit diagnostic toolsets or detailed explanations on troubleshooting are minimally described, preventing a perfect score.",
-  "ability": "The ability to provision and authenticate, configure, maintain, monitor and diagnose connected IoT devices operating as part of Digital Twin environment",
-  "category": " Management",
-  "capability": "Device Management"
-}

@@ -1,7 +1,0 @@
-{
-  "score": 8,
-  "justification": "Vendor 2 'enables automated orchestration of Digital Twin workflows' and supports 'configuration, coordination, and automation of distributed systems, edge devices, and digital twins at scale.' Interfaces (MQTT, AMQP, REST) and compliance (CloudEvents, NIST SP 800-53) reinforce orchestration across hybrid environments. However, there is limited explicit mention of the breadth of 'systems, applications, and services' beyond edge devices and digital twins, making the response strong but not fully comprehensive.",
-  "ability": "The ability to coordinate the automated configuration, management, and coordination of  systems, applications, digital twins and services.",
-  "category": " Intelligence",
-  "capability": "Orchestration"
-}

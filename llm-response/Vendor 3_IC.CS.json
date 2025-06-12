@@ -1,7 +1,0 @@
-{
-  "score": 8,
-  "justification": "Vendor 3 describes 'modular development capabilities' enabling rapid composition and recomposition of Digital Twin applications with 'pre-built components, templates, and service blocks,' supporting both business and technical users, which aligns closely with the requirement. However, the text does not explicitly mention 'packaged, reusable business capabilities (PBCs)' or detail how duplication is reduced or citizen development is specifically supported, warranting a deduction for partial detail.",
-  "ability": "The ability to use a modular digital twin application development approach to rapidly compose and recompose digital twin services that deliver use case specific outcomes.",
-  "category": " Intelligence",
-  "capability": "Composition "
-}

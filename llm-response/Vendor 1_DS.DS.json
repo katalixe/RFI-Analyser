@@ -1,7 +1,0 @@
-{
-  "score": 7,
-  "justification": "The Offering states 'domain-specific data management by enabling scalable storage and processing,' which aligns with the ability to handle, store, and retrieve domain-specific data. However, there is limited detail on the efficiency or specific handling tailored to distinct data types. Interfaces reference compliance and security but not directly the efficient retrieval of diverse domain data.",
-  "ability": "The ability to efficiently handle, store, and retrieve data based on the distinct characteristics inherent to specific data types.",
-  "category": " Data Services",
-  "capability": "Domain Specific Data Management"
-}

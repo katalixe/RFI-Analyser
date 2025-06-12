@@ -1,7 +1,0 @@
-{
-  "score": 7,
-  "justification": "The Offering details 'collecting, analyzing, and visualizing log data' and 'capturing and storing telemetry and event data' which support event and transaction logging. Interfaces mention supported protocols and compliance, confirming secure interoperability. However, there is no explicit mention of specifically recording user access data or full traceability in a Digital Twin system, so some required elements are only implied, not confirmed.",
-  "ability": "The ability to record events, transactions, access data of users, and transactions to understand and trace the activities occurring in a Digital Twin system.",
-  "category": " Management",
-  "capability": "Logging"
-}

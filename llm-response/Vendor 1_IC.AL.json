@@ -1,7 +1,0 @@
-{
-  "score": 6,
-  "justification": "The response describes real-time alerts, notifications, and their interfaces (SignalR, Event Hub, Power BI), and mentions mechanisms for ingesting, processing, and notifying users. However, there is little detail on managing message queues or explicit support for managing triggers or direct intervention mechanisms in ongoing processes—most references are to alerts and notifications, not broader management or actionable interventions.",
-  "ability": "The ability to display and manage alerts, messages, message queues, triggers, and notifications",
-  "category": " Intelligence",
-  "capability": "Alerts and Notification"
-}

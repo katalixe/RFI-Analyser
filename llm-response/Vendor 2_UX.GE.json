@@ -1,7 +1,0 @@
-{
-  "score": 8,
-  "justification": "Vendor 2 explicitly supports immersive visualization via Unity, Unreal Engine, and AR/VR tools, describing 'rendering of high-fidelity 3D simulations,' and enabling 'interaction via game-like experiences.' Interfaces include SDKs and standards relevant to gaming engines. However, the response emphasizes visualization, training, and walkthroughs, with limited detail on the depth of 'highly interactive' engagement in a metaverse context as per the Ability statement.",
-  "ability": "The ability to create immersive virtual worlds and interactive experiences with gaming engine technology",
-  "category": " User Experience",
-  "capability": "Gaming Engine Visualization"
-}

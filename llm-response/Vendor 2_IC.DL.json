@@ -1,7 +1,0 @@
-{
-  "score": 8,
-  "justification": "Vendor 2 provides 'tamper-proof transaction logging through integration with Hyperledger Fabric and Ethereum-based distributed ledgers' and details use for 'smart contracts and audit trails in digital twin workflows'. Interfaces listed (REST APIs, JSON-LD, Ethereum-compatible) support interoperability. Compliance with GDPR, SOC 2, ISO 27001 adds credibility to 'immutable transaction integrity and secure recordkeeping.' However, statements on practical deployment and automation are broad, lacking deeper operational specifics, preventing a perfect score.",
-  "ability": "The ability to use distributed ledgers for digital twin applications that require immutable data for digital twin instances, transactions and automation (smart contracts)",
-  "category": " Intelligence",
-  "capability": "Distributed Ledger and Smart Contracts"
-}

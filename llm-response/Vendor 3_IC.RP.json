@@ -1,7 +1,0 @@
-{
-  "score": 9,
-  "justification": "Vendor 3's Offering specifies 'customizable reporting capabilities,' support for 'operational, compliance, and performance reports,' and features such as 'time-based queries, aggregated KPIs, scheduled, shared, or embedded' reports. Stakeholders can use 'visual drill-downs, comparison views, and audit trails.' Reporting aligns with compliance requirements, supporting regulatory needs. This strongly supports configurability, custom insights, and compliance, as required in the Ability. However, minor details about report customization levels (e.g., field selection, layout editing) are not explicitly detailed, precluding a perfect score.",
-  "ability": "The ability to generate configurable and customizable reports to get insights into the data",
-  "category": " Intelligence",
-  "capability": "Reporting"
-}

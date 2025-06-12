@@ -1,7 +1,0 @@
-{
-  "score": 1,
-  "justification": "The Offering and Interfaces sections do not mention any capability related to presenting or interacting with continuously updated, low latency information. No evidence is provided that addresses real-time decision-making or streaming data.",
-  "ability": "The ability to present and interact with continuously updated information streaming at zero or low latency.",
-  "category": " User Experience",
-  "capability": "Real-time Monitoring"
-}

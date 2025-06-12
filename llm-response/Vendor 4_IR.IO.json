@@ -1,7 +1,0 @@
-{
-  "score": 2,
-  "justification": "The Offering and Interfaces sections do not mention integration capabilities, control systems, IoT, or SCADA. There is no explicit or implied reference to supporting interoperability with OT or IoT devices. The provided text is metaphorical and does not address technical integration at all.",
-  "ability": "The ability to integrate directly with control systems and IOT devices/sensors, SCADA ",
-  "category": " Integration",
-  "capability": "OT/IoT system integration"
-}

@@ -1,7 +1,0 @@
-{
-  "score": 8,
-  "justification": "Vendor 3 explicitly offers a 'centralized model repository' and supports 'define, version, and manage complex asset hierarchies,' along with 'metadata tagging' and 'model validation.' The system 'facilitates model-based systems engineering' and supports 'change history tracking.' However, while it mentions managing metadata, data structures, and governance, it lacks explicit details on 'comprehensive data definitions' and 'precise data integrity rules' as directly outlined in the requirement.",
-  "ability": "The ability to store, manage and retrieve the meta data that describe the digital twin model. The model can include formal data names, comprehensive data definitions, proper data structures, and precise data integrity rules. ",
-  "category": " Data Services",
-  "capability": "Digital Twin Model Repository"
-}

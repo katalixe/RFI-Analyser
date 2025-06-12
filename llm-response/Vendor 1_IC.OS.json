@@ -1,7 +1,0 @@
-{
-  "score": 7,
-  "justification": "The response describes orchestration features across multiple services (Event Grid, Service Bus, IoT Central) and mentions real-time distribution, reliable queuing, and workflow management. Interfaces support standard protocols (MQTT, HTTP, AMQP, REST API), enabling integration. However, there is only an implicit reference to 'digital twins' (IoT Central manages devices/data, but does not mention digital twins explicitly) and lacks concrete examples of configuration or coordinated management of digital twins. Coverage is strong for applications and systems, but evidence for digital twins is inferred, not explicit.",
-  "ability": "The ability to coordinate the automated configuration, management, and coordination of  systems, applications, digital twins and services.",
-  "category": " Intelligence",
-  "capability": "Orchestration"
-}

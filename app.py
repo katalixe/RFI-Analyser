@@ -8,6 +8,7 @@ import yaml
 import os
 from azure.storage.blob import BlobServiceClient
 from llm import main as llm_main
+from llm import clear_llm_response_folder
 
 app = FastAPI()
 templates = Jinja2Templates(directory="templates")
@@ -98,6 +99,7 @@ def get_llm_file(filename: str):
 @app.get("/refresh")
 def run_llm_main():
     try:
+        clear_llm_response_folder()
         llm_main()
         return {"status": "success"}
     except Exception as e:

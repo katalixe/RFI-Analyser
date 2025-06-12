@@ -1,7 +1,0 @@
-{
-  "score": 1,
-  "justification": "The Offering and Interfaces sections do not mention storage, management, retrieval, or registration of algorithmic codebase, business rules, meta data, or simulation models. No evidence is provided to address central repository, configuration management, or model governance.",
-  "ability": "The ability to store, manage and retrieve the algorithmic codebase, business rules and meta data that describe a simulation model.",
-  "category": " Data Services",
-  "capability": "Simulation Model Repository"
-}

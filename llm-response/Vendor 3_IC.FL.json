@@ -1,7 +1,0 @@
-{
-  "score": 9,
-  "justification": "Vendor 3 explicitly states support for federated learning 'allowing distributed devices and edge systems to collaboratively train machine learning models without sharing raw data,' which directly matches the need to train across decentralized nodes without data exchange. Claims of 'differential privacy,' 'model aggregation,' and adherence to standards (GDPR, ISO/IEC 27001, SOC 2) address privacy and security. However, while heterogeneity is implied via integration and ONNX/TensorFlow support, the response does not explicitly elaborate on handling heterogeneous data or actors, preventing a perfect score.",
-  "ability": "The ability to train an algorithm across multiple decentralized digital twin edge devices or servers holding local data samples, without exchanging their data samples.",
-  "category": " Intelligence",
-  "capability": "Federated Learning"
-}

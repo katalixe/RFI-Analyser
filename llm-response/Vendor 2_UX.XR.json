@@ -1,7 +1,0 @@
-{
-  "score": 7,
-  "justification": "Vendor 2 describes enabling 'immersive Extended Reality (XR) experiences' and allowing users to 'simulate, interact with, and collaborate on digital representations,' supporting the required immersive and interactive simulation. However, while visual and general XR integration is explicit, there is no specific mention of auditory or haptic enhancements. The support for 'virtual, augmented, or mixed reality' and integration of XR with digital twins address most of the requirement but not all modalities mentioned.",
-  "ability": "The ability to provide an interactive experience of a real-world environment where the objects that reside in the real world are enhanced by computer-generated perceptual information such as visual, auditory, haptic etc.  environment.",
-  "category": " User Experience",
-  "capability": "Extended Reality (XR)"
-}

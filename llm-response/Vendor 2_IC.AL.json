@@ -1,7 +1,0 @@
-{
-  "score": 7,
-  "justification": "Vendor 2 details 'real-time alerting and notification capabilities,' 'role-based notifications,' and 'condition-based alerts,' supporting the ability to display and manage alerts and notifications. However, management of 'message queues,' 'triggers,' or in-depth control/management features are not explicitly confirmed, lowering confidence in full coverage.",
-  "ability": "The ability to display and manage alerts, messages, message queues, triggers, and notifications",
-  "category": " Intelligence",
-  "capability": "Alerts and Notification"
-}
