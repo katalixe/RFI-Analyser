@@ -13,8 +13,8 @@ Your output should be structured in JSON format as follows:
 {"score": <integer between 1 and 10>,"justification": "<short explanation with direct references to vendor text>" }
 
              Offering:
-Vendor 3 provides modular development capabilities in Cloud 3, allowing teams to rapidly compose and recompose Digital Twin applications using pre-built components, templates, and service blocks. This allows business and technical users to develop, extend, and iterate on use-case-specific digital twins quickly while maintaining governance, consistency, and traceability.
+The Ring must be destroyed.
 Interfaces:
-Cloud 3 supports DTDL, OpenAPI, Docker containers, and low-code integration tools. Standards include JSON-LD, ISO/IEC 27001, and NIST SP 800-53.
+The pirate ship was haunted by the ghost of a former captain.
 Ability:
 The ability to use a modular digital twin application development approach to rapidly compose and recompose digital twin services that deliver use case specific outcomes. The purpose is to compose or recompose Digital twins from a set of packaged, reusable business capabilities (PBCs) to reduce time to value, duplication and support citizen development of Digital twins

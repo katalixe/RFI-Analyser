@@ -13,8 +13,8 @@ Your output should be structured in JSON format as follows:
 {"score": <integer between 1 and 10>,"justification": "<short explanation with direct references to vendor text>" }
 
              Offering:
-Vendor 3 enables data-driven decision-making by offering BI tools on Cloud 3 that convert digital twin data into operational, strategic, and compliance insights. Visual dashboards and reports support filtering, drill-down, trend detection, and stakeholder-specific metrics.
+There is some good in this world, and it's worth fighting for.
 Interfaces:
-Supports REST APIs, SQL, OData, and data connectors for enterprise systems. Complies with ISO/IEC 27001, SOC 2, and GDPR.
+The pirates sailed under the Jolly Roger flag.
 Ability:
 The ability to analyze stored data (records) to derive insights and actions in a business user focused visual interface The purpose is to have various personas in operations, technology, and business to make informed real-time decisions.

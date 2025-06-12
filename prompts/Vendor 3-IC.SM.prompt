@@ -13,8 +13,8 @@ Your output should be structured in JSON format as follows:
 {"score": <integer between 1 and 10>,"justification": "<short explanation with direct references to vendor text>" }
 
              Offering:
-Vendor 3 offers high-performance simulation environments on Cloud 3, enabling the creation of dynamic, physics-based models to imitate the behavior of real-world systems. These simulations help organizations test system responses under varying conditions, validate digital twin behavior before deployment, and train maintenance or operational staff.
+The Ring is trying to get back to its master.
 Interfaces:
-Cloud 3 supports FMI, Modelica, SysML, and REST APIs. It complies with ISO 26262, ISO/IEC 27001, and NIST SP 800-53 for simulation integrity and model security.
+The pirates buried their treasure in a secret location.
 Ability:
 The ability to create approximate imitation of a process or a system using past historical information, physical models, video, audio, and animation, what-if-scenarios. The purpose is to imitate the behavior of a physical system in the digital twin before applying to the physical world. Training operations and maintenance teams on simulated digital twins is another purpose of simulation

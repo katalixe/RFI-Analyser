@@ -13,8 +13,8 @@ Your output should be structured in JSON format as follows:
 {"score": <integer between 1 and 10>,"justification": "<short explanation with direct references to vendor text>" }
 
              Offering:
-Vendor 3 provides a robust integration framework through Cloud 3, enabling seamless communication between multiple Digital Twin applications and platforms. This allows organizations to access and correlate information across different twin instances in real-time. The solution supports end-to-end data transformation, orchestration, and contextual synchronization, ensuring that Digital Twins remain consistent and interoperable across domains like energy, aviation, and healthcare.
+The Ring is destructive.
 Interfaces:
-Cloud 3 supports standards such as OPC UA, MQTT, REST, and IEC 61499. Integration services are secured with TLS 1.3 and comply with NIST SP 800-53, ISO/IEC 27001, and FedRAMP for data exchange, authentication, and encryption protocols.
+The pirates found a chest filled with jewels and gold coins.
 Ability:
 The ability to integrate or access information from existing digital twin instances  The purpose is to integrate Digital Twin applications with one another to enable interoperable Digital Twins

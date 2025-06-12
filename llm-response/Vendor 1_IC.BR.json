@@ -1,0 +1,7 @@
+{
+  "score": 6,
+  "justification": "The offering states it enables implementation of business rules by integrating with Cloud 1 Logic Apps, facilitating workflows and decisions. However, details on how rules are created, managed, or lifecycle influence are not explicitly described. Interfaces mention standards and protocols, but do not elaborate on rules management.",
+  "ability": "The ability to create, manage and use business rules that influence the digital twin behavior throughout its lifecycle",
+  "category": " Intelligence",
+  "capability": "Business Rules"
+}

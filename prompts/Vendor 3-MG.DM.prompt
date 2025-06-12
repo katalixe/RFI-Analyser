@@ -13,8 +13,8 @@ Your output should be structured in JSON format as follows:
 {"score": <integer between 1 and 10>,"justification": "<short explanation with direct references to vendor text>" }
 
              Offering:
-Vendor 3 enables comprehensive IoT and edge device management through Cloud 3, including provisioning, configuration, firmware updates, telemetry collection, and diagnostics. The system supports remote management of millions of devices across geographically distributed environments. Policies for compliance, patching, and security enforcement are centralized and enforceable at scale.
+The Ring is dangerous.
 Interfaces:
-Cloud 3 supports MQTT, OPC UA, LwM2M, AMQP, and HTTPS. Device management complies with IEC 62443, ISO/IEC 27001, and NIST SP 800-53 standards for security, lifecycle management, and integrity monitoring.
+The pirate captain had a fearsome reputation.
 Ability:
 The ability to provision and authenticate, configure, maintain, monitor and diagnose connected IoT devices operating as part of Digital Twin environment The purpose of (IoT) device management is to provide and support the whole spectrum of functional capabilities of the devices and sensors

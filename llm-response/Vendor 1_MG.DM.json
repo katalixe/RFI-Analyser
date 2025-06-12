@@ -1,0 +1,7 @@
+{
+  "score": 9,
+  "justification": "The offering explicitly addresses provisioning (“zero-touch, just-in-time provisioning…”), authentication (via secure communication and compliance with standards such as GDPR, ISO, SOC 2), configuration, monitoring, update, and diagnostic capabilities across multiple products. Phrases like 'comprehensive device management', 'monitor, manage, and update', and 'collecting, analyzing, and responding to monitoring data' closely align with requirement. Interfaces detail protocol and security compliance supporting functionality. However, there is limited explicit mention of 'diagnosing' devices and Digital Twin-specific operational diagnostics, preventing a perfect score.",
+  "ability": "The ability to provision and authenticate, configure, maintain, monitor and diagnose connected IoT devices operating as part of Digital Twin environment",
+  "category": " Management",
+  "capability": "Device Management"
+}

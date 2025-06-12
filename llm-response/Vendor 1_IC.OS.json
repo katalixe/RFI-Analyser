@@ -1,0 +1,7 @@
+{
+  "score": 6,
+  "justification": "The offering describes orchestration via Event Grid, Service Bus, and IoT Central, mentioning ability to manage workflows and device data, e.g., 'enabling automated workflows and integrations with other Cloud 1 services.' However, explicit mention of digital twins' configuration, management, or coordination is missing. Interfaces are well-detailed, but do not reference digital twins directly. The response partially addresses the requirement but lacks direct or comprehensive evidence of automated coordination specifically including digital twins.",
+  "ability": "The ability to coordinate the automated configuration, management, and coordination of  systems, applications, digital twins and services.",
+  "category": " Intelligence",
+  "capability": "Orchestration"
+}

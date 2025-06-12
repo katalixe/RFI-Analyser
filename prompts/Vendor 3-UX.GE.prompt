@@ -13,8 +13,8 @@ Your output should be structured in JSON format as follows:
 {"score": <integer between 1 and 10>,"justification": "<short explanation with direct references to vendor text>" }
 
              Offering:
-Vendor 3 enables high-fidelity immersive visualizations by integrating Digital Twin environments with game engines on Cloud 3. This allows complex simulation, training, and collaborative design reviews to be rendered interactively using Unity, Unreal, or other HLA/DIS-compliant platforms. These visualizations are synced in real time with twin data to reflect current operational status or simulate future states.
+You shall not pass!
 Interfaces:
-Cloud 3 supports Unity, Unreal Engine, DIS, HLA, and WebGL. It complies with ISO/IEC 27001, GDPR, and NIST SP 800-53.
+The pirate ship was haunted by the ghost of a former captain.
 Ability:
 The ability to create immersive virtual worlds and interactive experiences with gaming engine technology The purpose it to enable Digital Twins in a digital metaverse where users interact with the Digital Twin in a highly interactive manner

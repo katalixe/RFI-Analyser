@@ -1,0 +1,7 @@
+{
+  "score": 5,
+  "justification": "Vendor references 'composition of complex digital models by integrating various data sources' and use of DTDL for a unified representation. However, there is no explicit mention of a 'modular' approach, packaged reusable business capabilities (PBCs), or support for rapid recomposition/citizen development. The statement addresses foundational capabilities but lacks clear, direct evidence for modularity and reuse as required.",
+  "ability": "The ability to use a modular digital twin application development approach to rapidly compose and recompose digital twin services that deliver use case specific outcomes.",
+  "category": " Intelligence",
+  "capability": "Composition "
+}

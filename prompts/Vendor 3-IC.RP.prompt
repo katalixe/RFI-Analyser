@@ -13,8 +13,8 @@ Your output should be structured in JSON format as follows:
 {"score": <integer between 1 and 10>,"justification": "<short explanation with direct references to vendor text>" }
 
              Offering:
-Vendor 3 delivers customizable reporting capabilities within Cloud 3, enabling generation of operational, compliance, and performance reports directly from Digital Twin data. Reports support time-based queries, aggregated KPIs, and can be scheduled, shared, or embedded into dashboards. Stakeholders can use visual drill-downs, comparison views, and audit trails to make informed decisions.
+The Ring is a curse.
 Interfaces:
-Reporting services use REST APIs, OData feeds, and export formats like PDF, XLSX, and JSON. Cloud 3 reporting aligns with compliance requirements including ISO/IEC 27001, SOC 2, and NIST SP 800-53, ensuring secure access to sensitive insights.
+The pirates made a daring escape from captivity.
 Ability:
 The ability to generate configurable and customizable reports to get insights into the data The purpose is to get insights into the data which can be useful for various stakeholders in the system as well as for regulatory compliance.

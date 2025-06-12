@@ -1,0 +1,7 @@
+{
+  "score": 2,
+  "justification": "The Offering ('I can't carry it for you, but I can carry you.') and Interfaces ('The pirates used a spyglass to spot distant ships.') do not mention integration with control systems, IoT devices/sensors, or SCADA as required. There is no direct or indirect reference to OT/IoT integration or Digital Twin data flow. The content lacks any relevant technical evidence, providing only metaphorical language.",
+  "ability": "The ability to integrate directly with control systems and IOT devices/sensors, SCADA ",
+  "category": " Integration",
+  "capability": "OT/IoT system integration"
+}

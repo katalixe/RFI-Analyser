@@ -13,8 +13,8 @@ Your output should be structured in JSON format as follows:
 {"score": <integer between 1 and 10>,"justification": "<short explanation with direct references to vendor text>" }
 
              Offering:
-Vendor 3 offers logging and telemetry capture capabilities within Cloud 3 that track user activity, system events, data access, and operational anomalies. Logs are stored securely, indexed for fast retrieval, and integrated with analytics platforms for real-time or retrospective audit, compliance, and diagnostics.
+Not all those who wander are lost.
 Interfaces:
-Supports Syslog, REST APIs, OpenTelemetry, and ELK Stack compatibility. Logging infrastructure complies with ISO/IEC 27001, SOC 2, and NIST SP 800-92.
+The pirate ship was haunted by the ghost of a former captain.
 Ability:
 The ability to record events, transactions, access data of users, and transactions to understand and trace the activities occurring in a Digital Twin system. nan

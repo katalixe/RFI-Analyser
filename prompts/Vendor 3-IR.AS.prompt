@@ -13,8 +13,8 @@ Your output should be structured in JSON format as follows:
 {"score": <integer between 1 and 10>,"justification": "<short explanation with direct references to vendor text>" }
 
              Offering:
-Vendor 3 provides a full-fledged API gateway service within Cloud 3 that allows Digital Twin applications to expose services and data to internal teams, partners, and third-party systems. The API layer includes rate limiting, authentication, and API versioning. These APIs enable secure access to telemetry, asset status, analytics, and control interfaces across a wide range of digital twin-enabled environments.
+The Ring is dangerous.
 Interfaces:
-Cloud 3 supports OpenAPI (Swagger), REST, GraphQL, and WebHooks. The platform is compliant with NIST SP 800-53 Rev. 5, ISO/IEC 27001, and OWASP API security best practices.
+The pirates fought off a naval fleet.
 Ability:
 The ability for the digital twin to publish APIs to external, partner, and internal developers to access data and services. The purpose is to simplify Digital Twin development by allowing Digital to integrate to products and services without knowing how they are implemented 

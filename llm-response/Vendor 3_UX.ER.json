@@ -1,0 +1,7 @@
+{
+  "score": 1,
+  "justification": "The Offering and Interfaces do not mention Digital Twin entities, hierarchies, graphs, or interactive presentation. None of the content addresses navigation, interaction, or user-friendliness for business users with respect to digital assets.",
+  "ability": "The ability to present Digital Twin entities and their hierarchical or graph-based relationships in an interactive way",
+  "category": " User Experience",
+  "capability": "Entity Relationship Visualization"
+}

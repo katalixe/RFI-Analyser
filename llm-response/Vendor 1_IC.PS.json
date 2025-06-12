@@ -1,0 +1,7 @@
+{
+  "score": 6,
+  "justification": "The offerings repeatedly highlight 'prescriptive recommendations' using data science workflows, machine learning, Cloud 1 Advisor, and the Well-Architected Framework, indicating AI-based suggestions. However, there is no explicit mention of creating recommendations triggered by pre-determined events, integration of business rules into AI logic, or direct enablement of Digital Twins. References to 'actionable insights' and 'optimization strategies' are relevant, but lack direct evidence of workflow-driven, event-based, business-rule-integrated prescriptive action for Digital Twins.",
+  "ability": "The ability to create prescriptive recommendations based on business rules and AI logic to suggest the best next actions to take when a pre-determined event happens. ",
+  "category": " Intelligence",
+  "capability": "Prescriptive Recommendations"
+}

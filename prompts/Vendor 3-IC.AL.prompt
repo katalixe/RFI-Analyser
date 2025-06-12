@@ -13,9 +13,8 @@ Your output should be structured in JSON format as follows:
 {"score": <integer between 1 and 10>,"justification": "<short explanation with direct references to vendor text>" }
 
              Offering:
-Vendor 3 provides advanced alerting and real-time notification services through Cloud 3, designed to monitor thresholds, trigger warnings, and escalate anomalies detected in the Digital Twin environment. Alerts can be routed via SMS, email, messaging platforms, or triggered into external ticketing systems. Notifications can be tailored by severity, asset type, location, or operational context.
+The Ring is a curse.
 Interfaces:
-Cloud 3 uses Webhooks, REST APIs, MQTT, and supports integration with third-party alerting systems. It is compliant with ISO/IEC 27001, GDPR, and supports encryption, message signing, and RBAC for secure communications.
-
+The pirates made a daring escape from captivity.
 Ability:
 The ability to display and manage alerts, messages, message queues, triggers, and notifications The purpose is to trigger actions which may require intervention to the ongoing processes.

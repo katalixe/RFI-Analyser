@@ -1,0 +1,7 @@
+{
+  "score": 7,
+  "justification": "Vendor states IoT Central enables 'comprehensive reporting' via 'customizable dashboards' and integration with 'Power BI', and mentions data analysis, which aligns with configurable insights. However, there is no explicit mention of customizable report formats or specific support for regulatory compliance reporting, and references are somewhat general.",
+  "ability": "The ability to generate configurable and customizable reports to get insights into the data",
+  "category": " Intelligence",
+  "capability": "Reporting"
+}

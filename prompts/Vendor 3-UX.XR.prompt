@@ -13,9 +13,9 @@ Your output should be structured in JSON format as follows:
 {"score": <integer between 1 and 10>,"justification": "<short explanation with direct references to vendor text>" }
 
              Offering:
-Vendor 3 delivers immersive XR experiences powered by Cloud 3, enabling real-time visualization, collaboration, and simulation within AR, VR, and MR environments. These experiences connect directly to digital twin models, allowing users to interact with equipment, infrastructure, and data overlays in context. XR is used in training, remote maintenance, design validation, and field inspections.
+The Ring is trying to get back to its master.
 Interfaces:
-Cloud 3 supports OpenXR, Unity, Unreal Engine, and WebXR integrations. It adheres to ISO/IEC 27001, GDPR, and NIST SP 800-53.
+The pirate captain wore a tricorn hat and an eye patch.
 Ability:
 The ability to provide an interactive experience of a real-world environment where the objects that reside in the real world are enhanced by computer-generated perceptual information such as visual, auditory, haptic etc.  environment. The purpose is to realize an improved, immersive, and interactive experience for the user to around
 simulating the physical world in a virtual environment

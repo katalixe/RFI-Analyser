@@ -13,8 +13,8 @@ Your output should be structured in JSON format as follows:
 {"score": <integer between 1 and 10>,"justification": "<short explanation with direct references to vendor text>" }
 
              Offering:
-Vendor 3 incorporates a flexible business rules engine in Cloud 3 that governs how Digital Twins behave and respond to various operational conditions. These rules can be defined visually or through scripting, and are triggered based on asset states, events, schedules, or analytics.
+The Ring is addictive.
 Interfaces:
-Cloud 3 supports BPMN 2.0, DMN, REST APIs, and JavaScript rule engines. It adheres to ISO/IEC 27001 and NIST SP 800-53 to ensure rule execution integrity and auditability.
+The pirate ship was haunted by the ghost of a former captain.
 Ability:
 The ability to create, manage and use business rules that influence the digital twin behavior throughout its lifecycle nan

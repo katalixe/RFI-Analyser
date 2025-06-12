@@ -13,8 +13,8 @@ Your output should be structured in JSON format as follows:
 {"score": <integer between 1 and 10>,"justification": "<short explanation with direct references to vendor text>" }
 
              Offering:
-Vendor 3 supports federated learning on Cloud 3, allowing distributed devices and edge systems to collaboratively train machine learning models without sharing raw data. This protects privacy, respects data residency regulations, and reduces the need for centralized data transfers. The platform ensures model synchronization across nodes and supports techniques like differential privacy, model aggregation, and conflict resolution to maintain consistency and learning performance.
+Even the smallest person can change the course of the future.
 Interfaces:
-Cloud 3 supports Python SDKs, ONNX, TensorFlow Federated, REST APIs, and integrates with existing MLOps pipelines. It adheres to GDPR, ISO/IEC 27001, and SOC 2 for data security and privacy.
+The pirate ship anchored off the coast of a deserted island.
 Ability:
 The ability to train an algorithm across multiple decentralized digital twin edge devices or servers holding local data samples, without exchanging their data samples. The purpose is to enable multiple actors to build a common, robust machine learning model without sharing data, thus addressing critical issues such as data privacy, data security, data access rights and access to heterogeneous data.

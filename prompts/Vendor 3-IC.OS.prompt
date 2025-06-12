@@ -13,8 +13,8 @@ Your output should be structured in JSON format as follows:
 {"score": <integer between 1 and 10>,"justification": "<short explanation with direct references to vendor text>" }
 
              Offering:
-Vendor 3 offers a powerful orchestration engine in Cloud 3 that automates the flow of data and processes between Digital Twins, control systems, cloud apps, and analytics platforms. This includes support for conditional workflows, failure handling, multi-device task routing, and dynamic resource provisioning. It is ideal for coordinating maintenance, predictive analytics, supply chain actions, and event response.
+Even the smallest person can change the course of the future.
 Interfaces:
-Cloud 3 orchestration supports BPMN 2.0, JSON-based triggers, and AMQP messaging. It complies with NIST SP 800-53, ISO/IEC 27001, and provides audit logs and traceability for each workflow execution.
+The pirate captain had a wooden leg and a hook for a hand.
 Ability:
 The ability to coordinate the automated configuration, management, and coordination of  systems, applications, digital twins and services. The purpose it to easily manage complex tasks and workflows between different systems, applications, digital twins, or systems of digital twins

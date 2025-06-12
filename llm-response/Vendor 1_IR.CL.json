@@ -1,0 +1,7 @@
+{
+  "score": 9,
+  "justification": "The vendor explicitly states that Cloud 1 Bot Services 'enables seamless integration with collaboration platforms like Yammer, Jabber, Teams, and Slack, providing Digital Twin users with a conversational user interface.' This directly covers both the required platforms and the conversational interface. The reference to a 'robust bot framework and channel connectors' provides further support. There is no evidence of implementation or customer success, slightly reducing the score from perfect.",
+  "ability": "The ability for the digital twin to interface with platforms like Yammer, Jabber, Teams, Slack",
+  "category": " Integration",
+  "capability": "Collaboration platform integration"
+}

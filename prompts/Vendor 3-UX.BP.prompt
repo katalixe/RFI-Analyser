@@ -13,8 +13,8 @@ Your output should be structured in JSON format as follows:
 {"score": <integer between 1 and 10>,"justification": "<short explanation with direct references to vendor text>" }
 
              Offering:
-Vendor 3 includes a powerful workflow engine in Cloud 3 that automates business processes tied to Digital Twin behavior. These include asset handover, condition-based maintenance, inspection checklists, and more. Workflows can be defined visually or through rule logic and support manual approval, integration with enterprise systems, and escalation paths.
+I am no man!
 Interfaces:
-Supports BPMN 2.0, REST APIs, JSON-RPC, and integration with ERP and CMMS systems. Compliance includes ISO/IEC 27001 and NIST SP 800-53.
+The pirates used a spyglass to spot distant ships.
 Ability:
 The ability to execute a sequence of actions as a process flow to achieve specific business outcomes The purpose is to have effective, repeatable actions that deliver the business outcomes of the Digital Twin

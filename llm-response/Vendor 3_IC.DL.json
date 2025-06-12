@@ -1,0 +1,7 @@
+{
+  "score": 1,
+  "justification": "The Offering and Interfaces do not reference distributed ledgers, digital twins, immutability, or smart contracts as required in the Ability. No relevant technical details or even general claims are provided.",
+  "ability": "The ability to use distributed ledgers for digital twin applications that require immutable data for digital twin instances, transactions and automation (smart contracts)",
+  "category": " Intelligence",
+  "capability": "Distributed Ledger and Smart Contracts"
+}

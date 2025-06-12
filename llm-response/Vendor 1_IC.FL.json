@@ -1,0 +1,7 @@
+{
+  "score": 9,
+  "justification": "The Offering explicitly states 'supports federated learning by enabling multiple organizations to collaboratively train models on decentralized data while maintaining data privacy and security,' and mentions 'collaborative analytics across different organizational boundaries.' Interfaces support REST APIs, Python SDKs, integration with major frameworks, and compliance with GDPR, ISO, and SOC 2. However, while 'edge devices' are implied, there is no explicit mention of digital twin edge devices or handling of heterogeneous data beyond 'various sources,' preventing a perfect score.",
+  "ability": "The ability to train an algorithm across multiple decentralized digital twin edge devices or servers holding local data samples, without exchanging their data samples.",
+  "category": " Intelligence",
+  "capability": "Federated Learning"
+}

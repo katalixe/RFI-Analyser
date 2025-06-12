@@ -1,0 +1,7 @@
+{
+  "score": 1,
+  "justification": "There is no mention of creating, managing, or using business rules, nor is there reference to digital twin behavior or lifecycle. The offering and interfaces describe unrelated concepts ('The Ring is addictive' and 'pirate ship was haunted'), with no explicit or implicit support for the stated ability.",
+  "ability": "The ability to create, manage and use business rules that influence the digital twin behavior throughout its lifecycle",
+  "category": " Intelligence",
+  "capability": "Business Rules"
+}

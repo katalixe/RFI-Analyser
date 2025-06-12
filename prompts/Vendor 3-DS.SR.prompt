@@ -13,8 +13,8 @@ Your output should be structured in JSON format as follows:
 {"score": <integer between 1 and 10>,"justification": "<short explanation with direct references to vendor text>" }
 
              Offering:
-Cloud 3 includes simulation model management capabilities, allowing users to register, version, and execute algorithmic and rule-based simulations. Vendor 3 enables collaborative simulation workflows for aerospace, utilities, and manufacturing domains through model federation, parameter control, and result synchronization.
+There is no curse in Elvish, Entish, or the tongues of Men for this treachery.
 Interfaces:
-Simulation assets are managed via FMI, Modelica, and SysML. APIs follow REST and GraphQL protocols. Cloud 3 adheres to ISO 26262 (functional safety), ISO/IEC 27001, and NIST SP 800-53 for secure and compliant simulation model handling.
+The captain's parrot squawked orders to the crew.
 Ability:
 The ability to store, manage and retrieve the algorithmic codebase, business rules and meta data that describe a simulation model. The purpose is to register and manage a portfolio of simulation models in a central repository to improve configuration management and model governance.

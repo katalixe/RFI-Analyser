@@ -1,0 +1,7 @@
+{
+  "score": 9,
+  "justification": "Vendor 2 states 'enabling Digital Twin systems to publish RESTful and GraphQL APIs for both internal and external consumers' and provides OpenAPI-compliant interfaces, directly supporting API access as required. The specifics on 'simplifies integration' also supports ease of use. However, there is no explicit mention of how abstraction of implementation details is achieved, which keeps this just below a perfect score.",
+  "ability": "The ability for the digital twin to publish APIs to external, partner, and internal developers to access data and services.",
+  "category": " Integration",
+  "capability": "API Services"
+}

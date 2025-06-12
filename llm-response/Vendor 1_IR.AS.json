@@ -1,0 +1,7 @@
+{
+  "score": 6,
+  "justification": "The Offering states that Cloud 1 API Manager 'provides a unified platform for managing APIs' and 'simplifies Digital Twin development by abstracting the complexities of backend implementations.' This addresses the requirement for API publication and abstraction. However, it does not explicitly mention publishing APIs to external, partner, and internal developers, nor does it provide details on how APIs are published or accessed. Compliance information in Interfaces is not directly relevant to the requirement.",
+  "ability": "The ability for the digital twin to publish APIs to external, partner, and internal developers to access data and services.",
+  "category": " Integration",
+  "capability": "API Services"
+}

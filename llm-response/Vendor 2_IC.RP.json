@@ -1,0 +1,7 @@
+{
+  "score": 8,
+  "justification": "Vendor 2 states 'enables customizable, real-time reporting through MindSphere and Mendix’s dashboarding tools,' and that these 'support stakeholder visibility and compliance reporting.' Interfaces support REST APIs and SQL-based reporting engines, supporting flexible integration. However, while customization and compliance are mentioned, no detailed examples or explicit depth of configurability are provided. Thus, response is strong but lacks deep specifics.",
+  "ability": "The ability to generate configurable and customizable reports to get insights into the data",
+  "category": " Intelligence",
+  "capability": "Reporting"
+}

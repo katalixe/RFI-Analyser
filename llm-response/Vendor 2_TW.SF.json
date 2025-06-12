@@ -1,0 +1,7 @@
+{
+  "score": 8,
+  "justification": "Vendor 2 explicitly addresses risk mitigation via 'simulation, validation, and real-time analytics,' and uses 'Simcenter Safety Analysis' for modeling safety scenarios. Interfaces demonstrate compatibility with relevant standards (IEC 61508, ISO 13849) and safety-critical processes. While mitigation of equipment failure, human error, and hazards is described, there is no explicit mention of feedback loops or continuous improvement, leaving minor gaps. The evidence is strong but not exhaustively comprehensive.",
+  "ability": "The ability to operate digital twins without causing unacceptable risk of physical injury or damage to the health of people, either directly, or indirectly as a result of damage to property or to the environment",
+  "category": " Trustworthiness",
+  "capability": "Safety"
+}

@@ -1,0 +1,7 @@
+{
+  "score": 5,
+  "justification": "The Offering describes a 'fully managed environment for engineering design and simulation,' and the ability to 'enable secure and efficient user collaboration.' However, there is no explicit reference to using historical information, physical models, video, audio, or animation, nor is there mention of digital twin functionality or training of operations/maintenance teams. The evidence provided only partially addresses the detailed simulation and digital twin requirements.",
+  "ability": "The ability to create approximate imitation of a process or a system using past historical information, physical models, video, audio, and animation, what-if-scenarios.",
+  "category": " Intelligence",
+  "capability": "Simulation"
+}

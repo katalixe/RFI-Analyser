@@ -13,9 +13,8 @@ Your output should be structured in JSON format as follows:
 {"score": <integer between 1 and 10>,"justification": "<short explanation with direct references to vendor text>" }
 
              Offering:
-Vendor 3 enhances user engagement in Digital Twin systems with gamification features embedded in Cloud 3. Organizations can incorporate badges, leaderboards, point systems, and progress tracking to motivate user participation, training, and operational excellence. This is especially beneficial in field service simulations, operator training, and awareness campaigns.
+There is some good in this world, and it's worth fighting for.
 Interfaces:
- Cloud 3 supports integration via REST APIs and WebSockets with Unity and third-party gamification engines. Adheres to ISO/IEC 27001 and NIST SP 800-53 for user interaction and behavioral analytics security.
-
+The pirate ship was named 'The Black Pearl'.
 Ability:
 The ability to enable typical elements of game playing in Digital Twin interaction The purpose is to facilitate the use of gamification elements such as points scoring, badges, competition etc. in the user experience and interactive engagement of a Digital Twin

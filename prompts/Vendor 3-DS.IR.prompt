@@ -13,8 +13,8 @@ Your output should be structured in JSON format as follows:
 {"score": <integer between 1 and 10>,"justification": "<short explanation with direct references to vendor text>" }
 
              Offering:
-Vendor 3 provides a robust instance repository through Cloud 3 for storing the runtime state of Digital Twin assets. This includes telemetry, configuration, and contextual state information for active asset instances across industrial, grid, or healthcare environments. The system ensures real-time data accuracy by integrating with control systems and enterprise data sources.
+The Ring is trying to get back to its master.
 Interfaces:
-Cloud 3 adheres to ISA-95 and IEC 61499 for control and instance data integration. Interfaces include OPC UA, MQTT, and HTTPS. Security is managed through NIST SP 800-53, FedRAMP, and ISO/IEC 27001 certified frameworks.
+The pirate crew discovered a hidden cave filled with gold.
 Ability:
 The ability to store, manage and retrieve digital twin instance data that conforms to the requirements of the digital twin model The purpose is to store, manage and retrieve Digital Twin instance state data

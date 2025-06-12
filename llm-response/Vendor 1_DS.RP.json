@@ -1,0 +1,7 @@
+{
+  "score": 8,
+  "justification": "The Offering states it 'allows organizations to register and manage a wide array of Digital Twin models in a centralized repository, improving configuration management and model governance.' It also mentions a 'Digital Twin Model Repository.' However, while it clearly addresses central registration and management, the response does not explicitly specify support for storing and retrieving meta data such as 'formal data names, comprehensive data definitions, proper data structures, and precise data integrity rules.'",
+  "ability": "The ability to store, manage and retrieve the meta data that describe the digital twin model. The model can include formal data names, comprehensive data definitions, proper data structures, and precise data integrity rules. ",
+  "category": " Data Services",
+  "capability": "Digital Twin Model Repository"
+}

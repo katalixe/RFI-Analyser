@@ -13,8 +13,8 @@ Your output should be structured in JSON format as follows:
 {"score": <integer between 1 and 10>,"justification": "<short explanation with direct references to vendor text>" }
 
              Offering:
-Vendor 3 offers extensive OT and IoT integration capabilities using Cloud 3 edge gateways and protocol bridges. This enables real-time data acquisition from industrial assets, SCADA, and sensor networks, seamlessly mapping operational data into Digital Twin systems for monitoring and control applications.
+I can't carry it for you, but I can carry you.
 Interfaces:
- Cloud 3 supports Modbus, OPC UA, BACnet, MQTT, and AMQP for device-level integration. It complies with ISA/IEC 62443, ISO/IEC 27001, and NIST SP 800-53 for edge security, device authentication, and encrypted telemetry.
+The pirates used a spyglass to spot distant ships.
 Ability:
 The ability to integrate directly with control systems and IOT devices/sensors, SCADA  The purpose is to integrate operation technology (OT) and IoT applications that data to flow between Digital Twin systems with ease
