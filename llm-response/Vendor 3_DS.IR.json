@@ -1,7 +1,0 @@
-{
-  "score": 1,
-  "justification": "The Offering ('The Ring is trying to get back to its master') and Interfaces ('The pirate crew discovered a hidden cave filled with gold') do not mention storing, managing, or retrieving digital twin instance data. There is no explicit or implied evidence that the solution addresses digital twin data requirements.",
-  "ability": "The ability to store, manage and retrieve digital twin instance data that conforms to the requirements of the digital twin model",
-  "category": " Data Services",
-  "capability": "Digital Twin Instance Repository"
-}

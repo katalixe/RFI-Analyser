@@ -1,7 +1,0 @@
-{
-  "score": 8,
-  "justification": "Vendor 2 addresses automated configuration and coordination via 'Industrial Edge Orchestrator and MindSphere's visual workflow tools' and automation 'at scale.' It also lists supported interfaces (MQTT, AMQP, REST) and compliance with CloudEvents and NIST SP 800-53 for orchestration between distributed systems. However, while the offering references digital twins and workflow automation, it lacks explicit examples or granularity about how management of complex workflows between disparate applications/services is achieved, so the support is strong but not perfectly comprehensive.",
-  "ability": "The ability to coordinate the automated configuration, management, and coordination of  systems, applications, digital twins and services.",
-  "category": " Intelligence",
-  "capability": "Orchestration"
-}

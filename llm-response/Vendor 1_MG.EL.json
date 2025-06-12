@@ -1,7 +1,0 @@
-{
-  "score": 7,
-  "justification": "The Offering states Log Analytics collects and analyzes log data to monitor and troubleshoot systems, and IoT Central captures/stores telemetry and events from IoT devices. Both support security/compliance and standard interfaces. However, neither explicitly references recording 'access data of users' or tracing all activities in a Digital Twin system, making the coverage strong but not complete or directly tailored to all aspects of the requirement.",
-  "ability": "The ability to record events, transactions, access data of users, and transactions to understand and trace the activities occurring in a Digital Twin system.",
-  "category": " Management",
-  "capability": "Logging"
-}

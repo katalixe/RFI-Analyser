@@ -1,7 +1,0 @@
-{
-  "score": 7,
-  "justification": "Vendor 1 states that Power BI 'transforms raw data into interactive and visually immersive insights,' which suggests the ability to analyze stored data and provide a business user-focused interface. The phrase 'enabling data-driven decision-making' partially addresses the requirement for informed decisions. However, there is no explicit mention of 'real-time' capabilities or support for multiple personas (operations, technology, business) in the interface, so full coverage is not demonstrated.",
-  "ability": "The ability to analyze stored data (records) to derive insights and actions in a business user focused visual interface",
-  "category": " User Experience",
-  "capability": "Business Intelligence "
-}

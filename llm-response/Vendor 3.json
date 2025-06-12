@@ -1,0 +1,258 @@
+[
+  {
+    "score": 1,
+    "justification": "The Offering ('My precious.') and Interfaces ('The pirate ship was attacked by a rival crew.') do not address or reference metadata management, digital twins, or repository features as required. No relevant evidence is provided to meet any part of the Ability requirement.",
+    "ability": "The ability to store, manage and retrieve the meta data that describe the digital twin model. The model can include formal data names, comprehensive data definitions, proper data structures, and precise data integrity rules. ",
+    "category": " Data Services",
+    "capability": "Digital Twin Model Repository",
+    "uid": "DS.RP"
+  },
+  {
+    "score": 1,
+    "justification": "The Offering ('The Ring is trying to get back to its master') and Interfaces ('The pirate crew discovered a hidden cave filled with gold') do not mention storing, managing, or retrieving digital twin instance data. No relevant evidence is provided to support the requirement.",
+    "ability": "The ability to store, manage and retrieve digital twin instance data that conforms to the requirements of the digital twin model",
+    "category": " Data Services",
+    "capability": "Digital Twin Instance Repository",
+    "uid": "DS.IR"
+  },
+  {
+    "score": 1,
+    "justification": "The Offering ('The Ring is trying to get back to its master.') and Interfaces ('The crew followed the captain's orders without question.') do not mention data handling, storage, or retrieval in any form. There is no evidence provided that addresses the ability to manage domain-specific data as required.",
+    "ability": "The ability to efficiently handle, store, and retrieve data based on the distinct characteristics inherent to specific data types.",
+    "category": " Data Services",
+    "capability": "Domain Specific Data Management",
+    "uid": "DS.DS"
+  },
+  {
+    "score": 1,
+    "justification": "The vendor's Offering ('One does not simply walk into Mordor') and Interfaces ('Arr matey, the treasure be buried on Skull Island') do not mention data storage, organization, retrieval, access frequency, or retention. There is no explicit reference or evidence of meeting the stated ability regarding hot, cold, or archival data services.",
+    "ability": "The ability to store, organize and retrieve data  based on how frequently it will be accessed and how long it will be retained.",
+    "category": " Data Services",
+    "capability": "Data Storage and Archive Services",
+    "uid": "DS.SA"
+  },
+  {
+    "score": 1,
+    "justification": "The Offering and Interfaces do not mention storing, managing, or retrieving algorithmic codebase, business rules, metadata, or managing simulation models in a repository. There is no evidence addressing the Ability requirement.",
+    "ability": "The ability to store, manage and retrieve the algorithmic codebase, business rules and meta data that describe a simulation model.",
+    "category": " Data Services",
+    "capability": "Simulation Model Repository",
+    "uid": "DS.SR"
+  },
+  {
+    "score": 2,
+    "justification": "The Offering ('I can't carry it for you, but I can carry you.') and Interfaces ('The pirates used a spyglass to spot distant ships.') are metaphorical and do not provide any technical explanation or direct evidence for integration with control systems, IoT/SCADA, or OT-to-Digital Twin data flow. There are no explicit claims or technical details supporting the required integration ability.",
+    "ability": "The ability to integrate directly with control systems and IOT devices/sensors, SCADA ",
+    "category": " Integration",
+    "capability": "OT/IoT system integration",
+    "uid": "IR.IO"
+  },
+  {
+    "score": 1,
+    "justification": "The Offering ('The Ring is destructive.') and Interfaces ('The pirates found a chest filled with jewels and gold coins.') do not address integration or interoperability with digital twins in any way. There is no mention of integration, digital twins, access to information, or applications.",
+    "ability": "The ability to integrate or access information from existing digital twin instances ",
+    "category": " Integration",
+    "capability": "Digital Twin Integration",
+    "uid": "IR.DT"
+  },
+  {
+    "score": 1,
+    "justification": "The Offering ('I am no man!') and Interfaces ('The pirate ship was attacked by a rival crew.') do not mention or describe any integration with Yammer, Jabber, Teams, Slack, or any collaboration platforms, nor is there reference to conversational user interfaces. No supporting evidence is provided.",
+    "ability": "The ability for the digital twin to interface with platforms like Yammer, Jabber, Teams, Slack",
+    "category": " Integration",
+    "capability": "Collaboration platform integration",
+    "uid": "IR.CL"
+  },
+  {
+    "score": 1,
+    "justification": "The vendor's response lacks any explicit mention of APIs, digital twin, publishing APIs, or integration capabilities. Phrases such as 'The Ring is dangerous' and 'The pirates fought off a naval fleet' do not address the requirement of API publication for digital twin data and services.",
+    "ability": "The ability for the digital twin to publish APIs to external, partner, and internal developers to access data and services.",
+    "category": " Integration",
+    "capability": "API Services",
+    "uid": "IR.AS"
+  },
+  {
+    "score": 1,
+    "justification": "The Offering and Interfaces sections provide only abstract or irrelevant information ('Even the smallest person can change the course of the future', 'The pirate captain had a wooden leg and a hook for a hand.') and do not address or support the requirement for coordinating automated configuration, management, or coordination of systems, applications, digital twins, or workflows.",
+    "ability": "The ability to coordinate the automated configuration, management, and coordination of  systems, applications, digital twins and services.",
+    "category": " Intelligence",
+    "capability": "Orchestration",
+    "uid": "IC.OS"
+  },
+  {
+    "score": 1,
+    "justification": "The Offering ('The Ring is a curse.') and Interfaces ('The pirates made a daring escape from captivity.') do not reference alerts, messages, queues, triggers, notifications, or any related management or display functions. There is no explicit or implied support for the stated Ability.",
+    "ability": "The ability to display and manage alerts, messages, message queues, triggers, and notifications",
+    "category": " Intelligence",
+    "capability": "Alerts and Notification",
+    "uid": "IC.AL"
+  },
+  {
+    "score": 1,
+    "justification": "The Offering ('The Ring is a curse.') and Interfaces ('The pirates made a daring escape from captivity.') do not mention reports, configurability, customization, insights, data use, stakeholders, or compliance. There is no evidence that the requirement for generating configurable and customizable reports is met or even addressed.",
+    "ability": "The ability to generate configurable and customizable reports to get insights into the data",
+    "category": " Intelligence",
+    "capability": "Reporting",
+    "uid": "IC.RP"
+  },
+  {
+    "score": 1,
+    "justification": "The Offering and Interfaces sections make no reference to data study, presentation, analysis, charting, or any analytics capabilities. Neither addresses or evidences the requirement to analyze or present data as stipulated in the Ability section.",
+    "ability": "The study and presentation of data to create information and knowledge. The ability to analyze data through charts, tables, dashboards, fetch data between dates, and filter data based on various criteria. The analysis of data, typically large sets of business data, using mathematics, statistics, and computer software with an objective to draw conclusions.",
+    "category": " Intelligence",
+    "capability": "Data Analysis and Analytics",
+    "uid": "IC.AA"
+  },
+  {
+    "score": 1,
+    "justification": "The Offering and Interfaces statements are metaphorical and do not provide any direct or indirect evidence of the ability to train algorithms across decentralized, privacy-preserving environments as detailed in the Ability requirement.",
+    "ability": "The ability to train an algorithm across multiple decentralized digital twin edge devices or servers holding local data samples, without exchanging their data samples.",
+    "category": " Intelligence",
+    "capability": "Federated Learning",
+    "uid": "IC.FL"
+  },
+  {
+    "score": 1,
+    "justification": "The Offering ('The Ring is trying to get back to its master.') and Interfaces ('The pirates buried their treasure in a secret location.') do not mention simulation, digital twins, imitation, or training; there is no evidence provided that addresses the ability to create or use simulations or digital twins as required.",
+    "ability": "The ability to create approximate imitation of a process or a system using past historical information, physical models, video, audio, and animation, what-if-scenarios.",
+    "category": " Intelligence",
+    "capability": "Simulation",
+    "uid": "IC.SM"
+  },
+  {
+    "score": 1,
+    "justification": "The Offering states 'The Ring is corrupting', which does not mention any mathematical or statistical calculations. The Interfaces reference pirates sailing under the Jolly Roger flag, unrelated to mathematical or physics-based models. No evidence is provided that supports the ability to perform required calculations for Digital twin analytics.",
+    "ability": "The ability to perform mathematical and statical calculations to enable physics-based and other mathematical models",
+    "category": " Intelligence",
+    "capability": "Mathematical Analytics (Engineering Calculations)",
+    "uid": "IC.MA"
+  },
+  {
+    "score": 1,
+    "justification": "The Offering simply discusses time management ('All we have to decide is what to do with the time that is given us.') and the Interfaces reference an unrelated sea monster incident. There is no mention of prescriptive recommendations, business rules, AI logic, analytics, workflow, or Digital Twins as required in the Ability.",
+    "ability": "The ability to create prescriptive recommendations based on business rules and AI logic to suggest the best next actions to take when a pre-determined event happens. ",
+    "category": " Intelligence",
+    "capability": "Prescriptive Recommendations",
+    "uid": "IC.PS"
+  },
+  {
+    "score": 1,
+    "justification": "\"The Ring is addictive\" and \"The pirate ship was haunted by the ghost of a former captain\" do not address the ability to create, manage, or use business rules for digital twin behavior. There is no mention of business rules, digital twins, or lifecycle management.",
+    "ability": "The ability to create, manage and use business rules that influence the digital twin behavior throughout its lifecycle",
+    "category": " Intelligence",
+    "capability": "Business Rules",
+    "uid": "IC.BR"
+  },
+  {
+    "score": 1,
+    "justification": "There is no mention of distributed ledger technology, digital twins, immutability, smart contracts, or transaction records in either the Offering or Interfaces. The content is not relevant to the stated Ability.",
+    "ability": "The ability to use distributed ledgers for digital twin applications that require immutable data for digital twin instances, transactions and automation (smart contracts)",
+    "category": " Intelligence",
+    "capability": "Distributed Ledger and Smart Contracts",
+    "uid": "IC.DL"
+  },
+  {
+    "score": 1,
+    "justification": "The Offering ('The Ring must be destroyed.') and Interfaces ('The pirate ship was haunted by the ghost of a former captain.') do not mention digital twins, modular application development, packaged business capabilities, or any related concepts. There is no connection to the required ability.",
+    "ability": "The ability to use a modular digital twin application development approach to rapidly compose and recompose digital twin services that deliver use case specific outcomes.",
+    "category": " Intelligence",
+    "capability": "Composition ",
+    "uid": "IC.CS"
+  },
+  {
+    "score": 1,
+    "justification": "The Offering and Interfaces provide no reference to streaming information, latency, real-time updates, or decision support. The content is unrelated to the stated ability requirement.",
+    "ability": "The ability to present and interact with continuously updated information streaming at zero or low latency.",
+    "category": " User Experience",
+    "capability": "Real-time Monitoring",
+    "uid": "UX.RM"
+  },
+  {
+    "score": 1,
+    "justification": "The Offering ('It's a dangerous business, Frodo...') and Interfaces ('Captain Blackbeard's ship sailed...') do not reference Digital Twin entities, hierarchies, interactive presentation, or user usability. There is no relevant or explicit support for the stated Ability requirement.",
+    "ability": "The ability to present Digital Twin entities and their hierarchical or graph-based relationships in an interactive way",
+    "category": " User Experience",
+    "capability": "Entity Relationship Visualization",
+    "uid": "UX.ER"
+  },
+  {
+    "score": 1,
+    "justification": "The Offering ('The Ring is trying to get back to its master') and Interfaces ('The pirate captain wore a tricorn hat and an eye patch') do not mention or demonstrate the use of computer-generated perceptual information to enhance real-world objects, nor do they describe any interactive, immersive, or augmented experience.",
+    "ability": "The ability to provide an interactive experience of a real-world environment where the objects that reside in the real world are enhanced by computer-generated perceptual information such as visual, auditory, haptic etc.  environment.",
+    "category": " User Experience",
+    "capability": "Extended Reality (XR)",
+    "uid": "UX.XR"
+  },
+  {
+    "score": 1,
+    "justification": "The vendor's Offering and Interfaces do not mention stored data, analysis, insights, visual interfaces, or business decision-making. There is no evidence or even indirect reference to the required analytic or interface capabilities.",
+    "ability": "The ability to analyze stored data (records) to derive insights and actions in a business user focused visual interface",
+    "category": " User Experience",
+    "capability": "Business Intelligence ",
+    "uid": "UX.BI"
+  },
+  {
+    "score": 1,
+    "justification": "The Offering ('I am no man!') and Interfaces ('The pirates used a spyglass to spot distant ships.') are irrelevant and do not address the requirement for executing a sequence of actions as a process flow to achieve business outcomes. No evidence is provided regarding process flows, effectiveness, or repeatability.",
+    "ability": "The ability to execute a sequence of actions as a process flow to achieve specific business outcomes",
+    "category": " User Experience",
+    "capability": "Business Process Management & Workflow",
+    "uid": "UX.BP"
+  },
+  {
+    "score": 1,
+    "justification": "The Offering ('You shall not pass!') and Interfaces ('The pirate ship was haunted by the ghost of a former captain.') do not mention gaming engines, immersive virtual worlds, Digital Twins, or interactivity. There is no evidence presented that relates to the stated Ability requirement.",
+    "ability": "The ability to create immersive virtual worlds and interactive experiences with gaming engine technology",
+    "category": " User Experience",
+    "capability": "Gaming Engine Visualization",
+    "uid": "UX.GE"
+  },
+  {
+    "score": 1,
+    "justification": "The vendor's offering ('The Ring is corrupting') and interface ('The pirates discovered an ancient artifact') do not reference 3D visualization, point cloud data, LiDAR, or user interaction with large datasets. There is no evidence provided that addresses the ability described.",
+    "ability": "The ability to render 3D visualizations from point cloud data sets generated by LiDAR and other scanning technologies",
+    "category": " User Experience",
+    "capability": "3D rendering",
+    "uid": "UX.3R"
+  },
+  {
+    "score": 1,
+    "justification": "The response does not mention gamification, points, badges, competition, or Digital Twin interaction. Phrases like 'There is some good in this world...' and 'The pirate ship was named...' are irrelevant to the requirement, and there is no evidence of ability to enable gamification in Digital Twin experiences.",
+    "ability": "The ability to enable typical elements of game playing in Digital Twin interaction",
+    "category": " User Experience",
+    "capability": "Gamification ",
+    "uid": "UX.GM"
+  },
+  {
+    "score": 1,
+    "justification": "The Offering ('The Ring is dangerous.') and Interfaces ('The pirate captain had a fearsome reputation.') do not address any aspect of provisioning, authenticating, configuring, maintaining, monitoring, or diagnosing IoT devices in a Digital Twin environment, as required by the Ability. No relevant information is provided.",
+    "ability": "The ability to provision and authenticate, configure, maintain, monitor and diagnose connected IoT devices operating as part of Digital Twin environment",
+    "category": " Management",
+    "capability": "Device Management",
+    "uid": "MG.DM"
+  },
+  {
+    "score": 1,
+    "justification": "The Offering ('Not all those who wander are lost.') and Interfaces ('The pirate ship was haunted by the ghost of a former captain.') do not mention or address the recording of events, transaction logs, user access, or data tracing in a Digital Twin system. There is no relevant or explicit evidence provided to support the required ability.",
+    "ability": "The ability to record events, transactions, access data of users, and transactions to understand and trace the activities occurring in a Digital Twin system.",
+    "category": " Management",
+    "capability": "Logging",
+    "uid": "MG.EL"
+  },
+  {
+    "score": 1,
+    "justification": "The Offering ('My precious.') and Interfaces ('The pirates sang sea shanties as they sailed.') provide no relevant information about security measures, protection from unauthorized access, or safeguarding integrity and confidentiality as requested in the Ability.",
+    "ability": "The ability to protected Digital Twins from unintended or unauthorized access, change or destruction. Security concerns equipment, systems and information, ensuring availability, integrity and confidentiality of information.",
+    "category": " Trustworthiness",
+    "capability": "Security",
+    "uid": "TW.SC"
+  },
+  {
+    "score": 1,
+    "justification": "The Offering ('What's it got in its pocketses?') and Interfaces ('Land ho.') provide no relevant information about the ability to operate digital twins without causing risk of injury, property, or environmental damage. There is no evidence or explicit statement addressing the requirement.",
+    "ability": "The ability to operate digital twins without causing unacceptable risk of physical injury or damage to the health of people, either directly, or indirectly as a result of damage to property or to the environment",
+    "category": " Trustworthiness",
+    "capability": "Safety",
+    "uid": "TW.SF"
+  }
+]

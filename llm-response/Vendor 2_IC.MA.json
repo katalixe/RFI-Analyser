@@ -1,7 +1,0 @@
-{
-  "score": 8,
-  "justification": "Vendor 2 states support for 'complex mathematical analytics using simulation tools like Simcenter Amesim and HEEDS for model-based engineering and optimization,' which aligns well with the requirement for physics-based and mathematical models in Digital Twin analytics. Explicit mention of 'HPC environments' suggests capability for complex calculations. However, a direct mention of 'statistical' calculations is absent, which slightly limits the breadth of their evidence.",
-  "ability": "The ability to perform mathematical and statical calculations to enable physics-based and other mathematical models",
-  "category": " Intelligence",
-  "capability": "Mathematical Analytics (Engineering Calculations)"
-}

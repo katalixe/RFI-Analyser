@@ -1,7 +1,0 @@
-{
-  "score": 9,
-  "justification": "Vendor 2 explicitly addresses the ability to 'store, manage and retrieve the algorithmic codebase, business rules and meta data' by providing a 'centralized Simulation Model Repository via Cloud 2, integrating Simcenter and Teamcenter for model versioning, governance, and traceability.' The offering describes management of algorithmic models, business rules, and simulation metadata. However, while comprehensive, it lacks detailed examples of retrieval processes, preventing a perfect score.",
-  "ability": "The ability to store, manage and retrieve the algorithmic codebase, business rules and meta data that describe a simulation model.",
-  "category": " Data Services",
-  "capability": "Simulation Model Repository"
-}

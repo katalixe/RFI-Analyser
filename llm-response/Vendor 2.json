@@ -1,0 +1,258 @@
+[
+  {
+    "score": 8,
+    "justification": "Vendor 2 states Teamcenter 'enables centralized storage and governance of digital twin models, ensuring structured metadata, version control, and traceability,' directly supporting the metadata management and central repository requirement. However, while the response refers to 'structured metadata' and 'traceability,' it does not explicitly detail support for 'comprehensive data definitions' or 'precise data integrity rules,' making the evidence strong but not fully exhaustive.",
+    "ability": "The ability to store, manage and retrieve the meta data that describe the digital twin model. The model can include formal data names, comprehensive data definitions, proper data structures, and precise data integrity rules. ",
+    "category": " Data Services",
+    "capability": "Digital Twin Model Repository",
+    "uid": "DS.RP"
+  },
+  {
+    "score": 8,
+    "justification": "Vendor 2's offering 'delivers an integrated Digital Twin Instance Repository' and 'supports real-time capture and synchronization of asset state data.' It also allows for accurate monitoring, diagnostics, and performance management, which demonstrates strong alignment with the requirement to store, manage, and retrieve digital twin instance data. However, while these features are explicitly mentioned, there is limited detail on the retrieval process and no explicit reference to conformity with a digital twin model's specific requirements. Thus, it falls short of a perfect score.",
+    "ability": "The ability to store, manage and retrieve digital twin instance data that conforms to the requirements of the digital twin model",
+    "category": " Data Services",
+    "capability": "Digital Twin Instance Repository",
+    "uid": "DS.IR"
+  },
+  {
+    "score": 8,
+    "justification": "Vendor 2's response explicitly addresses domain-specific data management through Simcenter and Mendix Data Hub, detailing 'scalable, structured storage and retrieval of engineering, simulation, and OT datasets.' The mention of 'domain-specific APIs' and relevant standards further supports appropriate handling of distinct data types. However, while the response is thorough, it lacks concrete examples or metrics of efficiency, leading to a slight deduction.",
+    "ability": "The ability to efficiently handle, store, and retrieve data based on the distinct characteristics inherent to specific data types.",
+    "category": " Data Services",
+    "capability": "Domain Specific Data Management",
+    "uid": "DS.DS"
+  },
+  {
+    "score": 8,
+    "justification": "Vendor 2's offering explicitly provides 'tiered storage options (Hot, Cool, and Archive)', addressing the need to store, organize, and retrieve data by access frequency and retention duration. The justification for cost optimization is clear ('optimize storage costs'), and compliance is referenced. However, there is limited detail on the retrieval process, and some terms (e.g., 'Cool' instead of 'Cold') deviate slightly from standard. The solution convincingly meets the requirement but leaves small gaps in operational detail.",
+    "ability": "The ability to store, organize and retrieve data  based on how frequently it will be accessed and how long it will be retained.",
+    "category": " Data Services",
+    "capability": "Data Storage and Archive Services",
+    "uid": "DS.SA"
+  },
+  {
+    "score": 9,
+    "justification": "Vendor 2 explicitly provides a 'centralized Simulation Model Repository' and details 'management of algorithmic models, business rules, test cases, and simulation metadata', directly supporting the need to 'store, manage and retrieve' these elements. 'Model versioning, governance, and traceability' address configuration management and model governance. However, the retrieval mechanism is not described in detail, and there is no clear reference to explicit support for all potential retrieval scenarios, preventing a perfect score.",
+    "ability": "The ability to store, manage and retrieve the algorithmic codebase, business rules and meta data that describe a simulation model.",
+    "category": " Data Services",
+    "capability": "Simulation Model Repository",
+    "uid": "DS.SR"
+  },
+  {
+    "score": 9,
+    "justification": "Vendor 2 explicitly states 'bi-directional communication between control systems, IoT sensors, SCADA, and Cloud 2' and offers 'built-in connectors and pre-integrated apps for device management, protocol translation, and condition monitoring.' The Interfaces list OPC UA, MQTT, Modbus, and REST APIs, which are industry-relevant. These details strongly support the required ability to integrate OT, IoT, SCADA, and enable data flow. However, there is no specific mention of Digital Twin system integration, resulting in a minor gap.",
+    "ability": "The ability to integrate directly with control systems and IOT devices/sensors, SCADA ",
+    "category": " Integration",
+    "capability": "OT/IoT system integration",
+    "uid": "IR.IO"
+  },
+  {
+    "score": 8,
+    "justification": "Vendor 2 provides 'seamless integration of Digital Twin applications through Teamcenter and Mendix' and offers 'bidirectional data movement and synchronization,' which directly supports integration and interoperability. The statement 'using low-code integration workflows and robust connectors' and interface support for 'OPC UA, MQTT, REST APIs, and ISO/IEC 26550' further reinforce this. However, while strong, the response lacks concrete implementation examples and measurable outcomes, so a perfect score is not justified.",
+    "ability": "The ability to integrate or access information from existing digital twin instances ",
+    "category": " Integration",
+    "capability": "Digital Twin Integration",
+    "uid": "IR.DT"
+  },
+  {
+    "score": 7,
+    "justification": "Vendor 2 states 'integration between Digital Twin systems and collaboration platforms like MS Teams and Slack' using 'built-in connectors and bot integration frameworks,' and mentions 'conversational UI.' However, only Teams and Slack are explicitly mentioned; Yammer and Jabber are omitted. Security standards are addressed, but coverage of all required platforms is incomplete.",
+    "ability": "The ability for the digital twin to interface with platforms like Yammer, Jabber, Teams, Slack",
+    "category": " Integration",
+    "capability": "Collaboration platform integration",
+    "uid": "IR.CL"
+  },
+  {
+    "score": 9,
+    "justification": "Vendor 2 demonstrates 'API-first architecture', RESTful and GraphQL API publishing via Mendix and Teamcenter, and 'OpenAPI-compliant interfaces'. The response directly addresses enabling external, partner, and internal developers access to data/services for integration and simplification. Security/compliance detail adds strength. However, no explicit example or clear mention of developer onboarding, so 1 point is deducted.",
+    "ability": "The ability for the digital twin to publish APIs to external, partner, and internal developers to access data and services.",
+    "category": " Integration",
+    "capability": "API Services",
+    "uid": "IR.AS"
+  },
+  {
+    "score": 8,
+    "justification": "Vendor 2 'enables automated orchestration of Digital Twin workflows,' supporting 'configuration, coordination, and automation of distributed systems, edge devices, and digital twins at scale.' This aligns closely with the requirement for automated configuration, management, and coordination. Interfaces like MQTT, AMQP, and REST are explicitly named, and security standards are cited. However, there is no concrete example or explicit mention of managing 'complex tasks and workflows' beyond generic statements, preventing a perfect score.",
+    "ability": "The ability to coordinate the automated configuration, management, and coordination of  systems, applications, digital twins and services.",
+    "category": " Intelligence",
+    "capability": "Orchestration",
+    "uid": "IC.OS"
+  },
+  {
+    "score": 7,
+    "justification": "The offering details 'real-time alerting and notification capabilities,' 'condition-based alerts,' and 'escalation workflows,' indicating support for managing alerts and notifications. However, while notification delivery ('resilient alert delivery') and governance are mentioned, explicit support for 'display and manage... message queues, triggers' is not clearly stated. The evidence for full message queue and trigger management is limited.",
+    "ability": "The ability to display and manage alerts, messages, message queues, triggers, and notifications",
+    "category": " Intelligence",
+    "capability": "Alerts and Notification",
+    "uid": "IC.AL"
+  },
+  {
+    "score": 8,
+    "justification": "Vendor 2 'enables customizable, real-time reporting' and provides 'customizable, real-time reporting through MindSphere and Mendix’s dashboarding tools', explicitly addressing configurability and stakeholder/reporter needs. The mention of compliance ('supporting stakeholder visibility and compliance reporting') supports the regulatory aspect. However, details about the specific extent of customization or examples of report configurability are not fully elaborated.",
+    "ability": "The ability to generate configurable and customizable reports to get insights into the data",
+    "category": " Intelligence",
+    "capability": "Reporting",
+    "uid": "IC.RP"
+  },
+  {
+    "score": 8,
+    "justification": "The offering describes advanced analytics through integrated dashboards, trend visualization, and application of statistical functions, directly supporting historical and real-time analysis. Ability to 'visualize trends, build dashboards, and apply statistical functions' aligns well with the requirement for studying and presenting data, and drawing conclusions from large data sets. However, there is no explicit mention of 'fetching data between dates' or specific filtering features, which reduces completeness.",
+    "ability": "The study and presentation of data to create information and knowledge. The ability to analyze data through charts, tables, dashboards, fetch data between dates, and filter data based on various criteria. The analysis of data, typically large sets of business data, using mathematics, statistics, and computer software with an objective to draw conclusions.",
+    "category": " Intelligence",
+    "capability": "Data Analysis and Analytics",
+    "uid": "IC.AA"
+  },
+  {
+    "score": 8,
+    "justification": "Vendor 2's Offering states 'supports federated learning... allowing algorithm training across decentralized edge nodes without transmitting raw data,' directly aligning with training across decentralized devices without data exchange. Privacy and compliance are cited. However, while frameworks (ONNX, TensorFlow Lite) and RESTful interfaces are mentioned, the evidence is not deeply detailed regarding support for heterogeneous data or the mechanisms ensuring actors' involvement, leaving minor gaps in completeness.",
+    "ability": "The ability to train an algorithm across multiple decentralized digital twin edge devices or servers holding local data samples, without exchanging their data samples.",
+    "category": " Intelligence",
+    "capability": "Federated Learning",
+    "uid": "IC.FL"
+  },
+  {
+    "score": 8,
+    "justification": "Vendor 2 addresses the requirement by providing 'high-fidelity modeling, multi-physics simulation, and what-if analysis' for digital twins, and explicitly mentions 'operator training simulations.' While it supports 'predictive maintenance' and 'performance evaluation,' it does not explicitly mention use of video, audio, or animation as inputs or outputs, which are specified in the ability. The response strongly supports the requirement, with a slight gap in the explicit media types referenced.",
+    "ability": "The ability to create approximate imitation of a process or a system using past historical information, physical models, video, audio, and animation, what-if-scenarios.",
+    "category": " Intelligence",
+    "capability": "Simulation",
+    "uid": "IC.SM"
+  },
+  {
+    "score": 8,
+    "justification": "Vendor 2 'supports complex mathematical analytics using simulation tools like Simcenter Amesim and HEEDS for model-based engineering and optimization,' which directly aligns with enabling physics-based and mathematical models. However, the vendor lacks explicit mention of statistical calculations or any detailed examples of calculations performed, limiting the evidence for full fulfillment.",
+    "ability": "The ability to perform mathematical and statical calculations to enable physics-based and other mathematical models",
+    "category": " Intelligence",
+    "capability": "Mathematical Analytics (Engineering Calculations)",
+    "uid": "IC.MA"
+  },
+  {
+    "score": 7,
+    "justification": "Vendor 2 states 'prescriptive decision-making using built-in ML engines and rule-based systems,' and 'Insights are derived from sensor data, historical performance, and digital twin simulations,' which indicates alignment with business rules, analytics, and digital twin outcomes. However, it is not explicit about how business rules and analytics are combined with workflow to drive specific actions and business outcomes, and the mechanism for generating actionable recommendations is not detailed.",
+    "ability": "The ability to create prescriptive recommendations based on business rules and AI logic to suggest the best next actions to take when a pre-determined event happens. ",
+    "category": " Intelligence",
+    "capability": "Prescriptive Recommendations",
+    "uid": "IC.PS"
+  },
+  {
+    "score": 8,
+    "justification": "Vendor 2 enables defining and managing business rules via the Mendix low-code platform and provides features such as 'rule-based triggers, automated decision trees, and custom logic to control Digital Twin behavior throughout its lifecycle.' While this clearly covers creation, management, and usage, the response is high-level and lacks detailed, concrete workflows or lifecycle management examples.",
+    "ability": "The ability to create, manage and use business rules that influence the digital twin behavior throughout its lifecycle",
+    "category": " Intelligence",
+    "capability": "Business Rules",
+    "uid": "IC.BR"
+  },
+  {
+    "score": 9,
+    "justification": "Vendor 2 demonstrates 'tamper-proof transaction logging' via 'integration with Hyperledger Fabric and Ethereum-based distributed ledgers,' directly supporting immutable data and smart contracts for digital twins. Interfaces include 'Ethereum-compatible interfaces' and 'REST APIs.' Vendor references compliance with security standards. However, while evidence is strong, details on specific automation or record retrieval are not deeply elaborated, preventing a perfect score.",
+    "ability": "The ability to use distributed ledgers for digital twin applications that require immutable data for digital twin instances, transactions and automation (smart contracts)",
+    "category": " Intelligence",
+    "capability": "Distributed Ledger and Smart Contracts",
+    "uid": "IC.DL"
+  },
+  {
+    "score": 8,
+    "justification": "Vendor 2 'enables modular development and composition of Digital Twin services through reusable components in Mendix' and states these 'can be rapidly assembled and modified based on use-case-specific needs.' This directly addresses modularity and rapid composition using packaged, reusable business capabilities, supporting reduced time to value. However, there is no mention of explicit support for 'citizen development,' which leaves a minor gap in fully meeting the ability requirement.",
+    "ability": "The ability to use a modular digital twin application development approach to rapidly compose and recompose digital twin services that deliver use case specific outcomes.",
+    "category": " Intelligence",
+    "capability": "Composition ",
+    "uid": "IC.CS"
+  },
+  {
+    "score": 8,
+    "justification": "The vendor states 'real-time monitoring of assets, systems, and sensors' and 'visualized in dashboards,' supporting the requirement for continuously updated information and aiding decision-making. However, the description does not explicitly mention interaction with the data, only presentation and visualization. The claim of 'real-time' may warrant further clarification regarding actual latency benchmarks.",
+    "ability": "The ability to present and interact with continuously updated information streaming at zero or low latency.",
+    "category": " User Experience",
+    "capability": "Real-time Monitoring",
+    "uid": "UX.RM"
+  },
+  {
+    "score": 8,
+    "justification": "Vendor 2 'provides interactive graph-based visualization of digital twin hierarchies using Teamcenter’s Entity Explorer and Mendix’s customizable UI components,' explicitly supporting 'view, query, and navigate through connected digital entities.' While this directly addresses interactive presentation and navigation for business users, there is little detail about specific user-friendly features or interface design, making the evidence strong but not fully exhaustive.",
+    "ability": "The ability to present Digital Twin entities and their hierarchical or graph-based relationships in an interactive way",
+    "category": " User Experience",
+    "capability": "Entity Relationship Visualization",
+    "uid": "UX.ER"
+  },
+  {
+    "score": 8,
+    "justification": "Vendor 2 states they 'enable immersive Extended Reality (XR) experiences' and allow users to 'simulate, interact with, and collaborate on digital representations of real-world environments,' as well as 'explore 3D models, simulate system behavior, and conduct virtual commissioning.' However, while 'visual' interaction is strongly supported, there is only indirect mention of 'auditory, haptic' enhancements, with no explicit reference to those modalities.",
+    "ability": "The ability to provide an interactive experience of a real-world environment where the objects that reside in the real world are enhanced by computer-generated perceptual information such as visual, auditory, haptic etc.  environment.",
+    "category": " User Experience",
+    "capability": "Extended Reality (XR)",
+    "uid": "UX.XR"
+  },
+  {
+    "score": 8,
+    "justification": "Vendor 2 demonstrates integrated BI with Mendix Dashboards and MindSphere’s Insight Hub, stating users can 'visualize operational metrics, trigger alerts, and export analytics' which supports analytics and actionable insights for business users. Interfaces cite popular data protocols and export options, and compliance standards. While the offering addresses the requirement for real-time decision-making and multiple personas, it is not fully explicit about the ease of use or depth of insights for all listed personas, warranting a small deduction.",
+    "ability": "The ability to analyze stored data (records) to derive insights and actions in a business user focused visual interface",
+    "category": " User Experience",
+    "capability": "Business Intelligence ",
+    "uid": "UX.BI"
+  },
+  {
+    "score": 8,
+    "justification": "Vendor 2 describes their 'Workflow Engine' as enabling 'automation of business processes associated with digital twins' and specifically lists process examples such as 'asset commissioning' and 'maintenance scheduling.' The claim of 'rapid creation and deployment' supports effectiveness and repeatability. However, while the description implies ability to 'execute a sequence of actions as a process flow,' explicit mention of process flow logic or orchestration details is lacking, preventing a perfect score.",
+    "ability": "The ability to execute a sequence of actions as a process flow to achieve specific business outcomes",
+    "category": " User Experience",
+    "capability": "Business Process Management & Workflow",
+    "uid": "UX.BP"
+  },
+  {
+    "score": 9,
+    "justification": "Vendor 2 demonstrates support for immersive visualization using Unity, Unreal Engine, and Simcenter AR/VR tools, explicitly stating 'rendering of high-fidelity 3D simulations' and 'system interaction via game-like experiences.' Interfaces enable integration through Unity/Unreal SDKs and REST APIs, matching gaming engine technology requirements. However, while 'highly interactive' is implied, the extent of interactivity specifics are not deeply detailed, preventing a perfect score.",
+    "ability": "The ability to create immersive virtual worlds and interactive experiences with gaming engine technology",
+    "category": " User Experience",
+    "capability": "Gaming Engine Visualization",
+    "uid": "UX.GE"
+  },
+  {
+    "score": 8,
+    "justification": "Vendor 2 explicitly mentions 'real-time rendering of large models and point cloud data from LiDAR and scanning systems,' as well as 'visual inspection, annotation, and remote collaboration.' Supported interfaces (JT, STEP, X3D) are common in 3D workflows. However, while user-friendliness is suggested by 'enables visual inspection' and 'remote collaboration,' there is no explicit statement on ease-of-use or UI design. Therefore, while the technical requirements are well addressed, the user-friendly aspect is only implied, not demonstrated.",
+    "ability": "The ability to render 3D visualizations from point cloud data sets generated by LiDAR and other scanning technologies",
+    "category": " User Experience",
+    "capability": "3D rendering",
+    "uid": "UX.3R"
+  },
+  {
+    "score": 8,
+    "justification": "Vendor 2 addresses gamification in Digital Twin interaction by offering 'point tracking, digital twin interaction badges, achievement levels, and engagement metrics,' matching the requirement for points, badges, and competition. The mention of 'gamification design using Mendix SDKs' and support for event tracking bolsters this. However, competition (e.g., leaderboards) is only implied through 'engagement metrics' rather than explicitly stated, and the explicit linkage to user competition is somewhat vague, preventing a perfect score.",
+    "ability": "The ability to enable typical elements of game playing in Digital Twin interaction",
+    "category": " User Experience",
+    "capability": "Gamification ",
+    "uid": "UX.GM"
+  },
+  {
+    "score": 8,
+    "justification": "Vendor 2 'supports secure device onboarding, configuration, firmware updates, diagnostics, and remote monitoring', which aligns well with provisioning, authentication, configuration, maintenance, monitoring, and diagnosing IoT devices per the Ability. Central/edge management and broad protocol support further strengthen this. However, while the offering mentions comprehensive management, explicit references to Digital Twin environment integration are missing, and authentication is implied but not directly stated.",
+    "ability": "The ability to provision and authenticate, configure, maintain, monitor and diagnose connected IoT devices operating as part of Digital Twin environment",
+    "category": " Management",
+    "capability": "Device Management",
+    "uid": "MG.DM"
+  },
+  {
+    "score": 9,
+    "justification": "Vendor 2 provides explicit evidence that logs include 'system events, data access, transactions, and anomalies,' aligning directly with the requirement to record events, transactions, and user access data. The solution supports forensic investigation and audit, satisfying traceability needs. Interfaces (REST APIs, Syslog, Kibana) and compliance certifications further support robust logging. However, while 'user' data logging is implied under 'data access,' the explicit mention of user identity and granularity could be clearer, so a perfect score is withheld.",
+    "ability": "The ability to record events, transactions, access data of users, and transactions to understand and trace the activities occurring in a Digital Twin system.",
+    "category": " Management",
+    "capability": "Logging",
+    "uid": "MG.EL"
+  },
+  {
+    "score": 7,
+    "justification": "Vendor 2 specifies 'end-to-end digital twin security through Xcelerator Trust Framework, combining identity management,' and lists strong interface security protocols (OAuth 2.0, SAML, TLS 1.3) and compliance standards (NIST SP 800-53, ISO 27001, GDPR, IEC 62443-3-3). However, evidence is indirect: the offering mentions key elements, but lacks details on how availability, integrity, and confidentiality are explicitly maintained for equipment, systems, and information. The explanation is comprehensive but not deeply detailed, warranting a 7.",
+    "ability": "The ability to protected Digital Twins from unintended or unauthorized access, change or destruction. Security concerns equipment, systems and information, ensuring availability, integrity and confidentiality of information.",
+    "category": " Trustworthiness",
+    "capability": "Security",
+    "uid": "TW.SC"
+  },
+  {
+    "score": 8,
+    "justification": "Vendor 2 provides explicit details on how safety is managed ('simulation, validation, and real-time analytics'; 'modeled and mitigated virtually') and references standards (IEC 61508, ISO 13849) directly relevant to functional safety. However, while mitigation and monitoring are described, there is limited detail on specific operational controls or residual risk management, leaving some ambiguity.",
+    "ability": "The ability to operate digital twins without causing unacceptable risk of physical injury or damage to the health of people, either directly, or indirectly as a result of damage to property or to the environment",
+    "category": " Trustworthiness",
+    "capability": "Safety",
+    "uid": "TW.SF"
+  }
+]

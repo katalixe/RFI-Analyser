@@ -1,7 +1,0 @@
-{
-  "score": 7,
-  "justification": "Vendor 2 describes enabling 'immersive Extended Reality (XR) experiences' and highlights the ability to 'simulate, interact with, and collaborate on digital representations,' which supports interactivity and immersion. Platforms mentioned (NX Immersive Designer, Simcenter VR Viewer, Teamcenter AR/VR) suggest multiple modalities, though explicit mention of auditory or haptic enhancements is missing. The description is strong on visual and interactive simulation, but less explicit about other perceptual enhancements, thus only partially meeting the full requirement.",
-  "ability": "The ability to provide an interactive experience of a real-world environment where the objects that reside in the real world are enhanced by computer-generated perceptual information such as visual, auditory, haptic etc.  environment.",
-  "category": " User Experience",
-  "capability": "Extended Reality (XR)"
-}

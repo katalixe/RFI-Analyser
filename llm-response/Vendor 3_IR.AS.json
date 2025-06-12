@@ -1,7 +1,0 @@
-{
-  "score": 1,
-  "justification": "The Offering and Interfaces sections do not mention API publishing, digital twins, or developer access to data and services. There is no evidence provided that addresses the requirement for external, partner, or internal API capabilities.",
-  "ability": "The ability for the digital twin to publish APIs to external, partner, and internal developers to access data and services.",
-  "category": " Integration",
-  "capability": "API Services"
-}

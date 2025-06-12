@@ -1,7 +1,0 @@
-{
-  "score": 8,
-  "justification": "Vendor 2 offers 'bi-directional communication between control systems, IoT sensors, SCADA, and Cloud 2' and 'real-time ingestion, processing, and analysis,' matching the integration requirement. The support for OPC UA, MQTT, Modbus, and REST APIs, and protocol translation, directly addresses interoperability. However, there is no direct mention of Digital Twin system integration, just 'data to flow between Digital Twin systems with ease.' Therefore, the response is strong but not fully complete.",
-  "ability": "The ability to integrate directly with control systems and IOT devices/sensors, SCADA ",
-  "category": " Integration",
-  "capability": "OT/IoT system integration"
-}

@@ -1,7 +1,0 @@
-{
-  "score": 8,
-  "justification": "The vendor claims their Workbench 'provides a secure and scalable environment to store, manage, and retrieve simulation models, including algorithmic codebases, business rules, and metadata,' directly aligning with the requirement. The phrase 'efficient simulation model repository management' indicates support for portfolio and governance objectives. However, the statements are somewhat general and lack detail about specific configuration management and governance features, preventing a perfect score.",
-  "ability": "The ability to store, manage and retrieve the algorithmic codebase, business rules and meta data that describe a simulation model.",
-  "category": " Data Services",
-  "capability": "Simulation Model Repository"
-}

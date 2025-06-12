@@ -1,7 +1,0 @@
-{
-  "score": 1,
-  "justification": "The vendor's Offering ('I am no man!') and Interfaces ('The pirates used a spyglass to spot distant ships.') do not address the requirement for executing a sequence of actions as a process flow to achieve specific business outcomes, nor do they mention effective or repeatable actions related to Digital Twin. No relevant or explicit support is provided.",
-  "ability": "The ability to execute a sequence of actions as a process flow to achieve specific business outcomes",
-  "category": " User Experience",
-  "capability": "Business Process Management & Workflow"
-}

@@ -1,7 +1,0 @@
-{
-  "score": 1,
-  "justification": "The vendor's Offering ('Even the smallest person can change the course of the future.') and Interfaces ('The pirate ship anchored off the coast of a deserted island.') provide no factual or technical information about federated learning, decentralized training, data privacy, security, or related capabilities required by the Ability. There is no evidence addressing the criterion.",
-  "ability": "The ability to train an algorithm across multiple decentralized digital twin edge devices or servers holding local data samples, without exchanging their data samples.",
-  "category": " Intelligence",
-  "capability": "Federated Learning"
-}

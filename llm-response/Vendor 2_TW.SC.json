@@ -1,7 +1,0 @@
-{
-  "score": 8,
-  "justification": "Vendor 2 claims 'end-to-end digital twin security' using the Xcelerator Trust Framework and details interface support for OAuth 2.0, SAML, TLS 1.3, and compliance with well-known security standards like NIST SP 800-53 and ISO 27001. This substantiates strong alignment with requirements for access, change, and information protection. However, explanations are broad ('combining identity management') and lack explicit mechanisms for ensuring availability and integrity, preventing a full score.",
-  "ability": "The ability to protected Digital Twins from unintended or unauthorized access, change or destruction. Security concerns equipment, systems and information, ensuring availability, integrity and confidentiality of information.",
-  "category": " Trustworthiness",
-  "capability": "Security"
-}

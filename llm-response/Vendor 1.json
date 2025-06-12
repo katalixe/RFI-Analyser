@@ -1,0 +1,258 @@
+[
+  {
+    "score": 8,
+    "justification": "The offering explicitly states it provides 'a centralized repository' to 'register and manage a wide array of Digital Twin models,' addressing portfolio management and governance. The mention of 'model repository,' 'configuration management,' and 'version control' supports metadata management and retrieval. However, there is no explicit mention of storing formal data names, definitions, or data integrity rules, so comprehensive support for metadata structure is implied but not thoroughly detailed.",
+    "ability": "The ability to store, manage and retrieve the meta data that describe the digital twin model. The model can include formal data names, comprehensive data definitions, proper data structures, and precise data integrity rules. ",
+    "category": " Data Services",
+    "capability": "Digital Twin Model Repository",
+    "uid": "DS.RP"
+  },
+  {
+    "score": 8,
+    "justification": "The Offering explicitly states 'provides a comprehensive Digital Twin Instance Repository that enables the storage, management, and retrieval of Digital Twin instance state data,' which directly addresses the requirement. However, there is no detail about conformity to specific digital twin model requirements beyond adherence to NIST standards, making the support strong but not completely exhaustive.",
+    "ability": "The ability to store, manage and retrieve digital twin instance data that conforms to the requirements of the digital twin model",
+    "category": " Data Services",
+    "capability": "Digital Twin Instance Repository",
+    "uid": "DS.IR"
+  },
+  {
+    "score": 7,
+    "justification": "The offering states 'domain-specific data management by enabling scalable storage and processing of large datasets' and the interface mentions compliance with relevant standards. However, there is no explicit mention of handling or retrieval mechanisms based on 'distinct characteristics inherent to specific data types,' limiting direct evidence of the required specificity.",
+    "ability": "The ability to efficiently handle, store, and retrieve data based on the distinct characteristics inherent to specific data types.",
+    "category": " Data Services",
+    "capability": "Domain Specific Data Management",
+    "uid": "DS.DS"
+  },
+  {
+    "score": 7,
+    "justification": "The Offering states 'scalable storage solutions with tiered options (Hot, Cool, and Archive) to efficiently manage data based on access frequency and retention needs,' directly reflecting access frequency and retention. However, while storage and tiering are mentioned, there is no explicit mention of organization or retrieval processes for Digital Twin data, nor details on cost reduction mechanisms. Security compliance is described, but is not directly relevant to the specific organizational capabilities requested.",
+    "ability": "The ability to store, organize and retrieve data  based on how frequently it will be accessed and how long it will be retained.",
+    "category": " Data Services",
+    "capability": "Data Storage and Archive Services",
+    "uid": "DS.SA"
+  },
+  {
+    "score": 7,
+    "justification": "The Offering states the workbench can 'store, manage, and retrieve simulation models, including algorithmic codebases, business rules, and metadata,' matching the Ability's requirements. 'Facilitating efficient simulation model repository management' suggests support for a central repository. However, explicit mention of features for configuration management and model governance is absent, so coverage is solid but not fully comprehensive.",
+    "ability": "The ability to store, manage and retrieve the algorithmic codebase, business rules and meta data that describe a simulation model.",
+    "category": " Data Services",
+    "capability": "Simulation Model Repository",
+    "uid": "DS.SR"
+  },
+  {
+    "score": 8,
+    "justification": "The vendor explicitly mentions for all three offerings—Event Grid, Cloud 1 Service Bus, and IoT Central—that they facilitate 'seamless integration with control systems, IoT devices/sensors, and SCADA,' and enable 'real-time data flow and interoperability between OT and IoT applications and Digital Twin systems.' This directly addresses integration and data flow requirements. However, the explanation relies heavily on general claims of 'comprehensive platform' and 'built-in connectivity' without providing concrete technical details or examples, preventing a perfect score.",
+    "ability": "The ability to integrate directly with control systems and IOT devices/sensors, SCADA ",
+    "category": " Integration",
+    "capability": "OT/IoT system integration",
+    "uid": "IR.IO"
+  },
+  {
+    "score": 8,
+    "justification": "The vendor clearly supports integration and interoperability: 'facilitates the integration of Digital Twin applications,' 'enabling seamless integration and interoperability,' and 'allowing secure and scalable integration.' However, while strong, the response lacks explicit detail on HOW access to EXISTING digital twin instances is accomplished, and focuses more on platform capability than direct demonstration of cross-instance integration.",
+    "ability": "The ability to integrate or access information from existing digital twin instances ",
+    "category": " Integration",
+    "capability": "Digital Twin Integration",
+    "uid": "IR.DT"
+  },
+  {
+    "score": 9,
+    "justification": "The response states 'enables seamless integration with collaboration platforms like Yammer, Jabber, Teams, and Slack' and 'providing Digital Twin users with a conversational user interface through its robust bot framework,' which directly matches the requirement. However, there is no detail on scope or specific limitations, so a perfect 10 is not warranted.",
+    "ability": "The ability for the digital twin to interface with platforms like Yammer, Jabber, Teams, Slack",
+    "category": " Integration",
+    "capability": "Collaboration platform integration",
+    "uid": "IR.CL"
+  },
+  {
+    "score": 6,
+    "justification": "The vendor states the platform 'provides a unified platform for managing APIs' and 'enabling seamless integration,' which somewhat supports API publishing for various developer audiences. However, there is no explicit mention of publishing APIs to external, partner, and internal developers, nor detail on access mechanisms. Compliance standards are noted but do not directly address API publication. Evidence is partial but lacks specificity.",
+    "ability": "The ability for the digital twin to publish APIs to external, partner, and internal developers to access data and services.",
+    "category": " Integration",
+    "capability": "API Services",
+    "uid": "IR.AS"
+  },
+  {
+    "score": 6,
+    "justification": "The offering demonstrates orchestration capabilities ('enables seamless orchestration of event-driven workflows', 'facilitates orchestration by providing reliable message queuing'), and supports coordination across various services. Interfaces mention support for MQTT, HTTP, AMQP, REST APIs. However, there is no explicit mention of orchestration or management of digital twins, nor direct reference to automated configuration. Evidence is partial and supports the criterion for systems and applications, but not fully for digital twins.",
+    "ability": "The ability to coordinate the automated configuration, management, and coordination of  systems, applications, digital twins and services.",
+    "category": " Intelligence",
+    "capability": "Orchestration",
+    "uid": "IC.OS"
+  },
+  {
+    "score": 6,
+    "justification": "The offering describes capabilities for real-time alerts, notifications, and data-driven alerts (SignalR, Event Hub, Power BI), which relate to displaying and managing alerts and notifications. However, there is no explicit mention of message queues, triggers, or specific mechanisms for managing or triggering actions/interventions. Evidence is partial and mostly focused on delivery, not full management.",
+    "ability": "The ability to display and manage alerts, messages, message queues, triggers, and notifications",
+    "category": " Intelligence",
+    "capability": "Alerts and Notification",
+    "uid": "IC.AL"
+  },
+  {
+    "score": 7,
+    "justification": "The vendor states 'comprehensive reporting by allowing users to visualize and analyze telemetry data from connected devices through customizable dashboards and integration with tools like Power BI.' However, there is no explicit mention of report generation or detailed information about configurability for various stakeholders or compliance. The evidence is strong regarding visualization but less specific for configurable reports.",
+    "ability": "The ability to generate configurable and customizable reports to get insights into the data",
+    "category": " Intelligence",
+    "capability": "Reporting",
+    "uid": "IC.RP"
+  },
+  {
+    "score": 8,
+    "justification": "The vendor provides platforms (Vendor 1 Fabric, Cloud 1 Synapse, Databricks, Cloud 1 Time Series Insights) explicitly supporting analytics, including BI, ad hoc exploration, and advanced analytics. Interfaces (REST APIs, SQL, Spark, GraphQL) facilitate data extraction, filtering, and integration. However, while capabilities for insight and analytics are evident, the response lacks explicit mention of dashboards, charts, or fetching data between dates and filtering, as specified in the ability requirement. This omission prevents a perfect score.",
+    "ability": "The study and presentation of data to create information and knowledge. The ability to analyze data through charts, tables, dashboards, fetch data between dates, and filter data based on various criteria. The analysis of data, typically large sets of business data, using mathematics, statistics, and computer software with an objective to draw conclusions.",
+    "category": " Intelligence",
+    "capability": "Data Analysis and Analytics",
+    "uid": "IC.AA"
+  },
+  {
+    "score": 9,
+    "justification": "Both 'Cloud 1 Machine Learning' and 'Vendor 1 Fabric' explicitly support federated learning, which directly addresses the requirement to train models across decentralized data without data exchange. 'Maintaining data privacy and security' and 'enabling collaborative analytics across different organizational boundaries' align with privacy and access considerations. Security standards like GDPR, ISO, and SOC 2 are mentioned. However, there is no explicit mention of 'digital twin edge devices' or detailed heterogeneity of data sources, which prevents a perfect score.",
+    "ability": "The ability to train an algorithm across multiple decentralized digital twin edge devices or servers holding local data samples, without exchanging their data samples.",
+    "category": " Intelligence",
+    "capability": "Federated Learning",
+    "uid": "IC.FL"
+  },
+  {
+    "score": 5,
+    "justification": "The Offering mentions 'engineering design and simulation,' implying some simulation capabilities, and 'enabling secure and efficient user collaboration.' However, it does not specifically reference using historical data, physical models, video, audio, animation, what-if scenarios, or digital twins for training. The Interfaces detail technical integrations but do not explicitly support simulation requirements. The response is vague and only partially matches the detailed ability requested.",
+    "ability": "The ability to create approximate imitation of a process or a system using past historical information, physical models, video, audio, and animation, what-if-scenarios.",
+    "category": " Intelligence",
+    "capability": "Simulation",
+    "uid": "IC.SM"
+  },
+  {
+    "score": 7,
+    "justification": "The Offering states it 'provides a robust environment for performing complex mathematical analytics and engineering calculations,' which aligns with the requirement for mathematical and statistical calculations for physics-based models. However, there is no explicit mention of statistical calculations or digital twin analytics, so coverage is high for math/physics but not absolutely complete.",
+    "ability": "The ability to perform mathematical and statical calculations to enable physics-based and other mathematical models",
+    "category": " Intelligence",
+    "capability": "Mathematical Analytics (Engineering Calculations)",
+    "uid": "IC.MA"
+  },
+  {
+    "score": 6,
+    "justification": "The offerings repeatedly mention 'prescriptive recommendations,' 'integrating data science workflows and machine learning models,' and 'well-architected framework guiding on best practices.' However, none of the descriptions explicitly mention creating recommendations based on custom business rules, predefined event triggers, or support for Digital Twin scenarios as required. The alignment to 'business rules' and 'guidance based on analytics' is implied but not fully substantiated.",
+    "ability": "The ability to create prescriptive recommendations based on business rules and AI logic to suggest the best next actions to take when a pre-determined event happens. ",
+    "category": " Intelligence",
+    "capability": "Prescriptive Recommendations",
+    "uid": "IC.PS"
+  },
+  {
+    "score": 7,
+    "justification": "The offering states it 'enables the implementation of business rules by integrating with Cloud 1 Logic Apps', which suggests business rule creation and management is possible, but does not provide specific details on the breadth ('throughout its lifecycle') or explicit evidence of management and usage, only implementation and integration.",
+    "ability": "The ability to create, manage and use business rules that influence the digital twin behavior throughout its lifecycle",
+    "category": " Intelligence",
+    "capability": "Business Rules",
+    "uid": "IC.BR"
+  },
+  {
+    "score": 7,
+    "justification": "The offering provides a 'managed and decentralized ledger' and 'tamper-proof storage,' aligning with requirements for an immutable record. The mention of blockchain and REST APIs suggests support for distributed ledgers and integration. However, there is no explicit mention of digital twin application compatibility, smart contract support, or how digital twins interact with automation, which partially limits clear fulfillment of the full requirement.",
+    "ability": "The ability to use distributed ledgers for digital twin applications that require immutable data for digital twin instances, transactions and automation (smart contracts)",
+    "category": " Intelligence",
+    "capability": "Distributed Ledger and Smart Contracts",
+    "uid": "IC.DL"
+  },
+  {
+    "score": 5,
+    "justification": "The Offering notes 'composition of complex digital models by integrating various data sources' and references DTDL, implying modularity, but does not explicitly describe 'packaged, reusable business capabilities (PBCs)' or processes for rapid recomposition. Interfaces highlight flexibility but lack details on supporting citizen development or reducing duplication, leaving the modularity addressed only partially and without concrete examples.",
+    "ability": "The ability to use a modular digital twin application development approach to rapidly compose and recompose digital twin services that deliver use case specific outcomes.",
+    "category": " Intelligence",
+    "capability": "Composition ",
+    "uid": "IC.CS"
+  },
+  {
+    "score": 8,
+    "justification": "Vendor 1 describes features that 'enable real-time monitoring', 'instant detection of patterns and anomalies', and 'timely updates and notifications', directly supporting low-latency streaming and decision-making. The inclusion of stream processing with protocol and compliance support adds credibility. However, there is no explicit latency metric or detail on how interactive presentation occurs beyond monitoring and notifications; thus slight ambiguity remains.",
+    "ability": "The ability to present and interact with continuously updated information streaming at zero or low latency.",
+    "category": " User Experience",
+    "capability": "Real-time Monitoring",
+    "uid": "UX.RM"
+  },
+  {
+    "score": 9,
+    "justification": "The response specifically describes 'entity relationship visualization' and an 'interactive graphical interface' for viewing, querying, and editing digital twin models and their relationships, directly aligning with the requirement. The mention of Cloud 1 Digital Twins Explorer as a dedicated tool for these tasks provides strong evidence. However, there is no detailed description of specific user-friendly features tailored to business users, slightly limiting full confirmation.",
+    "ability": "The ability to present Digital Twin entities and their hierarchical or graph-based relationships in an interactive way",
+    "category": " User Experience",
+    "capability": "Entity Relationship Visualization",
+    "uid": "UX.ER"
+  },
+  {
+    "score": 8,
+    "justification": "The Offering describes 'live digital replicas,' 'immersive and interactive simulations,' and 'precise spatial tracking,' supporting interactivity and enhanced perception. Remote Rendering enables 'detailed and interactive visualizations.' This addresses multisensory, real-world simulation requirements but only explicitly mentions visual enhancements; auditory and haptic modalities are not referenced. Thus, while strong for visual and interactive aspects, the response is limited in sensory scope.",
+    "ability": "The ability to provide an interactive experience of a real-world environment where the objects that reside in the real world are enhanced by computer-generated perceptual information such as visual, auditory, haptic etc.  environment.",
+    "category": " User Experience",
+    "capability": "Extended Reality (XR)",
+    "uid": "UX.XR"
+  },
+  {
+    "score": 8,
+    "justification": "The Offering states Power BI 'transforms raw data into interactive and visually immersive insights, enabling data-driven decision-making,' which aligns closely with analyzing stored data for insights in a business-user focused interface. Interfaces detail support for various data sources and security compliance. However, there is limited explicit reference to real-time decision support or specific features for multiple personas (operations, technology, business), resulting in a slightly reduced score.",
+    "ability": "The ability to analyze stored data (records) to derive insights and actions in a business user focused visual interface",
+    "category": " User Experience",
+    "capability": "Business Intelligence ",
+    "uid": "UX.BI"
+  },
+  {
+    "score": 7,
+    "justification": "The Offering states PowerApps 'streamlines business process management and workflow automation by enabling users to create custom apps that integrate seamlessly with various data sources,' which suggests it can execute a sequence of actions. However, there is no explicit mention of repeatability or direct reference to achieving Digital Twin business outcomes. The support for REST APIs and connectors strengthens process flow capability, but more specific evidence tying these to Digital Twin use cases is missing.",
+    "ability": "The ability to execute a sequence of actions as a process flow to achieve specific business outcomes",
+    "category": " User Experience",
+    "capability": "Business Process Management & Workflow",
+    "uid": "UX.BP"
+  },
+  {
+    "score": 6,
+    "justification": "The Offering details 'real-time rendering of complex scenes' and 'interactive 3D content' in Unity, Unreal, and HLA & DIS engines, which aligns with creating immersive experiences. However, there is no explicit mention of 'Digital Twins' or clear examples of highly interactive user engagement within a metaverse context. The Interfaces support technical integration and compliance but lack evidence of full interactive capability as required.",
+    "ability": "The ability to create immersive virtual worlds and interactive experiences with gaming engine technology",
+    "category": " User Experience",
+    "capability": "Gaming Engine Visualization",
+    "uid": "UX.GE"
+  },
+  {
+    "score": 6,
+    "justification": "The Offering mentions 'high-fidelity 3D rendering' and real-time streaming to devices, which is relevant, but does not explicitly mention point cloud data or LiDAR. Interfaces describe REST APIs and engine integration, but again, no direct reference to point cloud or scanner data. The evidence partially demonstrates capability for 3D rendering and interaction, but lacks specific mention of point cloud/LiDAR dataset support.",
+    "ability": "The ability to render 3D visualizations from point cloud data sets generated by LiDAR and other scanning technologies",
+    "category": " User Experience",
+    "capability": "3D rendering",
+    "uid": "UX.3R"
+  },
+  {
+    "score": 8,
+    "justification": "The Offering clearly states 'provides a comprehensive platform for integrating gamification elements like points scoring, badges, and competitions into Digital Twin applications', directly matching the requirement. However, no specific examples or demonstration of actual implementation are given, and the details on integration into user experience are general rather than explicit, which justifies a score slightly below perfect.",
+    "ability": "The ability to enable typical elements of game playing in Digital Twin interaction",
+    "category": " User Experience",
+    "capability": "Gamification ",
+    "uid": "UX.GM"
+  },
+  {
+    "score": 9,
+    "justification": "The offering explicitly covers provisioning ('zero-touch, just-in-time provisioning'), configuration, monitoring, updates, and diagnostics across all relevant services. Security and compliance (GDPR, ISO, SOC 2) are detailed throughout. REST, MQTT, and other standard protocols are well described. The text could elaborate more on diagnostic capabilities within the Digital Twin context; otherwise, coverage is strong and explicit.",
+    "ability": "The ability to provision and authenticate, configure, maintain, monitor and diagnose connected IoT devices operating as part of Digital Twin environment",
+    "category": " Management",
+    "capability": "Device Management",
+    "uid": "MG.DM"
+  },
+  {
+    "score": 7,
+    "justification": "The offering describes features for 'collecting, analyzing, and visualizing log data' and 'capturing and storing telemetry and event data from connected IoT devices,' which support recording events and access/transaction data. However, there is no explicit mention of recording user access data or explicit linkage to Digital Twin system activities, making coverage plausible but not fully explicit for all required aspects.",
+    "ability": "The ability to record events, transactions, access data of users, and transactions to understand and trace the activities occurring in a Digital Twin system.",
+    "category": " Management",
+    "capability": "Logging",
+    "uid": "MG.EL"
+  },
+  {
+    "score": 7,
+    "justification": "The response addresses prevention of unauthorized access and changes by citing 'robust identity and access management,' 'advanced threat protection,' and 'comprehensive security monitoring.' Interfaces claim compliance with major standards and support secure integration. However, there is no explicit mention of Digital Twins or controls tailored specifically for their protection, and assurances around availability are indirect only. References are generalized to cloud workloads and IoT environments.",
+    "ability": "The ability to protected Digital Twins from unintended or unauthorized access, change or destruction. Security concerns equipment, systems and information, ensuring availability, integrity and confidentiality of information.",
+    "category": " Trustworthiness",
+    "capability": "Security",
+    "uid": "TW.SC"
+  },
+  {
+    "score": 7,
+    "justification": "The offering describes security measures—'robust security measures, including role-based access control (RBAC) and encryption'—and refers to compliance with industry standards, which supports safe operation. However, there is no explicit evidence or process detailing how unacceptable risks of physical injury or indirect harm are specifically mitigated. Statements are strong but still somewhat generic.",
+    "ability": "The ability to operate digital twins without causing unacceptable risk of physical injury or damage to the health of people, either directly, or indirectly as a result of damage to property or to the environment",
+    "category": " Trustworthiness",
+    "capability": "Safety",
+    "uid": "TW.SF"
+  }
+]

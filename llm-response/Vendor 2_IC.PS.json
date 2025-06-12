@@ -1,7 +1,0 @@
-{
-  "score": 7,
-  "justification": "Vendor 2 states they enable 'prescriptive decision-making using built-in ML engines and rule-based systems within MindSphere' and derive 'insights from sensor data, historical performance, and digital twin simulations,' which aligns with the requirement. However, while interfaces support integration and standards, and the offering refers to prescriptive and rule-based recommendations, there is no direct statement clarifying that combined analytics, business rules, and workflows are used together to generate actionable recommendations. The description lacks explicit examples of workflow or business outcome linkage.",
-  "ability": "The ability to create prescriptive recommendations based on business rules and AI logic to suggest the best next actions to take when a pre-determined event happens. ",
-  "category": " Intelligence",
-  "capability": "Prescriptive Recommendations"
-}

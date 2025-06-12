@@ -83,12 +83,14 @@ def list_azure_files():
 def list_llm_files():
     folder = "llm-response"
     files = [f for f in os.listdir(folder) if f.endswith('.json')]
-    return {"files": sorted(files)}
+    # Only return vendor files (not per-UID files)
+    vendor_files = [f for f in files if '_' not in f]
+    return {"files": sorted(vendor_files)}
 
-@app.get("/llm-response/{filename}")
-def get_llm_file(filename: str):
+@app.get("/llm-response/{vendor}")
+def get_llm_vendor_file(vendor: str):
     folder = "llm-response"
-    file_path = os.path.join(folder, filename)
+    file_path = os.path.join(folder, f"{vendor}.json")
     if not os.path.exists(file_path):
         return JSONResponse({"error": "File not found"}, status_code=404)
     with open(file_path, "r") as f:

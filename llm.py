@@ -141,6 +141,7 @@ def process_vendor(vendor):
     if xls is None:
         print(f"No sheet for {vendor}")
         return
+    vendor_results = []
     for idx, row in xls.iloc[5:].iterrows():  # Start from row 6 (index 5)
         category = row.iloc[0] if len(row) > 0 else None
         uid = row.iloc[1] if len(row) > 1 else None
@@ -181,18 +182,21 @@ Your output should be structured in JSON format as follows:
                 model=deployment,
             )
             if response.choices:
-              # Add 'ability' to the output JSON
               import json
               try:
                 result = json.loads(response.choices[0].message.content)
                 result['ability'] = ability
-                result['category'] = category.split('.')[1].strip('')
+                result['category'] = category.split('.')[1].strip('') if category and '.' in category else category
                 result['capability'] = capability
-                with open(f"./llm-response/{vendor}_{uid}.json", "w") as f:
-                    json.dump(result, f, ensure_ascii=False, indent=2)
+                result['uid'] = uid
+                vendor_results.append(result)
               except Exception as e:
                   print(f"Error writing JSON for {vendor} {uid}: {e}")
-
+    # Write all results for this vendor to a single file
+    if vendor_results:
+        import json
+        with open(f"./llm-response/{vendor}.json", "w") as f:
+            json.dump(vendor_results, f, ensure_ascii=False, indent=2)
 
 
 if __name__ == "__main__":

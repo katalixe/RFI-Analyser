@@ -1,7 +1,0 @@
-{
-  "score": 7,
-  "justification": "The vendor states that Cloud 1 Data Factory and Cloud 1 API Manager enable 'integration of Digital Twin applications' and 'seamless integration and interoperability between multiple Digital Twin applications.' This suggests a strong alignment with integrating and enabling interoperable Digital Twins. However, there is no explicit mention of accessing or integrating information from 'existing' digital twin instances, and technical details or process descriptions are lacking.",
-  "ability": "The ability to integrate or access information from existing digital twin instances ",
-  "category": " Integration",
-  "capability": "Digital Twin Integration"
-}

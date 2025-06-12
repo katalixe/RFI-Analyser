@@ -67,47 +67,37 @@
             const filesResp = await fetch('/list-llm-files');
             const filesData = await filesResp.json();
             const files = filesData.files || [];
-            const fileInfo = files.map(parseFileName).filter(Boolean);
-            const vendors = [...new Set(fileInfo.map(f => f.vendor))];
-            const uids = [...new Set(fileInfo.map(f => f.uid))];
+            const vendors = files.map(f => f.replace(/\.json$/, ''));
+            // Load all vendor data in parallel
+            const vendorDataArr = await Promise.all(
+                vendors.map(vendor => fetch(`/llm-response/${vendor}`).then(r => r.json()))
+            );
+            // Build UID set and fileMap
+            const uidSet = new Set();
             const fileMap = {};
-            fileInfo.forEach(f => {
-                if (!fileMap[f.vendor]) fileMap[f.vendor] = {};
-                fileMap[f.vendor][f.uid] = f.fname;
+            vendors.forEach((vendor, idx) => {
+                const responses = vendorDataArr[idx];
+                if (!Array.isArray(responses)) return;
+                responses.forEach(obj => {
+                    if (!obj.uid) return;
+                    uidSet.add(obj.uid);
+                    if (!fileMap[vendor]) fileMap[vendor] = {};
+                    fileMap[vendor][obj.uid] = obj;
+                });
             });
-            // Table header
-            const theadRow = document.querySelector('#vendor-table thead tr');
-            theadRow.innerHTML = '';
-            const thUid = document.createElement('th');
-            thUid.textContent = 'UID';
-            theadRow.appendChild(thUid);
-            vendors.forEach(vendor => {
-                const th = document.createElement('th');
-                th.textContent = vendor;
-                theadRow.appendChild(th);
-            });
+            const uids = Array.from(uidSet);
             // Map UID to category by reading the 'category' field from the first available vendor file for each UID
             const uidToCategory = {};
-            const categoryPromises = uids.map(uid => {
+            uids.forEach(uid => {
                 for (let v = 0; v < vendors.length; v++) {
                     const vendor = vendors[v];
-                    const fname = fileMap[vendor] && fileMap[vendor][uid];
-                    if (fname) {
-                        return fetch(`/llm-response/${fname}`)
-                            .then(resp => resp.json())
-                            .then(data => {
-                                if (data.category) {
-                                    uidToCategory[uid] = data.category;
-                                } else {
-                                    uidToCategory[uid] = uid.split('.')[0]; // fallback
-                                }
-                            });
+                    if (fileMap[vendor] && fileMap[vendor][uid] && fileMap[vendor][uid].category) {
+                        uidToCategory[uid] = fileMap[vendor][uid].category;
+                        return;
                     }
                 }
                 uidToCategory[uid] = uid.split('.')[0]; // fallback
-                return Promise.resolve();
             });
-            await Promise.all(categoryPromises);
             // Group UIDs by category name from JSON
             const uidGroups = {};
             uids.forEach(uid => {
@@ -125,28 +115,10 @@
                 for (const vendor of vendors) {
                     let sum = 0, count = 0;
                     for (const uid of uidGroups[cat]) {
-                        const fname = fileMap[vendor] && fileMap[vendor][uid];
-                        if (fname) {
-                            // Use synchronous fetch since we already fetch these files for cell population
-                            // We'll use a cache to avoid refetching
-                            if (!window._llmJsonCache) window._llmJsonCache = {};
-                            let dataPromise;
-                            if (window._llmJsonCache[fname]) {
-                                dataPromise = Promise.resolve(window._llmJsonCache[fname]);
-                            } else {
-                                dataPromise = fetch(`/llm-response/${fname}`)
-                                    .then(resp => resp.json())
-                                    .then(data => {
-                                        window._llmJsonCache[fname] = data;
-                                        return data;
-                                    });
-                            }
-                            await dataPromise.then(data => {
-                                if (typeof data.score === 'number') {
-                                    sum += data.score;
-                                    count++;
-                                }
-                            });
+                        const obj = fileMap[vendor] && fileMap[vendor][uid];
+                        if (obj && typeof obj.score === 'number') {
+                            sum += obj.score;
+                            count++;
                         }
                     }
                     vendorCategoryAverages[cat][vendor] = count > 0 ? (sum / count) : null;
@@ -158,31 +130,26 @@
                 let sum = 0, count = 0;
                 for (const cat of sortedCategories) {
                     for (const uid of uidGroups[cat]) {
-                        const fname = fileMap[vendor] && fileMap[vendor][uid];
-                        if (fname) {
-                            if (!window._llmJsonCache) window._llmJsonCache = {};
-                            let dataPromise;
-                            if (window._llmJsonCache[fname]) {
-                                dataPromise = Promise.resolve(window._llmJsonCache[fname]);
-                            } else {
-                                dataPromise = fetch(`/llm-response/${fname}`)
-                                    .then(resp => resp.json())
-                                    .then(data => {
-                                        window._llmJsonCache[fname] = data;
-                                        return data;
-                                    });
-                            }
-                            await dataPromise.then(data => {
-                                if (typeof data.score === 'number') {
-                                    sum += data.score;
-                                    count++;
-                                }
-                            });
+                        const obj = fileMap[vendor] && fileMap[vendor][uid];
+                        if (obj && typeof obj.score === 'number') {
+                            sum += obj.score;
+                            count++;
                         }
                     }
                 }
                 overallAverages[vendor] = count > 0 ? (sum / count) : null;
             }
+            // Table header
+            const theadRow = document.querySelector('#vendor-table thead tr');
+            theadRow.innerHTML = '';
+            const thUid = document.createElement('th');
+            thUid.textContent = 'UID';
+            theadRow.appendChild(thUid);
+            vendors.forEach(vendor => {
+                const th = document.createElement('th');
+                th.textContent = vendor;
+                theadRow.appendChild(th);
+            });
             // Table body
             const tbody = document.querySelector('#vendor-table tbody');
             tbody.innerHTML = '';
@@ -208,44 +175,28 @@
                     tdUid.textContent = uid;
                     tdUid.className = 'uid-cell';
                     // Fetch ability from the first available vendor file for this UID
-                    let abilityFetched = false;
-                    for (let v = 0; v < vendors.length && !abilityFetched; v++) {
+                    let abilitySet = false;
+                    for (let v = 0; v < vendors.length && !abilitySet; v++) {
                         const vendor = vendors[v];
-                        const fname = fileMap[vendor] && fileMap[vendor][uid];
-                        if (fname) {
-                            fetch(`/llm-response/${fname}`)
-                                .then(resp => resp.json())
-                                .then(data => {
-                                    if (data.ability) {
-                                        tdUid.setAttribute('data-ability', data.ability);
-                                        tdUid.classList.add('has-ability');
-                                    }
-                                });
-                            abilityFetched = true;
+                        const obj = fileMap[vendor] && fileMap[vendor][uid];
+                        if (obj && obj.ability) {
+                            tdUid.setAttribute('data-ability', obj.ability);
+                            tdUid.classList.add('has-ability');
+                            abilitySet = true;
                         }
                     }
                     tr.appendChild(tdUid);
                     for (let colIdx = 0; colIdx < vendors.length; colIdx++) {
                         const vendor = vendors[colIdx];
                         const td = document.createElement('td');
-                        const fname = fileMap[vendor] && fileMap[vendor][uid];
-                        if (fname) {
-                            td.textContent = '...';
-                            fetch(`/llm-response/${fname}`)
-                                .then(resp => resp.json())
-                                .then(data => {
-                                    if (typeof data.score === 'number') {
-                                        td.textContent = data.score;
-                                        td.className = getScoreColor(data.score);
-                                        if (data.justification) {
-                                            td.setAttribute('data-justification', data.justification);
-                                            td.classList.add('has-justification');
-                                        }
-                                    } else {
-                                        td.textContent = '-';
-                                    }
-                                })
-                                .catch(() => { td.textContent = '-'; });
+                        const obj = fileMap[vendor] && fileMap[vendor][uid];
+                        if (obj) {
+                            td.textContent = (typeof obj.score === 'number') ? obj.score : '-';
+                            td.className = getScoreColor(obj.score);
+                            if (obj.justification) {
+                                td.setAttribute('data-justification', obj.justification);
+                                td.classList.add('has-justification');
+                            }
                         } else {
                             td.textContent = '-';
                         }

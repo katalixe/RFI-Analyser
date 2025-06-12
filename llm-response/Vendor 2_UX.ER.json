@@ -1,7 +1,0 @@
-{
-  "score": 8,
-  "justification": "The offering describes 'interactive graph-based visualization of digital twin hierarchies' via Teamcenter’s Entity Explorer and Mendix UI, supporting user navigation and queries. The Ability requirement for presenting hierarchical/graph-based relationships interactively for business users is well supported. However, details about user-friendliness or specific functionality for diverse business user segments are not extensive, leaving a minor gap in explicitness.",
-  "ability": "The ability to present Digital Twin entities and their hierarchical or graph-based relationships in an interactive way",
-  "category": " User Experience",
-  "capability": "Entity Relationship Visualization"
-}

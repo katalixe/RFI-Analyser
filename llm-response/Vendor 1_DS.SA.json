@@ -1,7 +1,0 @@
-{
-  "score": 7,
-  "justification": "The Offering explicitly mentions 'scalable storage solutions with tiered options (Hot, Cool, and Archive) to efficiently manage data based on access frequency and retention needs,' which directly aligns with the Ability. However, there is no detail on data organization or retrieval processes, and cost reduction is implied but not substantiated. Interfaces focus on security but not relevant to tiered storage management, slightly limiting completeness.",
-  "ability": "The ability to store, organize and retrieve data  based on how frequently it will be accessed and how long it will be retained.",
-  "category": " Data Services",
-  "capability": "Data Storage and Archive Services"
-}

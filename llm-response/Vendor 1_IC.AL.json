@@ -1,7 +1,0 @@
-{
-  "score": 6,
-  "justification": "The vendor describes mechanisms for generating and delivering alerts and notifications (SignalR, Event Hub, Power BI alerts), and provides some technical detail on supported interfaces. However, explicit references to managing message queues or triggers, and to managing (not just displaying) alerts/messages, are lacking. The solution partially addresses the requirement by facilitating notifications and alerting, but there's limited evidence of comprehensive queue, trigger, or intervention management.",
-  "ability": "The ability to display and manage alerts, messages, message queues, triggers, and notifications",
-  "category": " Intelligence",
-  "capability": "Alerts and Notification"
-}

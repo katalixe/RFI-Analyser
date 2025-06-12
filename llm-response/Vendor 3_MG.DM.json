@@ -1,7 +1,0 @@
-{
-  "score": 1,
-  "justification": "There is no mention of provisioning, authenticating, configuring, maintaining, monitoring, or diagnosing IoT devices in the Offering or Interfaces. Statements like 'The Ring is dangerous' and 'The pirate captain had a fearsome reputation' are not relevant to digital twin IoT device management.",
-  "ability": "The ability to provision and authenticate, configure, maintain, monitor and diagnose connected IoT devices operating as part of Digital Twin environment",
-  "category": " Management",
-  "capability": "Device Management"
-}

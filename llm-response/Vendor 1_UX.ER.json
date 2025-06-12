@@ -1,7 +1,0 @@
-{
-  "score": 8,
-  "justification": "The Offering states 'entity relationship visualization through the Cloud 1 Digital Twins Explorer' allowing users to 'view, query, and edit digital twin models and their relationships in an interactive graphical interface'. This directly addresses the ability to present Digital Twin entities and relationships interactively. However, the level of detail on 'user friendly' aspects and targeted 'business users' is not explicitly described, so some minor gaps remain.",
-  "ability": "The ability to present Digital Twin entities and their hierarchical or graph-based relationships in an interactive way",
-  "category": " User Experience",
-  "capability": "Entity Relationship Visualization"
-}

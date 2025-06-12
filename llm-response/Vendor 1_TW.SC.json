@@ -1,7 +1,0 @@
-{
-  "score": 6,
-  "justification": "The response references security for identity (Entra), infrastructure (Security Center), IoT (Defender for IoT), and key management (Key Vault), with emphasis on compliance and standards. However, it does not explicitly mention Digital Twins nor directly address protecting Digital Twins from unintended access, change, or destruction. Coverage is partial, with only general relevance to the requirement.",
-  "ability": "The ability to protected Digital Twins from unintended or unauthorized access, change or destruction. Security concerns equipment, systems and information, ensuring availability, integrity and confidentiality of information.",
-  "category": " Trustworthiness",
-  "capability": "Security"
-}

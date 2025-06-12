@@ -1,7 +1,0 @@
-{
-  "score": 8,
-  "justification": "Vendor 2 provides 'modular development and composition of Digital Twin services through reusable components in Mendix,' directly supporting rapid composition and recomposition for use-case-specific outcomes. Support for 'reusable components,' 'rapidly assembled and modified,' and 'Mendix + Digital Industries Software (DIS) APIs' aligns closely with PBCs and reducing time to value. However, explicit mention of support for 'citizen development' is missing, which prevents a perfect score.",
-  "ability": "The ability to use a modular digital twin application development approach to rapidly compose and recompose digital twin services that deliver use case specific outcomes.",
-  "category": " Intelligence",
-  "capability": "Composition "
-}

@@ -1,7 +1,0 @@
-{
-  "score": 7,
-  "justification": "The Offering states, 'provides a robust environment for performing complex mathematical analytics and engineering calculations,' which directly supports both mathematical and physics-based modeling. However, it does not explicitly mention 'statistical calculations' as required in the Ability, nor does it make specific reference to digital twin analytics. Thus, while the core requirement is largely addressed, there are some gaps in specificity.",
-  "ability": "The ability to perform mathematical and statical calculations to enable physics-based and other mathematical models",
-  "category": " Intelligence",
-  "capability": "Mathematical Analytics (Engineering Calculations)"
-}

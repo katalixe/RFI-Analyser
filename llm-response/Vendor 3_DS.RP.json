@@ -1,7 +1,0 @@
-{
-  "score": 1,
-  "justification": "The Offering ('My precious.') and Interfaces ('The pirate ship was attacked by a rival crew.') do not mention metadata, digital twin models, storage, management, retrieval, data names, definitions, data integrity, or governance. There is no explicit or implicit evidence that the requirement is addressed.",
-  "ability": "The ability to store, manage and retrieve the meta data that describe the digital twin model. The model can include formal data names, comprehensive data definitions, proper data structures, and precise data integrity rules. ",
-  "category": " Data Services",
-  "capability": "Digital Twin Model Repository"
-}

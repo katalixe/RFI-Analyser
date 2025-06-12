@@ -1,7 +1,0 @@
-{
-  "score": 8,
-  "justification": "The Offering describes ‘live digital replicas of physical environments’ and ‘immersive and interactive simulations’ (Digital Twins), which directly support creating an interactive, enhanced real-world environment as required. Remote Rendering and Spatial Anchors further support interactivity and realism. However, there is no explicit mention of support for auditory or haptic enhancements; focus is chiefly on visual and interactive XR. Therefore, while the response is strong, it lacks comprehensive detail on all perceptual enhancements.",
-  "ability": "The ability to provide an interactive experience of a real-world environment where the objects that reside in the real world are enhanced by computer-generated perceptual information such as visual, auditory, haptic etc.  environment.",
-  "category": " User Experience",
-  "capability": "Extended Reality (XR)"
-}

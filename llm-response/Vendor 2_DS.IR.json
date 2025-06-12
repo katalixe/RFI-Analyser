@@ -1,7 +1,0 @@
-{
-  "score": 8,
-  "justification": "Vendor 2's offering details 'an integrated Digital Twin Instance Repository' and states it 'supports real-time capture and synchronization of asset state data with the digital twin model,' directly addressing storing, managing, and retrieving digital twin instance data. The explanation is clear but lacks granular detail on data retrieval operations. There is no explicit reference to mechanisms for data retrieval beyond synchronization and monitoring, which slightly limits the score.",
-  "ability": "The ability to store, manage and retrieve digital twin instance data that conforms to the requirements of the digital twin model",
-  "category": " Data Services",
-  "capability": "Digital Twin Instance Repository"
-}

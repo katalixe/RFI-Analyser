@@ -1,7 +1,0 @@
-{
-  "score": 7,
-  "justification": "The vendor offers a 'managed and decentralized ledger... backed by blockchain, ensuring data integrity and tamper-proof storage,' addressing the need for immutability and trustworthiness. Interfaces include 'REST APIs' and 'hardware-backed secure enclaves,' with reference to security standards. However, there is no explicit mention of digital twin integration or native support for smart contracts, which are explicitly requested in the Ability statement. Coverage is strong on ledger features but limited on digital twin and smart contract aspects.",
-  "ability": "The ability to use distributed ledgers for digital twin applications that require immutable data for digital twin instances, transactions and automation (smart contracts)",
-  "category": " Intelligence",
-  "capability": "Distributed Ledger and Smart Contracts"
-}

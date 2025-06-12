@@ -1,7 +1,0 @@
-{
-  "score": 8,
-  "justification": "Vendor 2 describes federated learning ('allowing algorithm training across decentralized edge nodes without transmitting raw data'), which matches the core requirement. They address data privacy, sovereignty, and compliance. However, the claim is mainly descriptive and does not provide concrete implementation details, testing evidence, or examples to confirm robustness or direct capability for 'multiple actors' or 'heterogeneous data.'",
-  "ability": "The ability to train an algorithm across multiple decentralized digital twin edge devices or servers holding local data samples, without exchanging their data samples.",
-  "category": " Intelligence",
-  "capability": "Federated Learning"
-}

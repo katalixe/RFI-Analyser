@@ -1,7 +1,0 @@
-{
-  "score": 1,
-  "justification": "The vendor's Offering ('All we have to decide is what to do with the time that is given us') and Interfaces ('The pirate ship was attacked by a rival crew') do not mention the ability to present or interact with continuously updated, low-latency information for real-time decision-making. There is no explicit or implicit support for the requirement.",
-  "ability": "The ability to present and interact with continuously updated information streaming at zero or low latency.",
-  "category": " User Experience",
-  "capability": "Real-time Monitoring"
-}

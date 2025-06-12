@@ -1,7 +1,0 @@
-{
-  "score": 1,
-  "justification": "The Offering does not address any aspects of storing, managing, or retrieving algorithmic codebase, business rules, or metadata, nor does it discuss model repositories or configuration management. The Interfaces reference is irrelevant to the requirement.",
-  "ability": "The ability to store, manage and retrieve the algorithmic codebase, business rules and meta data that describe a simulation model.",
-  "category": " Data Services",
-  "capability": "Simulation Model Repository"
-}
