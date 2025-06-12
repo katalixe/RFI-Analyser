@@ -1,9 +1,6 @@
-from fastapi import FastAPI, Request
+from fastapi import FastAPI, Request, HTTPException
 from fastapi.templating import Jinja2Templates
-from fastapi.responses import HTMLResponse
-from fastapi.responses import PlainTextResponse
-from fastapi.responses import JSONResponse
-from fastapi.responses import FileResponse
+from fastapi.responses import HTMLResponse, PlainTextResponse, JSONResponse, FileResponse
 import yaml
 import os
 from azure.storage.blob import BlobServiceClient
@@ -106,4 +103,27 @@ def run_llm_main():
         return {"status": "success"}
     except Exception as e:
         return JSONResponse({"status": "error", "error": str(e)}, status_code=500)
+
+@app.get("/vendor-summary/{vendor}")
+def get_vendor_summary(vendor: str):
+    # Handle spaces and URL encoding in vendor name
+    import urllib.parse
+    safe_vendor = urllib.parse.unquote(vendor)
+    folder = "llm-response"
+    file_path = os.path.join(folder, f"{safe_vendor}-summary.md")
+    if not os.path.exists(file_path):
+        return PlainTextResponse("Summary not found.", status_code=404)
+    with open(file_path, "r", encoding="utf-8") as f:
+        content = f.read()
+    return PlainTextResponse(content)
+
+@app.get("/download-pdf/{filename}")
+def download_pdf(filename: str):
+    import urllib.parse
+    # Sanitize filename to prevent directory traversal
+    safe_filename = os.path.basename(urllib.parse.unquote(filename))
+    pdf_path = os.path.join(os.getcwd(), safe_filename)
+    if not os.path.exists(pdf_path) or not pdf_path.lower().endswith('.pdf'):
+        raise HTTPException(status_code=404, detail="PDF not found")
+    return FileResponse(pdf_path, media_type='application/pdf', filename=safe_filename)
 

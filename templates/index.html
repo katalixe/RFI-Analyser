@@ -26,11 +26,59 @@
         /* Add style for pointer and transition */
         .category-header td { cursor: pointer; user-select: none; transition: background 0.2s; }
         .category-header td:hover { background: #e0e7ef !important; }
+        .markdown-body {
+            font-family: 'Segoe UI', 'Arial', 'sans-serif';
+            color: #222;
+            background: #fff;
+            padding: 0;
+            margin: 0;
+            word-break: break-word;
+        }
+        .markdown-body h1, .markdown-body h2, .markdown-body h3 {
+            font-weight: bold;
+            margin-top: 1.2em;
+            margin-bottom: 0.6em;
+        }
+        .markdown-body pre, .markdown-body code {
+            background: #f6f8fa;
+            border-radius: 4px;
+            padding: 2px 6px;
+            font-size: 1em;
+            font-family: 'Fira Mono', 'Consolas', 'Menlo', monospace;
+            white-space: pre-wrap;
+            word-break: break-word;
+        }
+        .markdown-body p {
+            margin: 0.7em 0;
+        }
+        .markdown-body ul, .markdown-body ol {
+            margin: 0.7em 0 0.7em 1.5em;
+        }
+        .markdown-body blockquote {
+            border-left: 4px solid #e0e0e0;
+            margin: 0.7em 0;
+            padding-left: 1em;
+            color: #555;
+            background: #f9f9fa;
+        }
+        .markdown-body table {
+            border-collapse: collapse;
+            margin: 1em 0;
+            width: 100%;
+        }
+        .markdown-body th, .markdown-body td {
+            border: 1px solid #e0e0e0;
+            padding: 6px 10px;
+        }
+        .markdown-body img {
+            max-width: 100%;
+        }
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
     <div class="container">
-        <h1>RFI AI machine 🚀</h1>
+        <h1>Tender T(I)nder 🚀</h1>
         <table id="vendor-table">
             <thead>
                 <tr>
@@ -148,6 +196,19 @@
             vendors.forEach(vendor => {
                 const th = document.createElement('th');
                 th.textContent = vendor;
+                th.style.cursor = 'pointer';
+                th.title = 'Download PDF report';
+                th.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    const pdfName = `${vendor} Report.pdf`;
+                    // Use the FastAPI endpoint to download the PDF
+                    const link = document.createElement('a');
+                    link.href = `/download-pdf/${encodeURIComponent(pdfName)}`;
+                    link.download = pdfName;
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                });
                 theadRow.appendChild(th);
             });
             // Table body
@@ -241,14 +302,58 @@
             overallLabelTd.textContent = 'OVERALL';
             overallLabelTd.style.fontWeight = 'bold';
             overallTr.appendChild(overallLabelTd);
-            vendors.forEach(vendor => {
+            vendors.forEach((vendor, idx) => {
                 const avgTd = document.createElement('td');
                 const avg = overallAverages[vendor];
                 avgTd.textContent = avg !== null ? avg.toFixed(2) : '-';
                 avgTd.style.fontWeight = 'bold';
+                avgTd.className = 'overall-score-cell';
+                avgTd.setAttribute('data-vendor', vendor);
                 overallTr.appendChild(avgTd);
             });
             tbody.appendChild(overallTr);
+
+            // Add summary container below the table
+            let summaryDiv = document.getElementById('vendor-summary');
+            if (!summaryDiv) {
+                summaryDiv = document.createElement('div');
+                summaryDiv.id = 'vendor-summary';
+                summaryDiv.style.display = 'none';
+                summaryDiv.style.margin = '32px auto';
+                summaryDiv.style.maxWidth = '900px';
+                summaryDiv.style.background = '#fff';
+                summaryDiv.style.boxShadow = '0 2px 8px #0001';
+                summaryDiv.style.borderRadius = '8px';
+                summaryDiv.style.padding = '32px 40px';
+                summaryDiv.style.fontSize = '1.0em';
+                summaryDiv.style.lineHeight = '1.6';
+                summaryDiv.style.transition = 'all 0.2s';
+                summaryDiv.style.overflowX = 'auto';
+                summaryDiv.style.wordBreak = 'break-word';
+                summaryDiv.classList.add('markdown-body');
+                document.querySelector('.container').appendChild(summaryDiv);
+            }
+            // Click event for overall score cells
+            tbody.querySelectorAll('.overall-score-cell').forEach(cell => {
+                cell.addEventListener('click', async function() {
+                    const vendor = cell.getAttribute('data-vendor');
+                    summaryDiv.innerHTML = '<em>Loading summary...</em>';
+                    summaryDiv.style.display = 'block';
+                    try {
+                        const resp = await fetch(`/vendor-summary/${encodeURIComponent(vendor)}`);
+                        if (!resp.ok) throw new Error('Not found');
+                        const md = await resp.text();
+                        if (window.marked) {
+                            summaryDiv.innerHTML = marked.parse(md, { breaks: true, gfm: true });
+                        } else {
+                            summaryDiv.innerHTML = `<pre style="white-space:pre-wrap;word-break:break-word;">${md}</pre>`;
+                        }
+                        summaryDiv.scrollIntoView({ behavior: 'smooth' });
+                    } catch {
+                        summaryDiv.innerHTML = '<span style="color:#b91c1c">Summary not found for this vendor.</span>';
+                    }
+                });
+            });
         }
         window.addEventListener('DOMContentLoaded', loadVendorsAndUIDs);
 
@@ -280,8 +385,9 @@
                 tooltip.style.zIndex = 1000;
                 // Position near the cell
                 const rect = td.getBoundingClientRect();
-                tooltip.style.left = (rect.right + 10) + 'px';
-                tooltip.style.top = (rect.top + window.scrollY) + 'px';
+                tooltip.style.left = (rect.right - 20) + 'px';
+                // tooltip.style.top = (rect.top + window.scrollY) + 'px';
+                tooltip.style.top = (rect.top) + 'px';
                 tooltip._lastTd = td;
             } else {
                 if (tooltip) {
