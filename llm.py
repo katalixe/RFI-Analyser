@@ -5,6 +5,12 @@ from azure.storage.blob import BlobServiceClient
 import concurrent.futures
 import pandas as pd
 from io import BytesIO
+from reportlab.lib.pagesizes import letter
+from reportlab.pdfgen import canvas
+from reportlab.lib.styles import getSampleStyleSheet
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle
+from reportlab.lib import colors
+import textwrap
 
 
 #endpoint = "https://foundry-ms.openai.azure.com/"
@@ -135,6 +141,10 @@ def main():
         for vendor in vendors:
             futures.append(executor.submit(process_vendor, vendor))
         concurrent.futures.wait(futures)
+    # After processing all vendors, process summaries
+    for vendor in vendors:    
+        process_vendor_summary(vendor)
+        generate_vendor_pdf_report(vendor)
 
 def process_vendor(vendor):
     xls = load_xls(f"{vendor} - RFP.xlsx")
@@ -189,6 +199,8 @@ Your output should be structured in JSON format as follows:
                 result['category'] = category.split('.')[1].strip('') if category and '.' in category else category
                 result['capability'] = capability
                 result['uid'] = uid
+                result['offering'] = offering
+                result['interfaces'] = intefaces
                 vendor_results.append(result)
               except Exception as e:
                   print(f"Error writing JSON for {vendor} {uid}: {e}")
@@ -198,7 +210,129 @@ Your output should be structured in JSON format as follows:
         with open(f"./llm-response/{vendor}.json", "w") as f:
             json.dump(vendor_results, f, ensure_ascii=False, indent=2)
 
+def process_vendor_summary(vendor):
+    """
+    Processes all responses for a vendor from the vendor's JSON file and prepares a summary using the 'offering' and 'interfaces' fields.
+    The prompt is left empty for now.
+    Returns a list of dicts with at least: uid, offering, interfaces, and any other fields you want to include.
+    """
+    import json
+    vendor_file = f"./llm-response/{vendor}.json"
+    if not os.path.exists(vendor_file):
+        print(f"No JSON file for vendor: {vendor}")
+        return []
+    with open(vendor_file, "r") as f:
+        responses = json.load(f)
+    summary = []
+    for obj in responses:
+        summary.append({
+            "uid": obj.get("uid"),
+            "offering": obj.get("offering"),
+            "interfaces": obj.get("interfaces"),
+        })
+    
 
+    # Aggregate all offerings and interfaces into a single string for summary
+    offerings = "\n".join(str(item.get("offering", "")) for item in summary if item.get("offering"))
+    interfaces = "\n".join(str(item.get("interfaces", "")) for item in summary if item.get("interfaces"))
+
+    prompt = f"""
+You are a professional RFP analyst tasked with generating a concise and factual summary of a vendor's submission to an RFP. You will be provided with the vendor's complete set of responses to all RFP criteria.
+Your job is to:
+Summarize the vendor's offering, using their own terminology where possible.
+Capture the main capabilities, key differentiators, and architectural or interface components they emphasize.
+Reflect the intended use cases, benefits, and design philosophy as presented by the vendor.
+Do not add interpretation, assumptions, or external context. Stick strictly to what is written.
+Your summary should:
+Be objective and neutral in tone.
+Highlight only what the vendor has provided, without omissions or commentary.
+Be written in maximum 200 words. Make it in pretty format.
+Offerings: 
+{offerings}
+Interfaces:
+{interfaces}
+    """
+    with open(f"./prompts/{vendor}-summary.prompt", "w") as out_f:
+        out_f.write(f"{prompt}")
+    
+    print(f"Processing Summary for {vendor} ")
+    response = client.chat.completions.create(
+            stream=False,
+            messages=[
+                {"role": "user", "content": f"{prompt}"},
+            ],
+            max_tokens=4096,
+            temperature=1.0,
+            top_p=1.0,
+            model=deployment,
+            )
+    if response.choices:
+            with open(f"./llm-response/{vendor}-summary.md", "w") as f:
+                f.write(response.choices[0].message.content)
+
+def generate_vendor_pdf_report(vendor):
+    """
+    Generate a PDF report for a vendor, including summary and all UID responses.
+    PDF is saved as 'Vendor X Report.pdf' in the root folder.
+    Each UID entry is rendered as labeled paragraphs, not as a table.
+    """
+    import os, json
+    from reportlab.lib.pagesizes import A4
+    from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, PageBreak
+    from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
+    from reportlab.lib.enums import TA_LEFT
+    from reportlab.lib.units import inch
+
+    # Load summary (markdown)
+    summary_path = f"./llm-response/{vendor}-summary.md"
+    summary = ""
+    if os.path.exists(summary_path):
+        with open(summary_path, "r", encoding="utf-8") as f:
+            summary = f.read()
+    # Load all responses
+    json_path = f"./llm-response/{vendor}.json"
+    if not os.path.exists(json_path):
+        print(f"No JSON file for vendor: {vendor}")
+        return
+    with open(json_path, "r", encoding="utf-8") as f:
+        responses = json.load(f)
+    # PDF setup
+    pdf_path = f"{vendor} Report.pdf"
+    doc = SimpleDocTemplate(pdf_path, pagesize=A4, rightMargin=36, leftMargin=36, topMargin=36, bottomMargin=36)
+    styles = getSampleStyleSheet()
+    styleN = styles["Normal"]
+    styleH = styles["Heading1"]
+    styleH2 = styles["Heading2"]
+    styleH3 = styles["Heading3"]
+    styleMono = ParagraphStyle('Mono', parent=styleN, fontName='Courier', fontSize=9, leading=12)
+    styleLabel = ParagraphStyle('Label', parent=styleN, fontName='Helvetica-Bold', fontSize=9, leading=12)
+    elements = []
+    # Title
+    elements.append(Paragraph(f"<b>{vendor} RFI/LLM Report</b>", styleH))
+    elements.append(Spacer(1, 0.2*inch))
+    # Summary
+    if summary:
+        elements.append(Paragraph("<b>Summary</b>", styleH2))
+        for para in summary.split('\n\n'):
+            elements.append(Paragraph(para.replace('\n', '<br/>'), styleN))
+            elements.append(Spacer(1, 0.1*inch))
+        elements.append(Spacer(1, 0.2*inch))
+    # Detailed Responses as paragraphs
+    elements.append(Paragraph("<b>Detailed Responses</b>", styleH2))
+    for idx, obj in enumerate(responses):
+        elements.append(Paragraph(f"<b>{obj.get('category', '')} - {obj.get('capability', '')} ({obj.get('uid', '')})</b>", styleH3))
+        elements.append(Paragraph(f"<b>Requirment:</b> {obj.get('ability', '')}", styleN))
+        elements.append(Paragraph(f"<b>Offering:</b> {obj.get('offering', '')}", styleN))
+        elements.append(Paragraph(f"<b>Interfaces:</b> {obj.get('interfaces', '')}", styleN))
+        elements.append(Paragraph(f"<b>AI Justification:</b> {obj.get('justification', '')}", styleN))
+        elements.append(Paragraph(f"<b>Score:</b> {obj.get('score', '')}", styleN))
+        elements.append(Spacer(1, 0.18*inch))
+        if idx and idx % 8 == 0:
+            elements.append(PageBreak())
+    doc.build(elements)
+    print(f"PDF report generated: {pdf_path}")
+
+# CLI entry point
 if __name__ == "__main__":
     clear_llm_response_folder()
     main()
