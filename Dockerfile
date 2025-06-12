@@ -9,9 +9,6 @@ COPY llm.py llm.py
 COPY templates templates
 COPY queries.yaml queries.yaml
 
-COPY *.pdf /app/
-COPY *.png /app/
-
 RUN pip install -U pip
 RUN pip install -r requirements.txt
 
