@@ -1,6 +1,7 @@
 from fastapi import FastAPI, Request, HTTPException
 from fastapi.templating import Jinja2Templates
 from fastapi.responses import HTMLResponse, PlainTextResponse, JSONResponse, FileResponse
+from fastapi.staticfiles import StaticFiles
 import yaml
 import os
 from azure.storage.blob import BlobServiceClient
@@ -126,4 +127,7 @@ def download_pdf(filename: str):
     if not os.path.exists(pdf_path) or not pdf_path.lower().endswith('.pdf'):
         raise HTTPException(status_code=404, detail="PDF not found")
     return FileResponse(pdf_path, media_type='application/pdf', filename=safe_filename)
+
+# Mount static files at the end so it does not override API routes
+app.mount("/", StaticFiles(directory="."), name="static")
 
