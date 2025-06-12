@@ -123,7 +123,7 @@ def download_pdf(filename: str):
     import urllib.parse
     # Sanitize filename to prevent directory traversal
     safe_filename = os.path.basename(urllib.parse.unquote(filename))
-    pdf_path = os.path.join(os.getcwd(), safe_filename)
+    pdf_path = os.path.join("llm-response", safe_filename)
     if not os.path.exists(pdf_path) or not pdf_path.lower().endswith('.pdf'):
         raise HTTPException(status_code=404, detail="PDF not found")
     return FileResponse(pdf_path, media_type='application/pdf', filename=safe_filename)

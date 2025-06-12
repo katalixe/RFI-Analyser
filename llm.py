@@ -297,7 +297,7 @@ def generate_vendor_pdf_report(vendor):
     with open(json_path, "r", encoding="utf-8") as f:
         responses = json.load(f)
     # PDF setup
-    pdf_path = f"{vendor} Report.pdf"
+    pdf_path = f"./llm-response/{vendor} Report.pdf"
     doc = SimpleDocTemplate(pdf_path, pagesize=A4, rightMargin=36, leftMargin=36, topMargin=36, bottomMargin=36)
     styles = getSampleStyleSheet()
     styleN = styles["Normal"]
