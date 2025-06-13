@@ -5,8 +5,8 @@ from fastapi.staticfiles import StaticFiles
 import yaml
 import os
 from azure.storage.blob import BlobServiceClient
-from llm import main as llm_main
-from llm import clear_llm_response_folder
+# from llm import main as llm_main
+# from llm import clear_llm_response_folder
 
 app = FastAPI()
 templates = Jinja2Templates(directory="templates")
@@ -31,15 +31,15 @@ def get_category_prompts(category_name: str):
             return category["prompts"]
     return {"error": "Category not found"}
 
-# @app.get("/category_content/{category_name}", response_class=HTMLResponse)
-# def get_category_content(category_name: str):
-#     filename = f"{category_name}.txt"
-#     if not os.path.exists(filename):
-#         return f"<h2>No content found for category: {category_name}</h2>"
-#     with open(filename, "r") as f:
-#         content = f.read()
-#     # Simple HTML formatting for display
-#     return f"<h2>Content for {category_name}</h2><pre>{content}</pre>"
+@app.get("/category_content/{category_name}", response_class=HTMLResponse)
+def get_category_content(category_name: str):
+    filename = f"{category_name}.txt"
+    if not os.path.exists(filename):
+        return f"<h2>No content found for category: {category_name}</h2>"
+    with open(filename, "r") as f:
+        content = f.read()
+    # Simple HTML formatting for display
+    return f"<h2>Content for {category_name}</h2><pre>{content}</pre>"
 
 @app.get("/")
 def home(request: Request):
@@ -57,25 +57,25 @@ def get_llm_response(category_name: str):
         content = f.read()
     return {"response": content}
 
-@app.get("/azure-files")
-def list_azure_files():
-  # Replace with your Azure Storage connection string
-  connection_string = os.getenv("CONNECTION_STRING")
-  container_name = "resources"  # Update if your container name is different
-  prefix = "data/"
-  if not connection_string:
-    return {"error": "AZURE_STORAGE_CONNECTION_STRING environment variable not set."}
-  try:
-    blob_service_client = BlobServiceClient.from_connection_string(connection_string)
-    container_client = blob_service_client.get_container_client(container_name)
-    files = [
-      os.path.basename(blob.name)
-      for blob in container_client.list_blobs(name_starts_with=prefix)
-      if blob.name.startswith(prefix)
-    ]
-    return {"files": files.sort()}
-  except Exception as e:
-    return {"error": str(e)}
+# @app.get("/azure-files")
+# def list_azure_files():
+#   # Replace with your Azure Storage connection string
+#   connection_string = os.getenv("CONNECTION_STRING")
+#   container_name = "resources"  # Update if your container name is different
+#   prefix = "data/"
+#   if not connection_string:
+#     return {"error": "AZURE_STORAGE_CONNECTION_STRING environment variable not set."}
+#   try:
+#     blob_service_client = BlobServiceClient.from_connection_string(connection_string)
+#     container_client = blob_service_client.get_container_client(container_name)
+#     files = [
+#       os.path.basename(blob.name)
+#       for blob in container_client.list_blobs(name_starts_with=prefix)
+#       if blob.name.startswith(prefix)
+#     ]
+#     return {"files": files.sort()}
+#   except Exception as e:
+#     return {"error": str(e)}
 
 @app.get("/list-llm-files")
 def list_llm_files():
@@ -96,14 +96,14 @@ def get_llm_vendor_file(vendor: str):
         data = json.load(f)
     return JSONResponse(data)
 
-@app.get("/refresh")
-def run_llm_main():
-    try:
-        clear_llm_response_folder()
-        llm_main()
-        return {"status": "success"}
-    except Exception as e:
-        return JSONResponse({"status": "error", "error": str(e)}, status_code=500)
+# @app.get("/refresh")
+# def run_llm_main():
+#     try:
+#         clear_llm_response_folder()
+#         llm_main()
+#         return {"status": "success"}
+#     except Exception as e:
+#         return JSONResponse({"status": "error", "error": str(e)}, status_code=500)
 
 @app.get("/vendor-summary/{vendor}")
 def get_vendor_summary(vendor: str):
